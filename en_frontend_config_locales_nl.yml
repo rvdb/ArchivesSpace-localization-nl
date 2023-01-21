@@ -21,6 +21,7 @@ nl:
     create: Maak
     cut: Knip
     date_picker: Open kalender
+    date_picker_toggle: Schakel kalender in/uit
     defaults: Standaardwaarden
     edit: Bewerk
     edit_oai: Bewerk OAI instellingen
@@ -31,6 +32,7 @@ nl:
     edit_required_fields: Bewerk verplichte velden
     edit_global_oai: Bekijk/bewerk globale OAI instellingen
     required: Verplichte velden
+    require_subrecord: Maak subrecord verplicht
     export: Exporteer
     view: Bekijk
     spawn: Spawn
@@ -106,7 +108,7 @@ nl:
     export_marc: Download MARCXML
     export_dc: Download DC
     export_csv: CSV overzicht
-    container_template: Download Container Template
+    container_template: Download containersjabloon
     loading: Laden...
     revert: Wijzigingen ongedaan maken
     finish_editing: Sluit record
@@ -137,10 +139,18 @@ nl:
     reorder_active: Herordenen uitschakelen
     copy: Kopieer
     run: Voer uit
+    select_resource: Selecteer archief/collectie
+    expand_tree_mode_on: Schakel automatisch uitklappen in 
+    expand_tree_mode_off: Schakel automatisch uitklappen uit
+    collapse_tree: Klap in
+    reorder_successful: Archieven/collecties succesvol herordend
+
   database_warning:
     message: "<p><strong>Database Warning:</strong> You are currently using the embedded database (Apache Derby). The embedded database is for testing/demo purposes only. You should use MySQL for any data intended for production, including data in a test instance that you intend to move over to a production instance.</p>"
+
   states:
     auto_generated: Gegenereerd door systeem bij Bewaren
+
   export_options:
     include_unpublished: Inclusief ongepubliceerde
     include_daos: Inclusief &lt;dao&gt; tags
@@ -149,6 +159,7 @@ nl:
     ead3: EAD3 schema
     use_mods: Gebruik MODS
     use_dc: Gebruik Dublin Core
+
   pagination:
     first: Eerste
     last: Laatste
@@ -162,6 +173,7 @@ nl:
     summary_suffix: Resultaten
     page_prefix: Pagina
     page_connector: van
+
   search_results:
     title: Zoekresultaten
     context: Gevonden in
@@ -180,12 +192,15 @@ nl:
     component_switch: Toon onderdelen
     help:
       row_selection: Klik op een rij om deze te selecteren voor bulkbewerkingen. Houd Alt ingedrukt terwijl u op een selectievakje klikt om meerdere vorige rijen te selecteren of de selectie ongedaan te maken.
+
+
   search_sorting:
     sort_by: "Sorteer:"
     and: "en:"
     asc: Oplopend
     desc: Aflopend
     select: Selecteer
+
   search:
     accession:
       score: Relevantie
@@ -210,6 +225,8 @@ nl:
       create_time: Gemaakt
       asc: Oplopend
       desc: Aflopend
+      uri: URI
+      representative_file_version: Thumbnail afbeelding
     resource:
       score: Relevantie
       title: Titel
@@ -232,6 +249,8 @@ nl:
       create_time: Gemaakt
       asc: Oplopend
       desc: Aflopend
+      uri: URI
+      representative_file_version: Thumbnail afbeelding
     archival_object:
       score: Relevantie
       title: Titel
@@ -248,6 +267,8 @@ nl:
       create_time: Gemaakt
       asc: Oplopend
       desc: Aflopend
+      uri: URI
+      representative_file_version: Thumbnail afbeelding
     subject:
       score: Relevantie
       source: Bron
@@ -259,6 +280,7 @@ nl:
       create_time: Gemaakt
       asc: Oplopend
       desc: Aflopend
+      uri: URI
     digital_object:
       score: Relevantie
       title: Titel
@@ -276,6 +298,8 @@ nl:
       create_time: Gemaakt
       asc: Oplopend
       desc: Aflopend
+      uri: URI
+      representative_file_version: Thumbnail afbeelding
     digital_object_component:
       score: Relevantie
       title: Titel
@@ -289,6 +313,8 @@ nl:
       create_time: Gemaakt
       asc: Oplopend
       desc: Aflopend
+      uri: URI
+      representative_file_version: Thumbnail afbeelding
     agent:
       score: Relevantie
       title: Naam
@@ -303,6 +329,7 @@ nl:
       create_time: Gemaakt
       asc: Oplopend
       desc: Aflopend
+      uri: URI
     location:
       score: Relevantie
       title: Locatie
@@ -324,6 +351,7 @@ nl:
       create_time: Gemaakt
       asc: Oplopend
       desc: Aflopend
+      uri: URI
     event:
       score: Relevantie
       agents: Actor
@@ -335,7 +363,9 @@ nl:
       create_time: Gemaakt
       asc: Oplopend
       desc: Aflopend
+      uri: URI
     collection_management:
+      name: Collectiebeheer
       score: Relevantie
       parent_title: Titel
       parent_type: Recordtype
@@ -349,6 +379,7 @@ nl:
       create_time: Gemaakt
       asc: Oplopend
       desc: Aflopend
+      uri: URI
     classification:
       score: Relevantie
       title: Titel
@@ -360,6 +391,7 @@ nl:
       create_time: Gemaakt
       asc: Oplopend
       desc: Aflopend
+      uri: URI
     assessment:
       score: Relevantie
       assessment_id: Waardering ID
@@ -382,6 +414,7 @@ nl:
       create_time: Gemaakt
       asc: Oplopend
       desc: Aflopend
+      uri: URI
     repositories:
       score: Relevantie
       title: Titel
@@ -391,6 +424,7 @@ nl:
       create_time: Gemaakt
       asc: Oplopend
       desc: Aflopend
+      uri: URI
     top_container:
       score: Relevantie
       title: Titel
@@ -406,6 +440,7 @@ nl:
       create_time: Gemaakt
       asc: Oplopend
       desc: Aflopend
+      uri: URI
     container_profile:
       score: Relevantie
       title: Titel
@@ -419,6 +454,8 @@ nl:
       create_time: Gemaakt
       asc: Oplopend
       desc: Aflopend
+      notes: Noot
+      uri: URI
     location_profile:
       score: Relevantie
       title: Titel
@@ -432,6 +469,7 @@ nl:
       create_time: Gemaakt
       asc: Oplopend
       desc: Aflopend
+      uri: URI
     job:
       score: Relevantie
       status: Status
@@ -447,6 +485,7 @@ nl:
       create_time: Gemaakt
       asc: Oplopend
       desc: Aflopend
+      uri: URI
     multi:
       score: Relevantie
       primary_type: Recordtype
@@ -465,8 +504,10 @@ nl:
       langcode: Taal van de materialen
       asc: Oplopend
       desc: Aflopend
+      uri: URI
     blank_facet_query_fields:
       owner_repo_display_string_u_ssort: Repository
+
   advanced_search:
     operator:
       operator: Functie
@@ -497,17 +538,20 @@ nl:
       empty: is leeg
     enum_field:
       empty: niet toegekend
+      label: Geavanceerd zoeken waardenlijsten
     search_field: Zoekveld
     search_text: Zoektekst
     search_date: Datum
     search_terms: Velden met geavanceerde zoektermen %{number}
     remove_row: Verwijder rij met geavanceerde zoektermen %{number}
     add_row: Voeg rij toe
+
   become-user:
     become-user: Word gebruiker
     failed: Kan niet overschakelen naar de opgegeven gebruiker
     success: Succesvol van gebruiker gewisseld
     username: Gebruikersnaam
+
   navbar:
     become-user: Word gebruiker
     brand: ArchivesSpace
@@ -548,16 +592,20 @@ nl:
     unpublished: Niet gepubliceerd
     manage_assessment_attributes: Beheer waarderingscriteria
     toggle_navigation: Schakel navigatie
+
   header:
     staff_interface: ArchivesSpace Staff Interface
+
   footer:
-    public_interface: Bekoijk <a href="%{public_url}">gebruikersinterface</a>
+    public_interface: Bekijk <a href="%{public_url}">gebruikersinterface</a>
     archivesspace_home: Bezoek <a href='http://archivesspace.org'>archivesspace.org</a>
     feedback: <a id='aspaceFeedbackLink' href='%{feedback_url}' target='_blank'>Verzend opmerkingen of rapporteer een probleem</a>
+
   session:
     gone: Je back-end-sessie is niet gevonden
     expired: Je sessie is verlopen wegens inactiviteit
     inline_login_title: Sessie verlopen
+
   batch_delete:
     archival_records:
       success: Records verwijderd
@@ -574,10 +622,12 @@ nl:
     assessments:
       success: Waarderingsrecord verwijderd
       error: "Kan waarderingsrecords niet verwijderen:"
+
   welcome:
     heading: Welkom bij ArchivesSpace
     message: De gebruiksvriendelijke tool voor archiefbeheer.
     message_logged_in: De gebruiksvriendelijke tool voor archiefbeheer.
+
   login:
     login: Log in
     login_please: Log in alstublieft
@@ -588,12 +638,15 @@ nl:
     password_placeholder: Wachtwoord
     username_aria_label: Gebruikersnaam
     password_aria_label: Wachtwoord
+
   breadcrumb:
     home: Home
+
   save_changes_modal:
     body: Je hebt een aantal openstaande wijzigingen. Sla deze wijzigingen op of wijs ze af om door te gaan.
     save: Bewaar wijzigingen
     dismiss: Negeer wijzigingen
+
   linker:
     link_to_prefix: Koppel met
     create_and_link_to_prefix: Maak en koppel met
@@ -602,9 +655,11 @@ nl:
     no_results: Geen resultaten.  Probeer 'Blader'.
     searching: Aan het zoeken...
     delete: "&times;"
+
   mixed_content:
     wrap_prefix: "Insluiten in tekstopmaak:"
     help: "Gemengde tekstopmaak ingeschakeld&#160;&#160;--&#160;&#160;Typ '<' voor elementen of markeer tekst om in te sluiten"
+
   import:
     eac_title: Importeer een EAC bestand
     ead_title: Importeer een EAD bestand
@@ -622,6 +677,7 @@ nl:
       missing_file: Selecteer een EAD bestand om op te laden
       error_prefix: Fout bij importeren van bestand
       complete: Import compleet
+
   default_values:
     form_title:
       archival_object: Archiefonderdeel-record standaardinstellingen
@@ -640,6 +696,7 @@ nl:
       classification_term: Classificatie Term standaardinstellingen
     messages:
       defaults_updated: Standaardwaarden aangepast
+
   required_fields:
     form_title:
       agent_person: Actor Record verplichte velden (Persoon)
@@ -648,6 +705,7 @@ nl:
       agent_software: Actor Record verplichte velden (Software)
     messages:
       required_fields_updated: Verplichte velden aangepast
+
   tree:
     drag_and_drop_actions:
       before: Voeg items vooraan toe
@@ -655,6 +713,7 @@ nl:
       as_child: Voeg items als kind toe
     unexpected_failure: Oeps! We hebben problemen met het ophalen van deze hiërarchie. Probeer de pagina te vernieuwen.
     resize: Toon/Verberg hiërarchie
+
   errors:
     sidebar_label: Fouten en waarschuwingen
     error_403: Kan pagina niet openen
@@ -670,7 +729,24 @@ nl:
     merge_restricted_contact_details: De samenvoeging kan niet worden voltooid omdat een of meer van de actoren contactgegevens hebben waartoe je geen toegang hebt.
     linked_to_assessment: Record kan niet worden verwijderd omdat het is gekoppeld aan een waarderingsrecord.
     cannot_delete_repository_agent: Deze actor is gekoppeld met een repository en kan niet worden verwijderd.
+    
+  component_link:
+    _plural: Gekoppelde componenten
+    _singular: Gekoppelde component
+    _frontend:
+      action:
+        add: Koppel met component
+
+  accession_link:
+    _plural: Gekoppelde aanwinsten
+    _singular: Gekoppelde aanwinst
+    _frontend:
+      action:
+        add: Koppel met aanwinst
+
   accession:
+    component_link: Linked Component
+    component_links: Linked Components
     _frontend:
       messages:
         created: Aanwinst <strong>%{accession.display_string}</strong> gemaakt
@@ -688,7 +764,8 @@ nl:
       action:
         create: Maak Aanwinst
         save: Bewaar Aanwinst
-  agent:
+
+  agent: &agent_attributes
     _frontend:
       messages:
         created: Actor gemaakt
@@ -719,6 +796,7 @@ nl:
       action:
         create: Maak actor
         preview: Voeg preview samen
+
   agent_contact:
     is_representative: Is primair contact
     notes_tooltip: |
@@ -727,37 +805,46 @@ nl:
       action:
         add: Voeg Contact toe
         make_representative: Make primair contact
+
   telephone:
     _frontend:
       action:
         add: Voeg telefoonnummer toe
+
   agent_corporate_entity:
     _frontend:
       action:
         save: Bewaar Organisatie
+
   agent_family:
     _frontend:
       action:
         save: Bewaar Familie
+
   agent_person:
     _frontend:
       action:
         save: Bewaar Persoon
+
   agent_software:
     _frontend:
       action:
         save: Bewaar Software
+
   structured_date_single:
     _frontend:
       action:
         add: Voeg enkelvoudige datum toe
+
   structured_date_range:
     _frontend:
       action:
         add: Voeg datumbereik toe
+
   archival_object:
     external_ark_url: Externe ARK URL
     external_ark_url_tooltip: Externe ARK URL Tooltip
+    new_title: Nieuw archiefonderdeel
     _frontend:
       messages:
         created: Archiefonderdeel <strong>%{archival_object.display_string}</strong> gemaakt op Archief/Collectie <strong>%{resource.title}</strong>
@@ -774,7 +861,12 @@ nl:
         suppressed: Archiefonderdeel <strong>%{archival_object.title}</strong> verborgen
         suppressed_info: Archiefonderdeel is verborgen en kan niet waorden aangepast
         has_unpublished_ancestor: Hou er rekening mee dat dit record een bovenliggende beschrijving heeft die niet is gepubliceerd.
+        spawned: "Dit archiefonderdeel is doorgedrukt van aanwinst <strong>%{accession.display_string}</strong>. Dit record is nog niet bewaard. Klik Opslaan om dit archiefonderdeel te bewaren in het systeem."
         delete_conflict: "Archiefonderdeel kon niet worden verwijderd: <pre>%{error}</pre>"
+        spawn_placeholder: "<em>Doorgedrukt archiefonderdeel zal hier worden ingevoegd./em>"
+        spawn_menu_before: Voeg doorgedrukt archiefonderdeel in vóór
+        spawn_menu_child: Voeg doorgedrukt archiefonderdeel in als kind
+        spawn_menu_after: Voeg doorgedrukt archiefonderdeel in na
       section:
         basic_information: Basisgegevens
       action:
@@ -782,8 +874,13 @@ nl:
         add_sibling: Voeg Sibling toe
         save: Bewaar Archiefonderdeel
         bulk_import: Laad met spreadsheet
+        select_resource: Selecteer Archief/Collectie
+        select_parent_and_position: Selecteer positie voor archiefonderdeel
+        leave_parent_empty: Sluit / wijs geen ouder toe
+
       tree:
         new_record_title: Nieuw archiefonderdeel
+
   classification:
     _frontend:
       messages:
@@ -798,6 +895,7 @@ nl:
         create: Maak Classificatie
         save: Bewaar Classificatie
         add: Voeg Classificatie toe
+
   classification_term:
     _frontend:
       messages:
@@ -815,57 +913,64 @@ nl:
         save: Bewaar Classificatie Term
       tree:
         new_record_title: Nieuwe classificatieterm
-  collection_management:
+
+  collection_management: &collection_management_attributes
     _frontend:
       title_prefix: Verwerken
       action:
         add: Voeg Collectiebeheer velden toe
+
   container:
     _frontend:
       action:
         add: Voeg Container toe
+
   container_location:
     _frontend:
       action:
         add: Voeg locatie toe
+
   date:
     _frontend:
       expression_placeholder: Beschrijf de datum of het datumbereik
       action:
         add: Voeg Datum toe
+
   dates_of_existence:
     _singular: Datum van bestaan
     _plural: Datums van bestaan
     _frontend:
       action:
         add: Voeg Datum toe
+
   deaccession:
     _frontend:
       action:
         add: Voeg Afstoting toe
-  structured_date_label_common_fields:
+
+  structured_date_label_common_fields: &structured_date_label_attributes
     date_label: Label
     date_type_structured: Datumtype
     date_certainty: Zekerheid
     date_era: Tijdperk
     date_calendar: Kalender
+
   structured_date_label_existence:
-    date_label: Label
-    date_type_structured: Datumtype
-    date_certainty: Zekerheid
-    date_era: Tijdperk
-    date_calendar: Kalender
+    <<: *structured_date_label_attributes
+
   structured_date_label_usage:
     date_label: Label
     date_type_structured: Datumtype
     date_certainty: Zekerheid
     date_era: Tijdperk
     date_calendar: Kalender
+
   structured_date_single_fields:
     date_role: Datum rol
     date_expression: Datum expressie
     date_standardized: Gestandaardiseerde datum
     date_standardized_type: Gestandaardiseerde datum type
+
   structured_date_range_fields:
     begin_date_expression: Begindatum expressie
     begin_date_standardized: Gestandaardiseerde begindatum
@@ -873,9 +978,11 @@ nl:
     end_date_expression: Einddatum expressie
     end_date_standardized: Gestandaardiseerde einddatum
     end_date_standardized_type: Type gestandaardiseerde einddatum
+
   date_type_structured:
     single: Enkelvoudig
     range: Bereik
+
   digital_object:
     _frontend:
       messages:
@@ -898,6 +1005,7 @@ nl:
         add_child: Voeg Kind toe
         create: Maak Digitaal object
         save: Bewaar Digitaal object
+
   digital_object_component:
     _frontend:
       messages:
@@ -918,6 +1026,7 @@ nl:
         save: Bewaar Digitaal object onderdeel
       tree:
         new_record_title: Nieuw digitaal object-onderdeel
+
   enumeration:
     _frontend:
       messages:
@@ -944,6 +1053,7 @@ nl:
         delete_value: Verwijder Waarde
         merge_value: Merge Waarde
         download_csv: Download CSV
+
   event:
     _frontend:
       messages:
@@ -958,24 +1068,30 @@ nl:
         save: Bewaar Gebeurtenis
         create: Maak Gebeurtenis
     linked_agents: Gerelateerde actoren
+
   extent:
     _frontend:
       action:
         add: Voeg omvang toe
+
   external_document:
     _frontend:
       action:
         add: Voeg extern document toe
+
   file_version:
     _frontend:
       action:
         add: Voeg Bestandsversie toe
         make_representative: Maak Representatief
+        make_representative_tooltip: Geef aan dat deze afbeelding moet worden getoond wanneer er verschillende bestandsversies geassocieerd zijn met het record.
+
   group:
     _frontend:
       action:
         create: Maak groep
         save: Bewaar groep
+
   instance:
     _frontend:
       messages:
@@ -983,20 +1099,24 @@ nl:
       action:
         add_digital_object: Voeg Digitaal object toe
         add: Voeg Instantie toe
+
   lang_material:
     _plural: Talen
     _frontend:
       action:
         add: Voeg Taal toe
         add_note: Voeg Taal noot toe
+
   linked_agent:
     _frontend:
       action:
         add: Voeg koppeling met actor toe
+
   linked_record:
     _frontend:
       action:
         add: Voeg Record Koppeling toe
+
   location:
     _frontend:
       messages:
@@ -1016,6 +1136,7 @@ nl:
         single: Enkelvoudige Locatie
         delete_confirm_message: "<p>Houd er rekening mee dat je <strong> deze actie niet ongedaan kan maken. </strong>. </p> <p> Als deze locatie momenteel is gekoppeld aan een of meer Instanties, kan deze niet worden verwijderd.</p>"
         show_space_calculator: Zoek met Ruimtecalculator
+
   location_batch:
     _frontend:
       section:
@@ -1035,6 +1156,7 @@ nl:
         preview: Voorvertoning locaties
         preview_short: Voorvertoning
         creating: Batch in uitvoering...
+
   name:
     _frontend:
       section:
@@ -1049,8 +1171,12 @@ nl:
       action:
         add: Voeg Naamvorm toe
         make_authorized: Maak geauthoriseerde Naam
+        make_authorized_tooltip: Geef aan dat deze naamvorm de geautoriseerde naamvorm is.
         make_display_name: Maak Weergavenaam
+        make_display_name_tooltip: Geef aan dat deze naamvorm als weergavevorm moet worden gebruikt wanneer het actorrecord verschillende naamvormen heeft.
         make_primary: Maak Primaire naam
+        make_primary_tooltip: Maak primaire naam.
+
   note:
     _frontend:
       preview:
@@ -1080,10 +1206,12 @@ nl:
       note_outline:
         placeholder: Voeg tekst toe
         empty_level: Leeg niveau - Gebruik de bovenstaande knoppen om nieuwe items of subniveaus toe te voegen
+
   related_accession:
     _frontend:
       action:
         add: Voeg gerelateerde Aanwinst toe
+
   related_agent:
     dates: Datering relatie
     _frontend:
@@ -1091,17 +1219,21 @@ nl:
         select_a_type: "<em>Selecteer een Relatietype</em>"
       action:
         add: Voeg koppeling met actor toe
+
   related_resource:
     _frontend:
       action:
         add: Voeg gerelateerde Archieven/Collecties toe
+
   revision_statement:
     _frontend:
       action:
         add: Voeg Revisieverklaring toe
+
   repository_oai:
     oai_is_disabled: OAI Harvesting Disabled?
     oai_sets_available: Sets inbegrepen in OAI
+
   repository:
     _frontend:
       messages:
@@ -1127,9 +1259,11 @@ nl:
         select: Selecteer Repository
         save: Bewaar Repository
         create: Maak Repository
+        order_for_pui: Bepaal volgorde in publieksinterface
     _sidebar:
       oai_settings:
         _plural: OAI Harvest instellingen
+
   resource:
     _frontend:
       messages:
@@ -1160,6 +1294,11 @@ nl:
       remove_subrecord: Verwijder subrecord
     external_ark_url: Externe ARK URL
     external_ark_url_tooltip: Archival Resource Key (ARK) persistent identifier werd gegenereerd buiten ArchivesSpace.Als dit veld een waarde heeft, heeft het voorrang op een ARK die is gegenereerd in ArchivesSpace.
+    linker:
+      browse:
+        Blader in Archieven/Collecties
+      link_title: Blader
+
   preference:
     _frontend:
       messages:
@@ -1168,18 +1307,22 @@ nl:
         reset_error: "Kan voorkeuren niet resetten vanwege een fout: %{exception}"
       action:
         save: Bewaar Voorkeuren
+
   rights_statement:
     _frontend:
       action:
         add: Voeg rechtenverklaring toe
+
   term:
     _frontend:
       messages:
         preview_pending: Onderwerp Voorvertoning
       action:
         add: Voeg Term/onderafdeling toe
+
   transfer:
     ref: Bestemmingsrepository
+
   subject:
     _frontend:
       messages:
@@ -1198,10 +1341,12 @@ nl:
         create: Maak Onderwerp
         save: Bewaar Onderwerp
         add: Voeg Onderwerp toe
+
   user:
     is_active_user: Actief
     active: "Ja"
     inactive: "Nee"
+    source: Aanmelding
     _frontend:
       messages:
         access_denied: Toegang geweigerd. Log in als de admin-gebruiker om deze actie uit te voeren.
@@ -1231,14 +1376,18 @@ nl:
         deactivate_user: Deactiveer
         activate_user: Activeer
         update_self: Beheer gebruikersaccount
+
+
   user_defined:
     _frontend:
       action:
         add: Voeg door de gebruiker gedefinieerde velden toe
+
   use_date:
     _frontend:
       action:
         add: Voeg Datum gebruik toe
+
   rde:
     date_type: Datumtype
     instance_type: Instantie type
@@ -1263,9 +1412,9 @@ nl:
       reorder_toggle: Herorden kolommen
       validate_rows: Valideer rijen
       inline_errors_toggle: Bekijk inline fouten
-      save_template: Bewaar als Template
-      select_template: Kies Template
-      manage_templates: Verwijder Templates
+      save_template: Bewaar als sjabloon
+      select_template: Kies sjabloon
+      manage_templates: Verwijder sjablonen
     fill_column:
       basic: Basis
       sequence: Sequentie
@@ -1282,13 +1431,13 @@ nl:
     reorder_columns:
       apply_order: Pas kolomvolgorde toe
     save_template:
-      save_template: Bewaar Template
-      template_name: Template naam
+      save_template: Bewaar sjabloon
+      template_name: Sjabloon naam
       confirm_removal: Bevestig verwijdering
     templates:
       listing: Templates
-      no_templates: Geen templates gedefinieerd
-    default_template: Standaard Template
+      no_templates: Geen sjablonen gedefinieerd
+    default_template: Standaard sjabloon
     messages:
       error_prefix: Rij
       success: "<div class='alert alert-success'>Kinderen gemaakt. Pagina verversen...</div>"
@@ -1296,7 +1445,7 @@ nl:
       rows_with_errors: "%{count} rij(en) met een fout - klik op een rijveld om de fouten voor die rij te bekijken"
       rows_no_errors: "Alle rijen zijn geldig"
       error_summary_header: "Fouten in rij:"
-      select_prompt: Pas een RDE Template toe
+      select_prompt: Pas een RDE sjabloon toe
     help:
       keyboard_shortcuts: |
         <div><strong>Sneltoetsen</strong></div>
@@ -1325,6 +1474,8 @@ nl:
     repository_changed: "Dit record kan niet worden opgeslagen, omdat uw actieve repository is gewijzigd. Open een ander venster en stel je actieve repository opnieuw in om dit record op te slaan."
   job:
     _frontend:
+      singular: Taak
+      plural: Taken
       audit_data: Audit data
       external_repo: Record hoort bij een ander repository
       actions:
@@ -1366,6 +1517,7 @@ nl:
         slug_config_eadid: Slugs voor <b> archieven/collecties </b> worden gegenereerd met behulp van de EAD-ID waar van toepassing.
         slug_config_cuid: Slugs voor <b> Archiefonderdelen </b> worden gegenereerd met behulp van de unieke ID van het onderdeel, waar van toepassing.
         ark_generation: Deze taak genereert ARK's voor alle <b> archieven/collecties </b> en <b> Archiefonderdeel </b> die nog geen ARK hebben. <br /> <br /> <em> Externe ARK's worden niet gewijzigd.</em>
+
   shortcuts:
     quick_reference_window: "Overzicht: Sneltoetsen"
     actions:
@@ -1376,8 +1528,10 @@ nl:
       close_record: "Sluit het record dat wordt bewerkt"
       open_browse: "Open Blader menu"
       open_create: "Open Maak menu"
+
   instance_container:
     container: Container
+
   sub_container:
     top_container: Topcontainer
     top_container_tooltip: |
@@ -1405,6 +1559,7 @@ nl:
     _frontend:
       action:
         add: Voeg Container Instantie toe
+
   top_container:
     container_profile: Containerprofiel
     container_profile_tooltip: |
@@ -1425,11 +1580,16 @@ nl:
     ils_item_id: ILS Item ID
     ils_item_id_tooltip: |
       <p>Identificatiecode, geleverd door de API, voor een bijbehorend itemrecord in de bibliotheekcatalogus (systeemveld; kan niet handmatig worden bewerkt)</p>
+
+    internal_note: Interne noot
+    internal_note_tooltip: |
+        <p>Noten voor intern gebruik. Uitsluitend zichtbaar in de beheersinterface.</p>
     exported_to_ils: Geëxporteerd naar het bibliotheeksysteem
     not_exported: Niet geëxporteerd
     restricted: Beperkt?
     parent: Ouder Container
     has_location: Heeft locatie
+
     managed_container_2_type: Kind Container type
     managed_container_2_type_tooltip: |
       <p> Het type container op het tweede niveau waarin het beschreven materiaal is ondergebracht. </p>
@@ -1446,11 +1606,14 @@ nl:
       <p>Een alfanumerieke expressie voor het aangeven van de ID van de container op het derde niveau, die ook de positie van de container op het tweede niveau binnen een reeks van dergelijke containers kan aangeven. Bulkreeksen van containers op het derde niveau zijn ook toegestaan, b.v. Mappen 1-16.</p>
     barcode_length_for_this_repository: "Barcodelengte voor deze Repository:"
     characters: Tekens
+
     batch_delete:
       success: Topcontainers zijn verwijderd
       error: Er is een probleem opgetreden bij het verwijderen van Topcontainers
+
     _singular: Topcontainer
     _plural: Topcontainers
+
     _frontend:
       section:
         active_restrictions: Actieve Beperkingen
@@ -1480,6 +1643,14 @@ nl:
         collection_resource_plural: Archieven/Collecties
         collection_accession_singular: Aanwinst
         collection_accession_plural: Aanwinsten
+        collection_resource_linker:
+          browse: Blader in archieven/collecties
+          create: Maak archief/collectie
+          link_title: Koppel aan archief/collectie
+        collection_accession_linker:
+          browse: Blader in aanwinsten
+          create: Maak aanwinst
+          link_title: Koppel aan aanwinst
         series: Reeksen
         current_location: Huidige locatie
         keyword_criteria: Trefwoord
@@ -1500,7 +1671,7 @@ nl:
         update_locations_multiple_help: Kies een locatie voor elke geselecteerde container. Laat dit veld leeg om de huidige waarde te verwijderen zonder deze te vervangen door een andere waarde.
         rapid_indicator_entry: Werk indicators bij
         rapid_indicator_entry_new_indicator: Nieuwe indicator
-        rapid_indicator_entry_help: Vul een indicator in voor elke geselecteerde container. Laat het nieuwe indicator veld leeg om de bestaande indicator ongewijzigd te laten.templates bevatten bijkomende instructies
+        rapid_indicator_entry_help: Vul een indicator in voor elke geselecteerde container. Laat het nieuwe indicator veld leeg om de bestaande indicator ongewijzigd te laten. Sjablonen bevatten bijkomende instructies
         rapid_barcode_entry: Snelle Barcode invoer
         rapid_barcode_entry_existing_barcode: Bestaande Barcode
         rapid_barcode_entry_new_barcode: Nieuwe Barcode
@@ -1523,6 +1694,11 @@ nl:
         update_locations_new_location: Nieuwe locatie
         has_location_true: "Ja"
         has_location_false: "Nee"
+    linker:
+      browse: Blader in topcontainers
+      create: Maak topcontainer
+      link_title: Koppel aan topcontainer
+
   container_profile:
     _singular: Containerprofiel
     _plural: Containerprofielen
@@ -1546,6 +1722,9 @@ nl:
         confirm_merge_question: Weet je zeker dat je de containerprofielen zoals hieronder vermeld wil samenvoegen? Deze actie is onomkeerbaar.
         confirm_merge_victims: "Voeg de volgende container profiel(en) samen:"
         confirm_merge_target: "In dit Containerprofiel:"
+    notes: Noot
+    notes_tooltip: |
+      <p>Noot voor diverse informatie/metadata.</p>
     name: Naam
     name_tooltip: |
       <p>VERPLICHT VELD. De naam van het Containerprofiel. Mag generiek of specifiek zijn.</p>
@@ -1586,6 +1765,11 @@ nl:
     stacking_limit: Stapellimiet
     stacking_limit_tooltip: |
       <p>Het aantal van deze containers dat op elkaar gestapeld kan worden. Laat leeg als er geen limiet is. Moet een positief geheel getal zijn.</p>
+    linker:
+      browse: Blader in containerprofielen
+      create: Maak containerprofiel
+      link_title: Koppel aan containerprofiel
+
   rights_restriction:
     begin: Beperking Begin
     begin_tooltip: |
@@ -1600,6 +1784,7 @@ nl:
        <p>Waarden in deze Waardenlijst kunnen worden aangepast. </p>
     linked_records: Gekoppeld record
     restriction_note_type: Noottype
+
   extent_calculator:
     no_object_message: Geef een object op om de omvangberekening op uit te voeren.
     report_title: Berekende Omvang rapport
@@ -1617,6 +1802,7 @@ nl:
     container_summary_type:
       _singular: container
       _plural: containers
+
   location_profile:
     _singular: Locatieprofiel
     _plural: Locatieprofielen
@@ -1636,6 +1822,11 @@ nl:
     depth: Diepte
     height: Hoogte
     width: Breedte
+    linker:
+      browse: Blader in locatieprofielen
+      create: Maak locatieprofiel
+      link_title: Koppel aan locatieprofiel
+
   space_calculator:
     modal_title: Ruimtecalculator
     modal_loading: Laden...
@@ -1664,6 +1855,7 @@ nl:
       container_at_location_lacks_profile: Ten minste één van de containers die zich momenteel op de locatie bevindt, mist een profiel
       containers_at_location_dont_fit: De containers die momenteel op de locatie staan passen niet
       location_cannot_fit_container: Op de locatie passen momenteel geen containers van dit type
+
   date_calculator:
     toolbar_button: Bereken datums
     calculate_button: Bereken datum record
@@ -1676,10 +1868,12 @@ nl:
     create_success: Datum succesvol gemaakt. Pagina verversen...
     no_dates: Geen geschikte datums gevonden
     no_dates_for_label: Geen geschikte %{label} datums gevonden
+
   act:
     _frontend:
       action:
         add: Voeg Act toe
+
   assessment:
     _frontend:
       form_header: Waardering %{display_string}
@@ -1737,6 +1931,7 @@ nl:
         rating: Beoordeling
         score: Score
         note: Noot
+
   assessment_attribute_definitions:
     _frontend:
       title: Waarderingscriteria
@@ -1762,21 +1957,24 @@ nl:
         attribute_in_use: Kan een waarderingscriterium niet verwijderen dat momenteel in gebruik is.
       database_value: Database waarde
       translation: Vertaling
+
   custom_report_template:
-    new_title: Nieuw aangepast Rapporttemplate
+    new_title: Nieuw aangepast Rapportsjabloon
     _frontend:
       section:
-        template_information: Template informatie
+        template_information: Sjabloon informatie
         basic_information_fields: Basisgegevens velden
         linked_records: Gekoppelde Records
         sort_by: Sorteer rapport op
       action:
-        create: Maak Template
-        save: Bewaar Template
+        create: Maak sjabloon
+        save: Bewaar sjabloon
+        search_usernames: Zoek gebruikersnamen
       messages:
-        copied: Aangepast rapporttemplate gekopieerd
-        created: Aangepast rapporttemplate gemaakt
-        updated: Aangepast rapporttemplate aangepast
+        copied: Aangepast rapportsjabloon gekopieerd
+        created: Aangepast rapportsjabloon gemaakt
+        updated: Aangepast rapportsjabloon aangepast
+
   oai_config:
     title: OAI-PMH instellingen
     title_repo_section: Per Repository OAI-PMH instellingen
@@ -1808,112 +2006,42 @@ nl:
         _plural: Sponsor Sets
       repo_settings:
         _plural: Per Repository OAI-PMH instellingen
-  agent_record_control:
-    _plural: Record Informatie
-    _singular: Record Informatie
+
+  agent_record_control: &agent_record_control_attributes
+    _plural: Recordinformatie
+    _singular: Recordinformatie
     _frontend:
       action:
-        add: Add Record Info
-    maintenance_status: Record Controle Onderhoud Status
-    publication_status: Record Controle Publicatie Status
+        add: Voeg recordinformatie toe
+    maintenance_status: Record controle onderhoudstatus
+    publication_status: Record controle publicatiestatus
     romanization: Romanisering
-    government_agency_type: Record Controle Overheidsorgaan Type
-    reference_evaluation: Record Controle Referentie Evaluatie
-    name_type: Record Controle Naam Type
-    level_of_detail: Record Controle Detailniveau
-    modified_record: Record Controle Aangepast Type
-    cataloging_source: Record Controle Catalogingbron
+    government_agency_type: Record controle overheidsorgaan type
+    reference_evaluation: Record controle referentie evaluatie
+    name_type: Record controle naam type
+    level_of_detail: Record controle detailniveau
+    modified_record: Record controle aangepast type
+    cataloging_source: Record controle bron van catalogisering
     maintenance_agency: Onderhoudsorganisatie
     agency_name: Organisatie naam
     maintenance_agency_note: Onderhoudsorganisatie noot
     language: Taal
     script: Schrift
     language_note: Taal noot
+
   agent_record_controls:
-    _plural: Record Informatie
-    _singular: Record Informatie
-    _frontend:
-      action:
-        add: Add Record Info
-    maintenance_status: Record Controle Onderhoud Status
-    publication_status: Record Controle Publicatie Status
-    romanization: Romanisering
-    government_agency_type: Record Controle Overheidsorgaan Type
-    reference_evaluation: Record Controle Referentie Evaluatie
-    name_type: Record Controle Naam Type
-    level_of_detail: Record Controle Detailniveau
-    modified_record: Record Controle Aangepast Type
-    cataloging_source: Record Controle Catalogingbron
-    maintenance_agency: Onderhoudsorganisatie
-    agency_name: Organisatie naam
-    maintenance_agency_note: Onderhoudsorganisatie noot
-    language: Taal
-    script: Schrift
-    language_note: Taal noot
+    <<: *agent_record_control_attributes
+
   agent_record_control_required:
-    _plural: Record Informatie
-    _singular: Record Informatie
-    _frontend:
-      action:
-        add: Add Record Info
-    maintenance_status: Record Controle Onderhoud Status
-    publication_status: Record Controle Publicatie Status
-    romanization: Romanisering
-    government_agency_type: Record Controle Overheidsorgaan Type
-    reference_evaluation: Record Controle Referentie Evaluatie
-    name_type: Record Controle Naam Type
-    level_of_detail: Record Controle Detailniveau
-    modified_record: Record Controle Aangepast Type
-    cataloging_source: Record Controle Catalogingbron
-    maintenance_agency: Onderhoudsorganisatie
-    agency_name: Organisatie naam
-    maintenance_agency_note: Onderhoudsorganisatie noot
-    language: Taal
-    script: Schrift
-    language_note: Taal noot
+    <<: *agent_record_control_attributes
+
   agent_record_control_merge_target:
-    _plural: Record Informatie
-    _singular: Record Informatie
-    _frontend:
-      action:
-        add: Add Record Info
-    maintenance_status: Record Controle Onderhoud Status
-    publication_status: Record Controle Publicatie Status
-    romanization: Romanisering
-    government_agency_type: Record Controle Overheidsorgaan Type
-    reference_evaluation: Record Controle Referentie Evaluatie
-    name_type: Record Controle Naam Type
-    level_of_detail: Record Controle Detailniveau
-    modified_record: Record Controle Aangepast Type
-    cataloging_source: Record Controle Catalogingbron
-    maintenance_agency: Onderhoudsorganisatie
-    agency_name: Organisatie naam
-    maintenance_agency_note: Onderhoudsorganisatie noot
-    language: Taal
-    script: Schrift
-    language_note: Taal noot
+    <<: *agent_record_control_attributes
+
   agent_record_control_merge_victim:
-    _plural: Record Informatie
-    _singular: Record Informatie
-    _frontend:
-      action:
-        add: Add Record Info
-    maintenance_status: Record Controle Onderhoud Status
-    publication_status: Record Controle Publicatie Status
-    romanization: Romanisering
-    government_agency_type: Record Controle Overheidsorgaan Type
-    reference_evaluation: Record Controle Referentie Evaluatie
-    name_type: Record Controle Naam Type
-    level_of_detail: Record Controle Detailniveau
-    modified_record: Record Controle Aangepast Type
-    cataloging_source: Record Controle Catalogingbron
-    maintenance_agency: Onderhoudsorganisatie
-    agency_name: Organisatie naam
-    maintenance_agency_note: Onderhoudsorganisatie noot
-    language: Taal
-    script: Schrift
-    language_note: Taal noot
-  agent_gender:
+    <<: *agent_record_control_attributes
+
+  agent_gender: &agent_gender_attributes
     _plural: Geslacht
     _singular: Geslacht
     _frontend:
@@ -1922,83 +2050,41 @@ nl:
     gender: Geslacht
     note: Noot
     dates: Datums
+
   agent_genders:
-    _plural: Geslacht
-    _singular: Geslacht
-    _frontend:
-      action:
-        add: Voeg geslacht toe
-    gender: Geslacht
-    note: Noot
-    dates: Datums
+    <<: *agent_gender_attributes
+
   agent_gender_required:
-    _plural: Geslacht
-    _singular: Geslacht
-    _frontend:
-      action:
-        add: Voeg geslacht toe
-    gender: Geslacht
-    note: Noot
-    dates: Datums
+    <<: *agent_gender_attributes
+
   agent_gender_merge_target:
-    _plural: Geslacht
-    _singular: Geslacht
-    _frontend:
-      action:
-        add: Voeg geslacht toe
-    gender: Geslacht
-    note: Noot
-    dates: Datums
+    <<: *agent_gender_attributes
+
   agent_gender_merge_victim:
-    _plural: Geslacht
-    _singular: Geslacht
-    _frontend:
-      action:
-        add: Voeg geslacht toe
-    gender: Geslacht
-    note: Noot
-    dates: Datums
-  used_language:
+    <<: *agent_gender_attributes
+
+  used_language: &used_language_attributes
     _plural: Gebruikte talen
     _singular: Gebruikte taal
     _frontend:
       action:
-        add: Voeg Taal toe
+        add: Voeg taal toe
     language: Taal
     script: Schrift
+
   used_language_required:
-    _plural: Gebruikte talen
-    _singular: Gebruikte taal
-    _frontend:
-      action:
-        add: Voeg Taal toe
-    language: Taal
-    script: Schrift
+    <<: *used_language_attributes
+
   used_languages:
-    _plural: Gebruikte talen
-    _singular: Gebruikte taal
-    _frontend:
-      action:
-        add: Voeg Taal toe
-    language: Taal
-    script: Schrift
+    <<: *used_language_attributes
+
   used_language_merge_victim:
-    _plural: Gebruikte talen
-    _singular: Gebruikte taal
-    _frontend:
-      action:
-        add: Voeg Taal toe
-    language: Taal
-    script: Schrift
+    <<: *used_language_attributes
+
   used_language_merge_target:
-    _plural: Gebruikte talen
-    _singular: Gebruikte taal
-    _frontend:
-      action:
-        add: Voeg Taal toe
-    language: Taal
-    script: Schrift
-  agent_identifier:
+    <<: *used_language_attributes
+
+  agent_identifier: &agent_identifier_attributes
     _plural: Identificatiecodes
     _singular: Identificatiecode
     _frontend:
@@ -2006,39 +2092,20 @@ nl:
         add: Voeg identificatiecode toe
     identifier_type: Identificatiecode type
     entity_identifier: Identificatiecodes
+
   agent_identifiers:
-    _plural: Identificatiecodes
-    _singular: Identificatiecode
-    _frontend:
-      action:
-        add: Voeg identificatiecode toe
-    identifier_type: Identificatiecode type
-    entity_identifier: Identificatiecodes
+    <<: *agent_identifier_attributes
+
   agent_identifier_required:
-    _plural: Identificatiecodes
-    _singular: Identificatiecode
-    _frontend:
-      action:
-        add: Voeg identificatiecode toe
-    identifier_type: Identificatiecode type
-    entity_identifier: Identificatiecodes
+    <<: *agent_identifier_attributes
+
   agent_identifier_merge_target:
-    _plural: Identificatiecodes
-    _singular: Identificatiecode
-    _frontend:
-      action:
-        add: Voeg identificatiecode toe
-    identifier_type: Identificatiecode type
-    entity_identifier: Identificatiecodes
+    <<: *agent_identifier_attributes
+
   agent_identifier_merge_victim:
-    _plural: Identificatiecodes
-    _singular: Identificatiecode
-    _frontend:
-      action:
-        add: Voeg identificatiecode toe
-    identifier_type: Identificatiecode type
-    entity_identifier: Identificatiecodes
-  agent_place:
+    <<: *agent_identifier_attributes
+
+  agent_place: &agent_place_attributes
     _frontend:
       action:
         add: Voeg plaats toe
@@ -2046,64 +2113,25 @@ nl:
       dates: Datums
     _plural: Plaatsen
     _singular: Plaats
-    place_role: Actor Plaats rol
+    place_role: Actor plaats rol
     text_note: Noot
     dates: Datums
     subjects: Plaatsen
     publish: Gepubliceerd
+
   agent_place_required:
-    _frontend:
-      action:
-        add: Voeg plaats toe
-    section:
-      dates: Datums
-    _plural: Plaatsen
-    _singular: Plaats
-    place_role: Actor Plaats rol
-    text_note: Noot
-    dates: Datums
-    subjects: Plaatsen
-    publish: Gepubliceerd
+    <<: *agent_place_attributes
+
   agent_places:
-    _frontend:
-      action:
-        add: Voeg plaats toe
-    section:
-      dates: Datums
-    _plural: Plaatsen
-    _singular: Plaats
-    place_role: Actor Plaats rol
-    text_note: Noot
-    dates: Datums
-    subjects: Plaatsen
-    publish: Gepubliceerd
+    <<: *agent_place_attributes
+
   agent_place_merge_target:
-    _frontend:
-      action:
-        add: Voeg plaats toe
-    section:
-      dates: Datums
-    _plural: Plaatsen
-    _singular: Plaats
-    place_role: Actor Plaats rol
-    text_note: Noot
-    dates: Datums
-    subjects: Plaatsen
-    publish: Gepubliceerd
+    <<: *agent_place_attributes
+
   agent_place_merge_victim:
-    _frontend:
-      action:
-        add: Voeg plaats toe
-    section:
-      dates: Datums
-    _plural: Plaatsen
-    _singular: Plaats
-    place_role: Actor Plaats rol
-    text_note: Noot
-    dates: Datums
-    subjects: Plaatsen
-    publish: Gepubliceerd
-  agent_occupation:
+    <<: *agent_place_attributes
+
+  agent_occupation: &agent_occupation_attributes
     _frontend:
       action:
         add: Voeg beroep toe
@@ -2116,59 +2144,20 @@ nl:
     subjects: Beroepen
     places: Plaatsen
     publish: Gepubliceerd
+
   agent_occupation_required:
-    _frontend:
-      action:
-        add: Voeg beroep toe
-    section:
-      dates: Datums
-    _plural: Beroepen
-    _singular: Beroep
-    text_note: Noot
-    dates: Datums
-    subjects: Beroepen
-    places: Plaatsen
-    publish: Gepubliceerd
+    <<: *agent_occupation_attributes
+
   agent_occupations:
-    _frontend:
-      action:
-        add: Voeg beroep toe
-    section:
-      dates: Datums
-    _plural: Beroepen
-    _singular: Beroep
-    text_note: Noot
-    dates: Datums
-    subjects: Beroepen
-    places: Plaatsen
-    publish: Gepubliceerd
+    <<: *agent_occupation_attributes
+
   agent_occupation_merge_target:
-    _frontend:
-      action:
-        add: Voeg beroep toe
-    section:
-      dates: Datums
-    _plural: Beroepen
-    _singular: Beroep
-    text_note: Noot
-    dates: Datums
-    subjects: Beroepen
-    places: Plaatsen
-    publish: Gepubliceerd
+    <<: *agent_occupation_attributes
+
   agent_occupation_merge_victim:
-    _frontend:
-      action:
-        add: Voeg beroep toe
-    section:
-      dates: Datums
-    _plural: Beroepen
-    _singular: Beroep
-    text_note: Noot
-    dates: Datums
-    subjects: Beroepen
-    places: Plaatsen
-    publish: Gepubliceerd
-  agent_function:
+    <<: *agent_occupation_attributes
+
+  agent_function: &agent_function_attributes
     _frontend:
       action:
         add: Add Function
@@ -2181,59 +2170,20 @@ nl:
     subjects: Functies
     places: Plaatsen
     publish: Gepubliceerd
+
   agent_function_required:
-    _frontend:
-      action:
-        add: Add Function
-    section:
-      dates: Datums
-    _plural: Functies
-    _singular: Functie
-    text_note: Noot
-    dates: Datums
-    subjects: Functies
-    places: Plaatsen
-    publish: Gepubliceerd
+    <<: *agent_function_attributes
+
   agent_functions:
-    _frontend:
-      action:
-        add: Add Function
-    section:
-      dates: Datums
-    _plural: Functies
-    _singular: Functie
-    text_note: Noot
-    dates: Datums
-    subjects: Functies
-    places: Plaatsen
-    publish: Gepubliceerd
+    <<: *agent_function_attributes
+
   agent_function_merge_target:
-    _frontend:
-      action:
-        add: Add Function
-    section:
-      dates: Datums
-    _plural: Functies
-    _singular: Functie
-    text_note: Noot
-    dates: Datums
-    subjects: Functies
-    places: Plaatsen
-    publish: Gepubliceerd
+    <<: *agent_function_attributes
+
   agent_function_merge_victim:
-    _frontend:
-      action:
-        add: Add Function
-    section:
-      dates: Datums
-    _plural: Functies
-    _singular: Functie
-    text_note: Noot
-    dates: Datums
-    subjects: Functies
-    places: Plaatsen
-    publish: Gepubliceerd
-  agent_topic:
+    <<: *agent_function_attributes
+
+  agent_topic: &agent_topic_attributes
     _frontend:
       action:
         add: Voeg onderwerp toe
@@ -2246,64 +2196,26 @@ nl:
     subjects: Onderwerpen
     places: Plaatsen
     publish: Gepubliceerd
+
   agent_topic_required:
-    _frontend:
-      action:
-        add: Voeg onderwerp toe
-    section:
-      dates: Datums
-    _plural: Onderwerpen
-    _singular: Onderwerp
-    text_note: Noot
-    dates: Datums
-    subjects: Onderwerpen
-    places: Plaatsen
-    publish: Gepubliceerd
+    <<: *agent_topic_attributes
+
   agent_topics:
-    _frontend:
-      action:
-        add: Voeg onderwerp toe
-    section:
-      dates: Datums
-    _plural: Onderwerpen
-    _singular: Onderwerp
-    text_note: Noot
-    dates: Datums
-    subjects: Termen
-    places: Plaatsen
-    publish: Gepubliceerd
+    <<: *agent_topic_attributes
+
   agent_topic_merge_target:
-    _frontend:
-      action:
-        add: Voeg onderwerp toe
-    section:
-      dates: Datums
-    _plural: Onderwerpen
-    _singular: Onderwerp
-    text_note: Noot
-    dates: Datums
-    subjects: Termen
-    places: Plaatsen
-    publish: Gepubliceerd
+    <<: *agent_topic_attributes
+
   agent_topic_merge_victim:
-    _frontend:
-      action:
-        add: Voeg onderwerp toe
-    section:
-      dates: Datums
-    _plural: Onderwerpen
-    _singular: Onderwerp
-    text_note: Noot
-    dates: Datums
-    subjects: Termen
-    places: Plaatsen
-    publish: Gepubliceerd
+    <<: *agent_topic_attributes
+
   place:
     _plural: Plaatsen
     _frontend:
       action:
         add: Voeg plaats toe
-  agent_alternate_set:
+
+  agent_alternate_set: &agent_alternate_set_attributes
     _plural: Gerelateerde alternatieve beschrijvingen
     _singular: Gerelateerde alternatieve beschrijving
     _frontend:
@@ -2312,75 +2224,28 @@ nl:
     set_component: Label
     descriptive_note: Beschrijvende noot
     file_uri: BestandsURI
-    xlink_title_attribute: Xlink Titel attribuut
-    xlink_role_attribute: Xlink Rol attribuut
-    xlink_arcrole_attribute: Xlink Arcrol attribuut
-    file_version_xlink_actuate_attribute: Xlink Activeer attribuut
-    file_version_xlink_show_attribute: Xlink Toon attribuut
+    xlink_title_attribute: Xlink titel attribuut
+    xlink_role_attribute: Xlink rol attribuut
+    xlink_arcrole_attribute: Xlink arcrol attribuut
+    file_version_xlink_actuate_attribute: Xlink activeer attribuut
+    file_version_xlink_show_attribute: Xlink toon attribuut
     last_verified_date: Datum laatste verificatie
+
   agent_alternate_sets:
-    _plural: Gerelateerde alternatieve beschrijvingen
-    _singular: Gerelateerde alternatieve beschrijving
-    _frontend:
-      action:
-        add: Voeg koppeling met alternatieve beschrijving toe
-    set_component: Label
-    descriptive_note: Beschrijvende noot
-    file_uri: BestandsURI
-    xlink_title_attribute: Xlink Titel attribuut
-    xlink_role_attribute: Xlink Rol attribuut
-    xlink_arcrole_attribute: Xlink Arcrol attribuut
-    file_version_xlink_actuate_attribute: Xlink Activeer attribuut
-    file_version_xlink_show_attribute: Xlink Toon attribuut
-    last_verified_date: Datum laatste verificatie
+    <<: *agent_alternate_set_attributes
+
   agent_alternate_set_required:
-    _plural: Gerelateerde alternatieve beschrijvingen
-    _singular: Gerelateerde alternatieve beschrijving
-    _frontend:
-      action:
-        add: Voeg koppeling met alternatieve beschrijving toe
-    set_component: Label
-    descriptive_note: Beschrijvende noot
-    file_uri: BestandsURI
-    xlink_title_attribute: Xlink Titel attribuut
-    xlink_role_attribute: Xlink Rol attribuut
-    xlink_arcrole_attribute: Xlink Arcrol attribuut
-    file_version_xlink_actuate_attribute: Xlink Activeer attribuut
-    file_version_xlink_show_attribute: Xlink Toon attribuut
-    last_verified_date: Datum laatste verificatie
+    <<: *agent_alternate_set_attributes
+
   agent_alternate_set_merge_target:
-    _plural: Gerelateerde alternatieve beschrijvingen
-    _singular: Gerelateerde alternatieve beschrijving
-    _frontend:
-      action:
-        add: Voeg koppeling met alternatieve beschrijving toe
-    set_component: Label
-    descriptive_note: Beschrijvende noot
-    file_uri: BestandsURI
-    xlink_title_attribute: Xlink Titel attribuut
-    xlink_role_attribute: Xlink Rol attribuut
-    xlink_arcrole_attribute: Xlink Arcrol attribuut
-    file_version_xlink_actuate_attribute: Xlink Activeer attribuut
-    file_version_xlink_show_attribute: Xlink Toon attribuut
-    last_verified_date: Datum laatste verificatie
+    <<: *agent_alternate_set_attributes
+
   agent_alternate_set_merge_victim:
-    _plural: Gerelateerde alternatieve beschrijvingen
-    _singular: Gerelateerde alternatieve beschrijving
-    _frontend:
-      action:
-        add: Voeg koppeling met alternatieve beschrijving toe
-    set_component: Label
-    descriptive_note: Beschrijvende noot
-    file_uri: BestandsURI
-    xlink_title_attribute: Xlink Titel attribuut
-    xlink_role_attribute: Xlink Rol attribuut
-    xlink_arcrole_attribute: Xlink Arcrol attribuut
-    file_version_xlink_actuate_attribute: Xlink Activeer attribuut
-    file_version_xlink_show_attribute: Xlink Toon attribuut
-    last_verified_date: Datum laatste verificatie
-  agent_conventions_declaration:
-    _plural: Conventie verklaringen
-    _singular: Conventie verklaring
+    <<: *agent_alternate_set_attributes
+
+  agent_conventions_declaration: &agent_conventions_declaration_attributes
+    _plural: Conventieverklaringen
+    _singular: Conventieverklaring
     _frontend:
       action:
         add: Voeg conventieverklaring toe
@@ -2388,310 +2253,133 @@ nl:
     citation: Citaat
     descriptive_note: Beschrijvende noot
     file_uri: BestandsURI
-    xlink_title_attribute: Xlink Titel attribuut
-    xlink_role_attribute: Xlink Rol attribuut
-    xlink_arcrole_attribute: Xlink Arcrol attribuut
-    file_version_xlink_actuate_attribute: Xlink Activeer attribuut
-    file_version_xlink_show_attribute: Xlink Toon attribuut
+    xlink_title_attribute: Xlink titel attribuut
+    xlink_role_attribute: Xlink rol attribuut
+    xlink_arcrole_attribute: Xlink arcrol attribuut
+    file_version_xlink_actuate_attribute: Xlink activeer attribuut
+    file_version_xlink_show_attribute: Xlink toon attribuut
     last_verified_date: Datum laatste verificatie
+
   agent_conventions_declarations:
-    _plural: Conventie verklaringen
-    _singular: Conventie verklaring
-    _frontend:
-      action:
-        add: Voeg conventieverklaring toe
-    name_rule: Conventie
-    citation: Citaat
-    descriptive_note: Beschrijvende noot
-    file_uri: BestandsURI
-    xlink_title_attribute: Xlink Titel attribuut
-    xlink_role_attribute: Xlink Rol attribuut
-    xlink_arcrole_attribute: Xlink Arcrol attribuut
-    file_version_xlink_actuate_attribute: Xlink Activeer attribuut
-    file_version_xlink_show_attribute: Xlink Toon attribuut
-    last_verified_date: Datum laatste verificatie
+    <<: *agent_conventions_declaration_attributes
+
   agent_conventions_declaration_required:
-    _plural: Conventie verklaringen
-    _singular: Conventie verklaring
-    _frontend:
-      action:
-        add: Voeg conventieverklaring toe
-    name_rule: Conventie
-    citation: Citaat
-    descriptive_note: Beschrijvende noot
-    file_uri: BestandsURI
-    xlink_title_attribute: Xlink Titel attribuut
-    xlink_role_attribute: Xlink Rol attribuut
-    xlink_arcrole_attribute: Xlink Arcrol attribuut
-    file_version_xlink_actuate_attribute: Xlink Activeer attribuut
-    file_version_xlink_show_attribute: Xlink Toon attribuut
-    last_verified_date: Datum laatste verificatie
+    <<: *agent_conventions_declaration_attributes
+
   agent_conventions_declaration_merge_target:
-    _plural: Conventie verklaringen
-    _singular: Conventie verklaring
-    _frontend:
-      action:
-        add: Voeg conventieverklaring toe
-    name_rule: Conventie
-    citation: Citaat
-    descriptive_note: Beschrijvende noot
-    file_uri: BestandsURI
-    xlink_title_attribute: Xlink Titel attribuut
-    xlink_role_attribute: Xlink Rol attribuut
-    xlink_arcrole_attribute: Xlink Arcrol attribuut
-    file_version_xlink_actuate_attribute: Xlink Activeer attribuut
-    file_version_xlink_show_attribute: Xlink Toon attribuut
-    last_verified_date: Datum laatste verificatie
+    <<: *agent_conventions_declaration_attributes
+
   agent_conventions_declaration_merge_victim:
-    _plural: Conventie verklaringen
-    _singular: Conventie verklaring
-    _frontend:
-      action:
-        add: Voeg conventieverklaring toe
-    name_rule: Conventie
-    citation: Citaat
-    descriptive_note: Beschrijvende noot
-    file_uri: BestandsURI
-    xlink_title_attribute: Xlink Titel attribuut
-    xlink_role_attribute: Xlink Rol attribuut
-    xlink_arcrole_attribute: Xlink Arcrol attribuut
-    file_version_xlink_actuate_attribute: Xlink Activeer attribuut
-    file_version_xlink_show_attribute: Xlink Toon attribuut
-    last_verified_date: Datum laatste verificatie
-  agent_other_agency_code:
+    <<: *agent_conventions_declaration_attributes
+
+  agent_other_agency_code: &agent_other_agency_code_attributes
     _plural: Andere agentschapscodes
     _singular: Andere agentschapscode
     _frontend:
       action:
         add: Voeg agentschapscode toe
-    agency_code_type: Record Controle agentschapscode Type
+    agency_code_type: Record controle agentschapscode type
     maintenance_agency: Onderhoudsorganisatie
+
   agent_other_agency_codes:
-    _plural: Andere agentschapscodes
-    _singular: Andere agentschapscode
-    _frontend:
-      action:
-        add: Voeg agentschapscode toe
-    agency_code_type: Record Controle agentschapscode Type
-    maintenance_agency: Onderhoudsorganisatie
+    <<: *agent_other_agency_code_attributes
+
   agent_other_agency_code_required:
-    _plural: Andere agentschapscodes
-    _singular: Andere agentschapscode
-    _frontend:
-      action:
-        add: Voeg agentschapscode toe
-    agency_code_type: Record Controle agentschapscode Type
-    maintenance_agency: Onderhoudsorganisatie
+    <<: *agent_other_agency_code_attributes
+
   agent_other_agency_code_merge_target:
-    _plural: Andere agentschapscodes
-    _singular: Andere agentschapscode
-    _frontend:
-      action:
-        add: Voeg agentschapscode toe
-    agency_code_type: Record Controle agentschapscode Type
-    maintenance_agency: Onderhoudsorganisatie
+    <<: *agent_other_agency_code_attributes
+
   agent_other_agency_code_merge_victim:
-    _plural: Andere agentschapscodes
-    _singular: Andere agentschapscode
-    _frontend:
-      action:
-        add: Voeg agentschapscode toe
-    agency_code_type: Record Controle agentschapscode Type
-    maintenance_agency: Onderhoudsorganisatie
-  agent_maintenance_history:
-    _plural: Actor Onderhoudgeschiedenis
-    _singular: Actor Onderhoudsgeschiedenissen
+    <<: *agent_other_agency_code_attributes
+
+  agent_maintenance_history: &agent_maintenance_history_attributes
+    _plural: Actor onderhoudgeschiedenis
+    _singular: Actor onderhoudsgeschiedenis
     _frontend:
       action:
         add: Voeg gebeurtenis toe
-    maintenance_event_type: Record Controle Onderhoudsgebeurtenis Type
-    maintenance_agent_type: Record Controle Onderhoud actor Type
+    maintenance_event_type: Record controle onderhoudsgebeurtenis type
+    maintenance_agent_type: Record controle onderhoud actor type
     agent: Actor
     descriptive_note: Beschrijvende noot
     event_date: Datum gebeurtenis
+
   agent_maintenance_histories:
-    _plural: Actor Onderhoudgeschiedenis
-    _singular: Actor Onderhoudsgeschiedenissen
-    _frontend:
-      action:
-        add: Voeg gebeurtenis toe
-    maintenance_event_type: Record Controle Onderhoudsgebeurtenis Type
-    maintenance_agent_type: Record Controle Onderhoud actor Type
-    agent: Actor
-    descriptive_note: Beschrijvende noot
-    event_date: Datum gebeurtenis
+    <<: *agent_maintenance_history_attributes
+
   agent_maintenance_history_required:
-    _plural: Actor Onderhoudgeschiedenis
-    _singular: Actor Onderhoudsgeschiedenissen
-    _frontend:
-      action:
-        add: Voeg gebeurtenis toe
-    maintenance_event_type: Record Controle Onderhoudsgebeurtenis Type
-    maintenance_agent_type: Record Controle Onderhoud actor Type
-    agent: Actor
-    descriptive_note: Beschrijvende noot
-    event_date: Datum gebeurtenis
+    <<: *agent_maintenance_history_attributes
+
   agent_maintenance_history_merge_target:
-    _plural: Actor Onderhoudgeschiedenis
-    _singular: Actor Onderhoudsgeschiedenissen
-    _frontend:
-      action:
-        add: Voeg gebeurtenis toe
-    maintenance_event_type: Record Controle Onderhoudsgebeurtenis Type
-    maintenance_agent_type: Record Controle Onderhoud actor Type
-    agent: Actor
-    descriptive_note: Beschrijvende noot
-    event_date: Datum gebeurtenis
+    <<: *agent_maintenance_history_attributes
+
   agent_maintenance_history_merge_victim:
-    _plural: Actor Onderhoudgeschiedenis
-    _singular: Actor Onderhoudsgeschiedenissen
-    _frontend:
-      action:
-        add: Voeg gebeurtenis toe
-    maintenance_event_type: Record Controle Onderhoudsgebeurtenis Type
-    maintenance_agent_type: Record Controle Onderhoud actor Type
-    agent: Actor
-    descriptive_note: Beschrijvende noot
-    event_date: Datum gebeurtenis
-  agent_record_identifier:
+    <<: *agent_maintenance_history_attributes
+
+  agent_record_identifier: &agent_record_identifier_attributes
     _plural: Record IDs
     _singular: Record ID
     _frontend:
       action:
-        add: Voeg Record ID toe
-    identifier_type: Record Controle Identificatiecode Type
+        add: Voeg record ID toe
+    identifier_type: Record controle identificatiecode type
     source: Bron
-    primary_identifier: Is Primaire Identificatiecode?
+    primary_identifier: Is primaire identificatiecode?
     primary: Primair
-    record_identifier: Record Identificatiecode
+    record_identifier: Record identificatiecode
+
   agent_record_identifiers:
-    _plural: Record IDs
-    _singular: Record ID
-    _frontend:
-      action:
-        add: Voeg Record ID toe
-    identifier_type: Record Controle Identificatiecode Type
-    source: Bron
-    primary_identifier: Is Primaire Identificatiecode?
-    primary: Primair
-    record_identifier: Record Identificatiecode
+    <<: *agent_record_identifier_attributes
+
   agent_record_identifier_required:
-    _plural: Record IDs
-    _singular: Record ID
-    _frontend:
-      action:
-        add: Voeg Record ID toe
-    identifier_type: Record Controle Identificatiecode Type
-    source: Bron
-    primary_identifier: Is Primaire Identificatiecode?
-    primary: Primair
-    record_identifier: Record Identificatiecode
+    <<: *agent_record_identifier_attributes
+
   agent_record_identifier_merge_target:
-    _plural: Record IDs
-    _singular: Record ID
-    _frontend:
-      action:
-        add: Voeg Record ID toe
-    identifier_type: Record Controle Identificatiecode Type
-    source: Bron
-    primary_identifier: Is Primaire Identificatiecode?
-    primary: Primair
-    record_identifier: Record Identificatiecode
+    <<: *agent_record_identifier_attributes
+
   agent_record_identifier_merge_victim:
-    _plural: Record IDs
-    _singular: Record ID
-    _frontend:
-      action:
-        add: Voeg Record ID toe
-    identifier_type: Record Controle Identificatiecode Type
-    source: Bron
-    primary_identifier: Is Primaire Identificatiecode?
-    primary: Primair
-    record_identifier: Record Identificatiecode
-  agent_source:
+    <<: *agent_record_identifier_attributes
+
+  agent_source: &agent_source_attributes
     _plural: Bronnen
     _singular: Actor bronnen
     _frontend:
       action:
-        add: Voeg Bron toe
-    source_entry: Bron Ingang
+        add: Voeg bron toe
+    source_entry: Bron ingang
     descriptive_note: Beschrijvende noot
     file_uri: BestandsURI
-    xlink_title_attribute: Xlink Titel attribuut
-    xlink_role_attribute: Xlink Rol attribuut
-    xlink_arcrole_attribute: Xlink Arcrol attribuut
-    file_version_xlink_actuate_attribute: Xlink Activeer attribuut
-    file_version_xlink_show_attribute: Xlink Toon attribuut
+    xlink_title_attribute: Xlink titel attribuut
+    xlink_role_attribute: Xlink rol attribuut
+    xlink_arcrole_attribute: Xlink arcrol attribuut
+    file_version_xlink_actuate_attribute: Xlink activeer attribuut
+    file_version_xlink_show_attribute: Xlink toon attribuut
     last_verified_date: Datum laatste verificatie
+
   agent_sources:
-    _plural: Bronnen
-    _singular: Actor bronnen
-    _frontend:
-      action:
-        add: Voeg Bron toe
-    source_entry: Bron Ingang
-    descriptive_note: Beschrijvende noot
-    file_uri: BestandsURI
-    xlink_title_attribute: Xlink Titel attribuut
-    xlink_role_attribute: Xlink Rol attribuut
-    xlink_arcrole_attribute: Xlink Arcrol attribuut
-    file_version_xlink_actuate_attribute: Xlink Activeer attribuut
-    file_version_xlink_show_attribute: Xlink Toon attribuut
-    last_verified_date: Datum laatste verificatie
+    <<: *agent_source_attributes
+
   agent_source_required:
-    _plural: Bronnen
-    _singular: Actor bronnen
-    _frontend:
-      action:
-        add: Voeg Bron toe
-    source_entry: Bron Ingang
-    descriptive_note: Beschrijvende noot
-    file_uri: BestandsURI
-    xlink_title_attribute: Xlink Titel attribuut
-    xlink_role_attribute: Xlink Rol attribuut
-    xlink_arcrole_attribute: Xlink Arcrol attribuut
-    file_version_xlink_actuate_attribute: Xlink Activeer attribuut
-    file_version_xlink_show_attribute: Xlink Toon attribuut
-    last_verified_date: Datum laatste verificatie
+    <<: *agent_source_attributes
+
   agent_source_merge_target:
-    _plural: Bronnen
-    _singular: Actor bronnen
-    _frontend:
-      action:
-        add: Voeg Bron toe
-    source_entry: Bron Ingang
-    descriptive_note: Beschrijvende noot
-    file_uri: BestandsURI
-    xlink_title_attribute: Xlink Titel attribuut
-    xlink_role_attribute: Xlink Rol attribuut
-    xlink_arcrole_attribute: Xlink Arcrol attribuut
-    file_version_xlink_actuate_attribute: Xlink Activeer attribuut
-    file_version_xlink_show_attribute: Xlink Toon attribuut
-    last_verified_date: Datum laatste verificatie
+    <<: *agent_source_attributes
+
   agent_source_merge_victim:
-    _plural: Bronnen
-    _singular: Actor bronnen
-    _frontend:
-      action:
-        add: Voeg Bron toe
-    source_entry: Bron Ingang
-    descriptive_note: Beschrijvende noot
-    file_uri: BestandsURI
-    xlink_title_attribute: Xlink Titel attribuut
-    xlink_role_attribute: Xlink Rol attribuut
-    xlink_arcrole_attribute: Xlink Arcrol attribuut
-    file_version_xlink_actuate_attribute: Xlink Activeer attribuut
-    file_version_xlink_show_attribute: Xlink Toon attribuut
-    last_verified_date: Datum laatste verificatie
+    <<: *agent_source_attributes
+
   agent_parallel_name:
-    _plural: Parallele namen
+    _plural: Parallelle namen
     use_dates: Datums gebruik
+
   agent_name:
     use_dates: Datums gebruik
-  agent_resource:
+
+  agent_resource: &agent_resource_attributes
     _frontend:
       action:
-        add: Voeg gerelateerd extern Archief/Collectie-record toe
+        add: Voeg gerelateerd extern archief/collectie-record toe
     section:
       dates: Datums
       places: Plaatsen
@@ -2704,146 +2392,81 @@ nl:
     linked_resource: Gerelateerd extern archief/collectie-record
     linked_resource_description: Beschrijving
     file_uri: BestandsURI
-    xlink_title_attribute: Xlink Titel attribuut
-    xlink_role_attribute: Xlink Rol attribuut
-    xlink_arcrole_attribute: Xlink Arcrol attribuut
-    file_version_xlink_actuate_attribute: Xlink Activeer attribuut
-    file_version_xlink_show_attribute: Xlink Toon attribuut
+    xlink_title_attribute: Xlink titel attribuut
+    xlink_role_attribute: Xlink rol attribuut
+    xlink_arcrole_attribute: Xlink arcrol attribuut
+    file_version_xlink_actuate_attribute: Xlink activeer attribuut
+    file_version_xlink_show_attribute: Xlink toon attribuut
     last_verified_date: Datum laatste verificatie
+
   agent_resources:
-    _frontend:
-      action:
-        add: Voeg gerelateerd extern Archief/Collectie-record toe
-    section:
-      dates: Datums
-      places: Plaatsen
-    _plural: Gerelateerde externe archief/collectie-records
-    _singular: Gerelateerde extern archief/collectie-record
-    dates: Datums
-    places: Plaatsen
-    publish: Gepubliceerd
-    linked_agent_role: Archief/Collectie relatie type
-    linked_resource: Gerelateerd extern archief/collectie-record
-    linked_resource_description: Beschrijving
-    file_uri: BestandsURI
-    xlink_title_attribute: Xlink Titel attribuut
-    xlink_role_attribute: Xlink Rol attribuut
-    xlink_arcrole_attribute: Xlink Arcrol attribuut
-    file_version_xlink_actuate_attribute: Xlink Activeer attribuut
-    file_version_xlink_show_attribute: Xlink Toon attribuut
-    last_verified_date: Datum laatste verificatie
+    <<: *agent_resource_attributes
+
   agent_resource_required:
-    _frontend:
-      action:
-        add: Voeg gerelateerd extern Archief/Collectie-record toe
-    section:
-      dates: Datums
-      places: Plaatsen
-    _plural: Gerelateerde externe archief/collectie-records
-    _singular: Gerelateerd extern archief/collectie-record
-    dates: Datums
-    places: Plaatsen
-    publish: Gepubliceerd
-    linked_agent_role: Archief/Collectie relatie type
-    linked_resource: Gerelateerd extern archief/collectie-record
-    linked_resource_description: Beschrijving
-    file_uri: BestandsURI
-    xlink_title_attribute: Xlink Titel attribuut
-    xlink_role_attribute: Xlink Rol attribuut
-    xlink_arcrole_attribute: Xlink Arcrol attribuut
-    file_version_xlink_actuate_attribute: Xlink Activeer attribuut
-    file_version_xlink_show_attribute: Xlink Toon attribuut
-    last_verified_date: Datum laatste verificatie
+    <<: *agent_resource_attributes
+
   agent_resource_merge_victim:
-    _frontend:
-      action:
-        add: Voeg gerelateerd extern Archief/Collectie-record toe
-    section:
-      dates: Datums
-      places: Plaatsen
-    _plural: Gerelateerde externe archief/collectie-records
-    _singular: Gerelateerd extern archief/collectie-record
-    dates: Datums
-    places: Plaatsen
-    publish: Gepubliceerd
-    linked_agent_role: Archief/Collectie relatie type
-    linked_resource: Gerelateerd extern archief/collectie-record
-    linked_resource_description: Beschrijving
-    file_uri: BestandsURI
-    xlink_title_attribute: Xlink Titel attribuut
-    xlink_role_attribute: Xlink Rol attribuut
-    xlink_arcrole_attribute: Xlink Arcrol attribuut
-    file_version_xlink_actuate_attribute: Xlink Activeer attribuut
-    file_version_xlink_show_attribute: Xlink Toon attribuut
-    last_verified_date: Datum laatste verificatie
+    <<: *agent_resource_attributes
+
   agent_resource_merge_target:
-    _frontend:
-      action:
-        add: Voeg gerelateerd extern Archief/Collectie-record toe
-    section:
-      dates: Datums
-      places: Plaatsen
-    _plural: Gerelateerde externe archief/collectie-records
-    _singular: Gerelateerd extern archief/collectie-record
-    dates: Datums
-    places: Plaatsen
-    publish: Gepubliceerd
-    linked_agent_role: Archief/Collectie relatie type
-    linked_resource: Gerelateerd extern archief/collectie-record
-    linked_resource_description: Beschrijving
-    file_uri: BestandsURI
-    xlink_title_attribute: Xlink Titel attribuut
-    xlink_role_attribute: Xlink Rol attribuut
-    xlink_arcrole_attribute: Xlink Arcrol attribuut
-    file_version_xlink_actuate_attribute: Xlink Activeer attribuut
-    file_version_xlink_show_attribute: Xlink Toon attribuut
-    last_verified_date: Datum laatste verificatie
+    <<: *agent_resource_attributes
+
   subsections:
     notes: Noten
     dates: Datums
+
   section_headings:
     basic_information_tooltip: |
       <p>Deze sectie geeft het type actor aan en of de actor is gepubliceerd of niet.</p>
+
     record_control_information_tooltip: |
       <p>Deze sectie bevat informatie over het record zelf, met de verwachting dat het afkomstig is van buiten ArchivesSpace of zal worden gedeeld met een ander systeem dan ArchivesSpace.</p>
+
     identity_information_tooltip: |
       <p>Dit gedeelte bevat de kerninformatie over de actor zelf. Een naamformulier is het enige vereiste subrecord in een actorrecord.</p>
+
     description_information_tooltip: |
       <p>Dit gedeelte bevat de kerninformatie over de actor zelf. Een naamformulier is het enige vereiste subrecord in een actorrecord.</p>
+
     relation_information_tooltip: |
       <p>Deze sectie wordt gebruikt om relaties aan te geven met andere actoren of materialen binnen of buiten ArchivesSpace.</p>
+
+
   bulk_import:
     _frontend:
       actions:
         add_file: Selecteer bestand
-        add_archival_objects: Importeer Archiefonderdeel
-        add_digital_objects: Voeg Digitale objecten toe aan Archiefonderdelen
-        import: Import via SpreadSheet
+        add_archival_objects: Importeer archiefonderdeel
+        add_digital_objects: Voeg digitale objecten toe aan archiefonderdelen
+        import: Import via spreadSheet
         drag_drop: Sleep het bestand hierheen.
         clip_btn: Kopieer naar klembord
         only_validate: Enkel valideren
-        link_top_containers: Koppel Top Containers
+        link_top_containers: Koppel topcontainers
       messages:
         missing_file: Je hebt geen bestand toegevoegd
         not_excel: Het door u gekozen bestand is geen Excel-spreadsheet
-        not_excel_csv: De fileRecord Control die je hebt gekozen, is geen Excel-spreadsheet of CSV-bestand
+        not_excel_csv: Het bestand record controle dat je hebt gekozen, is geen Excel-spreadsheet of CSV-bestand
         processed: Het bestand is verwerkt
         error: "ERROR: Fout(en) gedetecteerd: "
         copied: Gekopieerd!
         uncopied: Kan niet kopiëren
-        submitted: "<p>Job werd naar Background Jobs gestuurd. <br/> Klik 'Sluiten' om deze pagina te verversen.</p>"
+        submitted: "<p>Job werd naar achtergrondtaken gestuurd. <br/> Klik 'Sluiten' om deze pagina te verversen.</p>"
   bulk_import_job:
     active: "Er is een bulkimporttaak actief voor dit record, probeer het later te bewerken: <a href ='%{url}'>%{uri}</a>"
-    resource_id: Archief/Collectie Identificatiecode
+    resource_id: Archief/Collectie identificatiecode
     format: Download bestand
     filename: Spreadsheet bestandsnaam
     not_direct: Op dit moment kan deze taak alleen worden gemaakt op basis van het bronrecord
+
   note_contact_note:
     contact_notes_tooltip: |
       <p>Details over interactie met de contactpersoon</p>
+
     date_of_contact_tooltip: |
       <p>Wordt gebruikt om de specifieke datum of tijdsbestek van een interactie vast te leggen</p>
-  metadata_rights_declaration:
+
+  metadata_rights_declaration: &metadata_rights_declaration_attributes
     _plural: Rechtenverklaringen over de metadata
     _singular: Rechtenverklaring over de metadata
     _frontend:
@@ -2852,80 +2475,377 @@ nl:
     license: Licentie
     descriptive_note: Beschrijvende noot
     file_uri: BestandsURI
-    xlink_title_attribute: Xlink Titel attribuut
-    xlink_role_attribute: Xlink Rol attribuut
-    xlink_arcrole_attribute: Xlink Arcrol attribuut
-    file_version_xlink_actuate_attribute: Xlink Activeer attribuut
-    file_version_xlink_show_attribute: Xlink Toon attribuut
+    xlink_title_attribute: Xlink titel attribuut
+    xlink_role_attribute: Xlink rol attribuut
+    xlink_arcrole_attribute: Xlink arcrol attribuut
+    file_version_xlink_actuate_attribute: Xlink activeer attribuut
+    file_version_xlink_show_attribute: Xlink toon attribuut
     last_verified_date: Datum laatste verificatie
+
   metadata_rights_declarations:
-    _plural: Rechtenverklaringen over de metadata
-    _singular: Rechtenverklaring over de metadata
-    _frontend:
-      action:
-        add: Voeg rechtenverklaring over de metadata toe
-    license: Licentie
-    descriptive_note: Beschrijvende noot
-    file_uri: BestandsURI
-    xlink_title_attribute: Xlink Titel attribuut
-    xlink_role_attribute: Xlink Rol attribuut
-    xlink_arcrole_attribute: Xlink Arcrol attribuut
-    file_version_xlink_actuate_attribute: Xlink Activeer attribuut
-    file_version_xlink_show_attribute: Xlink Toon attribuut
-    last_verified_date: Datum laatste verificatie
+    <<: *metadata_rights_declaration_attributes
+
   metadata_rights_declaration_required:
-    _plural: Rechtenverklaringen over de metadata
-    _singular: Rechtenverklaring over de metadata
-    _frontend:
-      action:
-        add: Voeg rechtenverklaring over de metadata toe
-    license: Licentie
-    descriptive_note: Beschrijvende noot
-    file_uri: BestandsURI
-    xlink_title_attribute: Xlink Titel attribuut
-    xlink_role_attribute: Xlink Rol attribuut
-    xlink_arcrole_attribute: Xlink Arcrol attribuut
-    file_version_xlink_actuate_attribute: Xlink Activeer attribuut
-    file_version_xlink_show_attribute: Xlink Toon attribuut
-    last_verified_date: Datum laatste verificatie
+    <<: *metadata_rights_declaration_attributes
+
   metadata_rights_declaration_merge_target:
-    _plural: Rechtenverklaringen over de metadata
-    _singular: Rechtenverklaring over de metadata
-    _frontend:
-      action:
-        add: Voeg rechtenverklaring over de metadata toe
-    license: Licentie
-    descriptive_note: Beschrijvende noot
-    file_uri: BestandsURI
-    xlink_title_attribute: Xlink Titel attribuut
-    xlink_role_attribute: Xlink Rol attribuut
-    xlink_arcrole_attribute: Xlink Arcrol attribuut
-    file_version_xlink_actuate_attribute: Xlink Activeer attribuut
-    file_version_xlink_show_attribute: Xlink Toon attribuut
-    last_verified_date: Datum laatste verificatie
+    <<: *metadata_rights_declaration_attributes
+
   metadata_rights_declaration_merge_victim:
-    _plural: Rechtenverklaringen over de metadata
-    _singular: Rechtenverklaring over de metadata
-    _frontend:
-      action:
-        add: Voeg rechtenverklaring over de metadata toe
-    license: Licentie
-    descriptive_note: Beschrijvende noot
-    file_uri: BestandsURI
-    xlink_title_attribute: Xlink Titel attribuut
-    xlink_role_attribute: Xlink Rol attribuut
-    xlink_arcrole_attribute: Xlink Arcrol attribuut
-    file_version_xlink_actuate_attribute: Xlink Activeer attribuut
-    file_version_xlink_show_attribute: Xlink Toon attribuut
-    last_verified_date: Datum laatste verificatie
+    <<: *metadata_rights_declaration_attributes
+
   bulk_import_templates:
     overview: |
-      <p>Met deze templates kunnen spreadsheets worden opgeladen via de verschillende importeer-opties in de instellingen voor Achtergrondtaken. De benodigde gegevens voor een succesvolle import zijn afhankelijk van het recordtype. Niet elke rij en kolom moet worden ingevuld.</p><p>Elk CSV template bevat een rij met voorbeelddata. Om te vermijden dat een record met deze voorbeelddata wordt aangemaakt, moet deze rij worden verwijderd vóór het CSV bestand wordt opgeladen. <b>Verwijder de titelrij niet, voeg geen extra kolommen toe en herorden de bestaande kolommen niet.</b></p><p>De Excel templates bevatten bijkomende instructies over gebruik van de templates, en valideringsformules voor bepaalde cellen. <b>Verwijder deze instructies of valideringsformules niet.</b></p>
-    aspace_accession_import_template_csv: Maak aanwinstrecords en gekoppelde records zoals actoren, onderwerpen en gebeurtenissen.
+      <p>Met deze sjablonen kunnen spreadsheets worden opgeladen via de verschillende importeer-opties in de instellingen voor Achtergrondtaken. De benodigde gegevens voor een succesvolle import zijn afhankelijk van het recordtype. Niet elke rij en kolom moet worden ingevuld.</p><p>Elk CSV sjabloon bevat een rij met voorbeelddata. Om te vermijden dat een record met deze voorbeelddata wordt aangemaakt, moet deze rij worden verwijderd vóór het CSV bestand wordt opgeladen. <b>Verwijder de titelrij niet, voeg geen extra kolommen toe en herorden de bestaande kolommen niet.</b></p><p>De Excel sjablonen bevatten bijkomende instructies over gebruik van de sjablonen, en valideringsformules voor bepaalde cellen. <b>Verwijder deze instructies of valideringsformules niet.</b></p>
+    aspace_accession_import_template_csv: Maak aanwinstenrecords en gekoppelde records zoals actoren, onderwerpen en gebeurtenissen.
     aspace_digital_object_import_template_csv: Maak digitale objectenrecords en gekoppelde records zoals actoren, onderwerpen en gebeurtenissen.
     bulk_import_template_csv: Maak en koppel archiefonderdelen aan een bestaand archief/collectierecord. Het is mogelijk om verschillende sub-records en gekoppelde records op te nemen, zoals datums, omvant, noten, containers en digitale objecten. Het CSV formaat wordt aangeboden voor wie geen toegang heeft tot Microsoft Excel.
     bulk_import_template_xlsx: Maak en koppel archiefonderdelen aan een bestaand archief/collectierecord. Het is mogelijk om verschillende sub-records en gekoppelde records op te nemen, zoals datums, omvant, noten, containers en digitale objecten. Het XLSX formaat wordt aangeboden voor wie toegang heeft tot Microsoft Excel.
     bulk_import_DO_template_csv: Maak en koppel digitale objectenrecords aan bestaande archiefonderdelen in een archief/collectie. Het CSV formaat wordt aangeboden voor wie geen toegang heeft tot Microsoft Excel.
     bulk_import_DO_template_xlsx: Maak en koppel digitale objectenrecords aan bestaande archiefonderdelen in een archief/collectie. Het XLSX formaat wordt aangeboden voor wie toegang heeft tot Microsoft Excel.
-    aspace_location_import_template_csv: Maak nieuwe locatierecords. Merk op dat deze template bedoeld is om nieuwe locatierecords te creëren; niet om materialen te koppelen aan locaties.
+    aspace_location_import_template_csv: Maak nieuwe locatierecords. Merk op dat dit sjabloon bedoeld is om nieuwe locatierecords te creëren; niet om materialen te koppelen aan locaties.
     aspace_assessment_import_template_csv: Maak en koppel waarderingsrecords aan bestaande aanwinsten, archieven/collecties, archiefonderdele of digitale objecten.
+    aspace_subject_import_template_csv: Maak nieuwe onderwerpsrecords. Dit sjabloon dient om nieuwe locatierecords te maken; niet om ze te koppelen aan andere records.
+
+  reports:
+    location_holdings_report:
+      title: Gebruikte locaties
+      identifier_prefix: Locatie
+      description: Overzicht van containers die op een of meer locaties geplaatst zijn.
+      repository_report_type: Repository
+      building_report_type: Gebouw
+      single_location_report_type: Enkelvoudige locatie
+      location_range_report_type: Locatiebereik
+      start_range: Begin van locatiebereik
+      end_range: Einde van locatiebereik
+
+    digital_object_list_table_report:
+      title: Digitale objecten 
+      description: Overzicht van digitale objecten. Dit rapport bevat titel, identificatiecode, objecttype, datums, en de titel en identificatiecode van gekoppelde archieven/collecties.
+
+    digital_object_file_versions_report:
+      title: Bestandsversies
+      description: Overzicht van alle bestandsversies die gekoppeld zijn aan digitale objecten.
+
+    digital_object_file_versions_list_subreport:
+      test_value: testwaarde
+
+    accession_locations_subreport:
+      test_value: testwaarde
+
+    accession_subjects_subreport:
+      test_value: testwaarde
+
+    accession_inventory_report:
+      title: Aanwinsten met inventarislijsten
+      description: Overzicht van alleen die aanwinstenrecords met een inventarislijst. Dit rapport bevat aanwinstnummer, gekoppelde archieven/collecties, omvang, verwervingsdatum, overzicht verpakking en inventarislijst.
+      number_with_inventories: Aanwinsten met inventarislijsten
+      identifier_prefix: Aanwinst
+
+    accession_receipt_report:
+      title: Ontvangstbewijzen van aanwinsten
+      description: Overzicht van de verwerving van materialen. Dit rapport bevat aanwinstnummer, titel, omvang, verwervingsdatum, en repository.
+      identifier_prefix: Aanwinst
+
+    created_accessions_report:
+      title: Gemaakte aanwinstenrecords
+      description: Overzicht van aanwinstenrecords die binnen een bepaald datumbereik werden gecreëerd.
+      identifier_prefix: Aanwinst
+
+    accession_subjects_names_classifications_list_report:
+      title: Aanwinsten en gekoppelde onderwerpen, namen en classificaties
+      description: Overzicht van aanwinsten en gekoppelde namen, onderwerpen en classificaties. Dit rapport bevat aanwinstnummer, gekoppelde archieven/collecties, verwervingsdatum, titel, omvang, gekoppelde namen en gekoppelde onderwerpen.
+      identifier_prefix: Aanwinst
+
+    accession_report:
+      title: Aanwinsten
+      description: Overzicht van alle aanwinsten voor een bepaald repository. Dit rapport bevat de basisinformatie die voor elke aanwinst werd ingevuld.
+      identifier_prefix: Aanwinst
+
+    accession_classifications_subreport:
+      test_value: testwaarde
+
+    accession_names_subreport:
+      test_value: testwaarde
+
+    accession_unprocessed_report:
+      title: Niet-verwerkte aanwinsten
+      description: Overzicht van alleen die aanwinsten die nog niet werden verwerkt. Dit rapport bevat aanwinstnummer, gekoppele archieven/collecties, titel, omvang, catalogisering, verwerkingsdatum, totaal van de geselecteerde records met verwerkingsdatum, en totaal van de records zonder ingevulde verwerkingsdatum.
+      total_count: Aantal aanwinsten
+      identifier_prefix: Aanwinst
+      total_extent: Totaal niet-verwerkt
+
+    accession_deaccessions_list_report:
+      title: Aanwinsten en gekoppelde afstotingsrecords
+      description: Overzicht van aanwinstenrecords en gekoppelde afstotingsrecords. Dit rapport bevat aanwinstnummer, titel, omvang, verwervingsdatum, overzicht verpaking, catalogisering, verwerkingsdatum, overgedragen rechten, gekoppelde afstotingsrecords en totaal van alle afstotingen.
+      total_extent: Totaal aanwinsten
+      identifier_prefix: Aanwinst
+ 
+    accession_deaccessions_subreport:
+      test_value: testwaarde
+
+    accession_resources_subreport:
+      test_value: testwaarde
+
+    accession_rights_transferred_report:
+      title: Aanwinsten met overgedragen rechten
+      description: "Overzicht van alleen die aanwinsten waarvoor rechten werden overgedragen. Dit rapport bevat aanwinstnummer, gekoppelde archieven/collecties, titel, omvang, catalogisering, verwerkingsdatum, toegangsbeperkingen, gebruiksbeperkingen, overgedragen rechten en een totaal van het aantal geselecteerde records met overgedragen rechten."
+      identifier_prefix: Aanwinst
+
+    custom_report:
+      title: Aangepast rapport
+      description: Sjablonen voor aangepaste rapporten bundelen informatie die werd geselecteerd voor recordtype, data velden en gekoppelde records. Maak eerst een aangepast rapportsjabloon, en selecteer het vervolgens in de keuzelijst om het uit te voeren.
+
+    user_groups_report:
+      title:  Gebruikersgroepen
+      description: Overzicht van gebruikers en gebruikersgroepen voor het repository
+      name: Naam
+      department: Afdeling
+      user_title: Titel
+      groups: Groepen
+      email: E-mail
+      telephone: Telefoon
+
+    resource_deaccessions_list_report:
+      title: Archieven/collecties en afstotingen
+      description: Overzicht van archieven/collecties en gekoppelde afstotingsrecords. Dit rapport bevat titel, identificatiecode van het archief/collectie, beschrijvingsniveau, datumbereik, gekoppelde afstotingsrecords, namen van archiefvormers en totaal van de fysieke omvang.
+      total_extent: Totaal van de fysieke omvang
+      identifier_prefix: Archief/collectie
+
+    resource_instances_list_report:
+      title: Archieven/collecties en containers
+      description: Overzicht van archieven/collecties en alle containergegevens. Dit rapport bevat titel, identificatiecode van het archief/collectie, beschrijvingsniveau, datumbereik en gekoppelde containers.
+      total_extent: Totaal van de fysieke omvang
+      identifier_prefix: Archief/collectie
+
+    resource_deaccessions_subreport:
+      test_value: testwaarde
+
+    resource_locations_list_report:
+      title: Archieven/collecties en locaties
+      description: Overzicht van archieven/collecties en alle locatiegegevens. Dit rapport bevat titel, identificatiecode van het archief/collectie, beschrijvingsniveau, datumbereik en gekoppelde locaties.
+      total_extent: Totaal van de fysieke omvang
+      identifier_prefix: Archief/collectie
+
+    resources_list_report:
+      title: Archieven/collecties
+      description: Overzicht van alle archieven/collecties. Dit rapport bevat basisgegevens, datums en omvang van archief/collectie-records.
+
+    resource_instances_subreport:
+      test_value: testwaarde
+
+    resource_restrictions_list_report:
+      title: Archieven/collecties met beperkingen
+      description: Overzicht van archieven/collecties met beperkingen en locatiegegevens. Dit rapport bevat titel, identificatiecode van het archief/collectie, beschrijvingsniveau, datumbereik en gekoppelde locaties.
+      total_count: Totaal aantal archieven/collecties met beperkingen
+      total_extent: Totaal van de fysieke omvang van archieven/collecties met beperkingen
+      identifier_prefix: Archief/collectie
+
+    assessment_rating_report:
+      title: Waardering met bepaalde beoordelingen
+      description: Overzicht van waarderingsrecords met een beoordeling binnen het geselecteerde bereik. Minstens één waarde moet worden geselecteerd; selecteer alle waarden om alle records te tonen.
+      identifier_prefix: Waardering
+
+    assessment_list_report:
+      description: Overzicht van alle gemaakte waarderingen
+      title: Waarderingen
+      identifier_prefix: Waardering
+
+    agent_list_report:
+      title: Naamrecords
+      description: Overzicht van geselecteerde naamrecords. Dit rapport bevat naam, naamtype en de bron voor de naamgeving.
+
+    location_containers_subreport:
+      test_value: testwaarde
+
+    location_resources_subreport:
+      test_value: testwaarde
+
+    container_resources_accessions_subreport:
+      test_value: testwaarde
+
+    location_report:
+      title: Locaties
+      description: Overzicht van locaties en alle gekoppelde aanwinsten en archieven/collecties.
+      total_count: Aantal locaties
+
+    location_accessions_subreport:
+
+    shelflist_report:
+      title: Magazijnplaatsing
+      description: Overzicht van locaties en alle gekoppelde topcontainers.
+
+    translation_defaults:
+      accession_processed_date: Aanwinst verwerkingsdatum
+      access_restrictions_note: Type beperking
+      access_restrictions: Toegang beperkt?
+      accession_date: Verwervingsdatum
+      accession_number: Aawinstnummer
+      accession_processed: Aanwinst verwerkt?
+      accession_report: Aanwinsten rapport
+      total_transferred: Aanwinsten met overgedragen rechten
+      acknowledgement_sent: Bevestiging verzonden?
+      acquisition_type: Verwervingsprocedure
+      appraisal: Selectie
+      area: Gebied
+      barcode: Barcode
+      begin_date: Begindatum
+      container_list: Doos/container overzicht
+      building: Gebouw
+      bulk_begin_date: Bulk begindatum
+      bulk_end_date: Bulk einddatum
+      catalog_record: Catalogusrecord (MARC)
+      cataloged: Gecatalogiseerd
+      classification_number: Classificatienummer
+      classifications: Classificaties
+      control_file: Collectie/controle bestand
+      component_identifier: Component identificatiecode
+      component_title: Component titel
+      condition_note: Conditie
+      conservation_issues: Conservatieproblemen
+      conservation_note: Conservatie noot
+      container: Container
+      container_2: Container 2
+      container_3: Container 3
+      container_profile: Containerprofiel
+      container_summary: Overzicht verpakking
+      containers: Containers
+      date: Datum
+      date_expression: Datumexpressie
+      survey_end: Einddatum onderzoek
+      survey_begin: Begindatum onderzoek
+      dates: Datums
+      deaccessions: Afstotingen
+      deed_of_gift: Akte van schenking
+      description: Beschrijving
+      description_note: Beschrijving
+      disposition_note: Bestemming
+      end_date: Einddatum
+      exhibition_value_note: Tentoonstellinsgwaarde noot
+      existing_description_notes: Bestaande beschrijving noten
+      extent: Omvang
+      surveyed_extent: Omvang onderzochte materialen
+      field: Veld
+      file_versions: Bestandsversie(s)
+      finding_aid_ead: Finding aid (EAD-codering)
+      finding_aid_online: Finding aid (Online)
+      finding_aid_paper: Finding aid (papier)
+      finding_aid_spreadsheet: Finding aid (spreadsheet)
+      finding_aid_word: Finding aid (word document)
+      floor: Verdieping
+      function: Functie
+      general_assessment_note: Algemene opmerking bij de waardering
+      general_note: Algemene noot
+      id: ID
+      identifier: Identificatiecode
+      ils_holding_id: Identificatiecode van bibliotheek
+      ils_item_id: Identificatiecode van bibliotheekrecord
+      inactive: Inactief
+      instance_type: Type
+      instances: Exemplaren
+      inventory: Inventarislijst
+      language: Taal
+      level: Niveau
+      linked_records: Gekoppelde records
+      linked_resources: Gekoppelde archieven/collecties
+      formats: Lijst van materiaaltypes en formaten
+      location: Locatie
+      location_barcode: Locatie barcode
+      location_in_room: Locatie in kamer
+      location_profile: Locatieprofiel
+      location_url: Locatie URL
+      locations: Locaties
+      monetary_value: Financiële waarde
+      monetary_value_note: Financiële waarde noot
+      name: Naam
+      name_source: Bron van de naam
+      name_type: Naamtype
+      names: Namen
+      note: Noot
+      notification_sent: Kennisgeving verzonden
+      number_of_accessions: Aantal aanwinsten
+      total_count: Aantal records
+      number_with_inventories: Aantal met inventarislijsten
+      object_type: Objecttype
+      provenance: Herkomst
+      purpose: Doel van de waardering
+      rating: Score
+      ratings: Scores
+      record_id: Record ID
+      linked_record_type: Recordtype
+      related_eac_records: Gerelateerd(e) EAC record(s)
+      repository: Repository
+      resource_identifier: Identificatiecode van archief/collectie
+      resources: Archieven/collecties
+      records: Archieven/collecties en aanwinsten
+      retention_rule: Bewaarregels
+      restrictions_apply: Beperkingen?
+      review_note: Review noot
+      review_required: Review vereist?
+      reviewer: Reviewer
+      rights_transferred_note: Rechten overgedragen noot
+      rights_transferred: Rechten overgedragen?
+      role: Rol
+      room: Kamer
+      scope: Reikwijdte van de waardering
+      scoped_by_rating: Binnen scorebereik
+      script: Schrift
+      sensitive_material: Gevoelig materiaal?
+      scoped_by_date_range: Toont records aangemaakt tussen
+      showing_values: Toont records met beoordelingswaarden
+      sort_name: Sorteernaam
+      source: Bron
+      special_format_note: Bijzondere formaten noot
+      subjects: Onderwerpen
+      surveyed_by: Onderzocht door
+      term: Term
+      surveyed_duration: Benodigde tijd voor onderzoek
+      record_title: Titel
+      title: Titel
+      top_container_barcode: Topcontainer barcode
+      top_container_indicator: Topcontainer aanduiding
+      total_deaccessions_extent: Totale omvang van afstotingen
+      total_extent: Totale omvang van records
+      type: Type
+      total_unprocessed: Niet-verwerkte aanwinsten
+      uri: URI
+      use_restrictions_note: Type beperking
+      use_restrictions: Gebruik beperkt?
+      use_statement: Gebruiksvoorwaarden
+      accessions: Aanwinsten
+      deaccession_date: Afstotingsdatum
+      rating_note: Beoordeling noot
+      temporary_location: Tijdelijke locatie
+      rights_statements: Rechtenstatus
+      rights_type: Rechtentype
+      statute_citation: Statuut citatie
+      jurisdiction: Jurisdictie
+      status: Status
+      determination_date: Datum vaststelling
+      license_terms: Licentievoorwaarden
+      other_rights_basis: Andere rechtengrondslag
+      custom_record_type: Aangepast rapport voor
+      digital_object: Digitaal object
+      is_representative: Is representatief?
+      sorted_by: Gesorteerd volgens
+      root_record: Root record
+      dimension_units: Meeteenheden
+      depth: Diepte
+      height: Hoogte
+      width: Breedte
+      template_name: Sjabloon naam
+      template_description: Sjabloon beschrijving
+      date_type: Datumtype
+      label:  Label
+      expression: Datumexpressie
+      standardized_type: Gestandaardiseerd type
+      begin_expression: Begindatum expressie
+      begin_standardized_type: Begindatum gestandaardiseerd type
+      end_expression: Einddatum expressie
+      end_standardized_type: Einddatum gestandaardiseerd type
+      select: Selecteer
+      back: Terug
+
+    subject_list_report:
+      title: Onderwerpen
+      description: Overzicht van geselecteerde onderwerprecords. Dit rapport bevat onderwerpstermen, term type en bron van het onderwerp.
