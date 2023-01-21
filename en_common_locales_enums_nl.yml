@@ -88,7 +88,8 @@ nl:
     restriction_type: Type beperking op toegankelijkheid
     rights_statement_act_restriction: Rechtenverklaring Regelgeving beperking
     rights_statement_act_type: Rechtenverklaring Regelgeving type
-    rights_statement_external_document_identifier_type: Rechtenverklaring Extern document identifier type
+    rights_statement_external_document_identifier_type: Rechtenverklaring Extern document 
+    identifier type
     rights_statement_ip_status: Rechtenverklaring IP Status
     rights_statement_other_rights_basis: Rechtenverklaring Other Rights Basis
     rights_statement_rights_type: Rechtenverklaring Rechten type
@@ -102,6 +103,7 @@ nl:
     user_defined_enum_2: User Defined Enum 2
     user_defined_enum_3: User Defined Enum 3
     user_defined_enum_4: User Defined Enum 4
+
   enumerations:
     accession_acquisition_type:
       deposit: Levering
@@ -489,7 +491,7 @@ nl:
       part: Deel
       whole: Geheel
     digital_object_digital_object_type:
-      cartographic: Cartographisch
+      cartographic: Cartografisch
       mixed_materials: Gemengde materialen
       moving_image: Bewegend beeld
       notated_music: Partituur
@@ -1468,19 +1470,26 @@ nl:
       cancelled_obsolete: Geannuleerd/verouderd
       deleted: Verwijderd
       deleted_replaced: Verwijderd-vervangen
+      deleted_merged: Verwijderd-samengevoegd
       deleted_split: Verwijderd-gesplitst
       derived: Afgeleid
       new: Nieuw
       revised_corrected: Gereviseerd/gecorrigeerd
       upgraded: Geüpgraded
     metadata_license:
-      no_derivatives: Dit record is beschikbaar onder een Naamsvermelding-GeenAfgeleideWerken 4.0 Internationaal Creative Commons licentie.
-      non_commercial: Dit record is beschikbaar onder een Naamsvermelding-NietCommercieel-GelijkDelen 4.0 Internationaal Creative Commons licentie.
-      non_commercial_no_derivatives: Dit record is beschikbaar onder een Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 4.0 Internationaal Creative Commons licentie.
-      non_commercial_share_a_like: Dit record is beschikbaar onder een Naamsvermelding-NietCommercieel-GelijkDelen 4.0 Internationaal Creative Commons licentie.
+      no_derivatives: Dit record is beschikbaar onder een Naamsvermelding-GeenAfgeleideWerken 4.0 
+      Internationaal Creative Commons licentie.
+      non_commercial: Dit record is beschikbaar onder een Naamsvermelding-NietCommercieel-GelijkDelen 4.0 
+      Internationaal Creative Commons licentie.
+      non_commercial_no_derivatives: Dit record is beschikbaar onder een 
+      Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 4.0 Internationaal Creative Commons licentie.
+      non_commercial_share_a_like: Dit record is beschikbaar onder een 
+      Naamsvermelding-NietCommercieel-GelijkDelen 4.0 Internationaal Creative Commons licentie.
       other: Niet nader bepaalde of aangepaste licentie.
-      public_domain: Dit record is beschikbaar onder een Universele 1.0 Publiek Domein  Creative Commons licentie.
-      share_a_like: Dit record is beschikbaar onder een Naamsvermelding-GelijkDelen 4.0 Internationaal Creative Commons licentie.
+      public_domain: Dit record is beschikbaar onder een Universele 1.0 Publiek Domein 
+      Creative Commons licentie.
+      share_a_like: Dit record is beschikbaar onder een Naamsvermelding-GelijkDelen 4.0 Internationaal 
+      Creative Commons licentie.
     modified_record:
       missing_characters: Ontbrekende tekens
       natc: Geen poging tot coderen
@@ -1493,8 +1502,9 @@ nl:
       aacr: Anglo-American Cataloging Rules
       ccr: Cataloging Cultural Resources
       dacs: "Describing Archives: A Content Standard"
-      isaar: International Standard Archival Authority Record for Corporate Bodies, Persons, and Families
-      local: Lokaal regelwerk
+      isaar: International Standard Archival Authority Record for Corporate Bodies, Persons, and 
+      Families
+      local: Lokale regels
       rad: Rules for Archival Description
       rda: Resource Description and Access
     name_source:
@@ -1536,7 +1546,7 @@ nl:
       additional_information: Aanvullende informatie
       materials: Materialen
       type_note: Noottype
-    _note_types:
+    _note_types: &note_type_definitions
       abstract: Abstract
       accessrestrict: Voorwaarden voor raadpleging
       accruals: Aanvullingen
@@ -1579,173 +1589,13 @@ nl:
       summary: Korte inhoud
       userestrict: Voorwaarden voor gebruik
     note_digital_object_type:
-      abstract: Abstract
-      accessrestrict: Voorwaarden voor raadpleging
-      accruals: Aanvullingen
-      acqinfo: Verwerving
-      altformavail: Bestaan en bewaarplaats van kopieën
-      appraisal: Selectie
-      arrangement: Ordening
-      bibliography: Bibliografie
-      bioghist: Biografische / historische noot
-      contact_note: Contact noot
-      custodhist: Geschiedenis archief
-      dimensions: Afmetingen
-      edition: Editie
-      extent: Omvang
-      fileplan: Ordeningsplan
-      general_context: Algemene context
-      index: Index
-      inscription: Inscriptie
-      langmaterial: Taal van de materialen
-      legal_status: Wettelijke status
-      legalstatus: Wettelijke status
-      mandate: Mandaat
-      materialspec: Materiaalspecifieke details
-      note: Algemene noot
-      note_bibliography: Bibliografie
-      odd: Algemeen
-      originalsloc: Bestaan en bewaarplaats van originelen
-      otherfindaid: Andere toegangen
-      physdesc: Fysieke beschrijving
-      physfacet: Fysiek aspect
-      physloc: Fysieke locatie
-      phystech: Fysieke kenmerken en technische vereisten
-      prefercite: Voorkeursvorm voor citatie
-      processinfo: Informatie over verwerking
-      relatedmaterial: Verwante materialen
-      rights_statement: Rechtenverklaring
-      scopecontent: Bereik en inhoud
-      separatedmaterial: Separated Materials@en
-      structure_or_genealogy: Structuu of genealogie
-      summary: Korte inhoud
-      userestrict: Voorwaarden voor gebruik
+      <<: *note_type_definitions
     note_langmaterial_type:
-      abstract: Abstract
-      accessrestrict: Voorwaarden voor raadpleging
-      accruals: Aanvullingen
-      acqinfo: Verwerving
-      altformavail: Bestaan en bewaarplaats van kopieën
-      appraisal: Selectie
-      arrangement: Ordening
-      bibliography: Bibliografie
-      bioghist: Biografische / historische noot
-      contact_note: Contact noot
-      custodhist: Geschiedenis archief
-      dimensions: Afmetingen
-      edition: Editie
-      extent: Omvang
-      fileplan: Ordeningsplan
-      general_context: Algemene context
-      index: Index
-      inscription: Inscriptie
-      langmaterial: Taal van de materialen
-      legal_status: Wettelijke status
-      legalstatus: Wettelijke status
-      mandate: Mandaat
-      materialspec: Materiaalspecifieke details
-      note: Algemene noot
-      note_bibliography: Bibliografie
-      odd: Algemeen
-      originalsloc: Bestaan en bewaarplaats van originelen
-      otherfindaid: Andere toegangen
-      physdesc: Fysieke beschrijving
-      physfacet: Fysiek aspect
-      physloc: Fysieke locatie
-      phystech: Fysieke kenmerken en technische vereisten
-      prefercite: Voorkeursvorm voor citatie
-      processinfo: Informatie over verwerking
-      relatedmaterial: Verwante materialen
-      rights_statement: Rechtenverklaring
-      scopecontent: Bereik en inhoud
-      separatedmaterial: Separated Materials@en
-      structure_or_genealogy: Structuu of genealogie
-      summary: Korte inhoud
-      userestrict: Voorwaarden voor gebruik
+      <<: *note_type_definitions
     note_multipart_type:
-      abstract: Abstract
-      accessrestrict: Voorwaarden voor raadpleging
-      accruals: Aanvullingen
-      acqinfo: Verwerving
-      altformavail: Bestaan en bewaarplaats van kopieën
-      appraisal: Selectie
-      arrangement: Ordening
-      bibliography: Bibliografie
-      bioghist: Biografische / historische noot
-      contact_note: Contact noot
-      custodhist: Geschiedenis archief
-      dimensions: Afmetingen
-      edition: Editie
-      extent: Omvang
-      fileplan: Ordeningsplan
-      general_context: Algemene context
-      index: Index
-      inscription: Inscriptie
-      langmaterial: Taal van de materialen
-      legal_status: Wettelijke status
-      legalstatus: Wettelijke status
-      mandate: Mandaat
-      materialspec: Materiaalspecifieke details
-      note: Algemene noot
-      note_bibliography: Bibliografie
-      odd: Algemeen
-      originalsloc: Bestaan en bewaarplaats van originelen
-      otherfindaid: Andere toegangen
-      physdesc: Fysieke beschrijving
-      physfacet: Fysiek aspect
-      physloc: Fysieke locatie
-      phystech: Fysieke kenmerken en technische vereisten
-      prefercite: Voorkeursvorm voor citatie
-      processinfo: Informatie over verwerking
-      relatedmaterial: Verwante materialen
-      rights_statement: Rechtenverklaring
-      scopecontent: Bereik en inhoud
-      separatedmaterial: Separated Materials@en
-      structure_or_genealogy: Structuu of genealogie
-      summary: Korte inhoud
-      userestrict: Voorwaarden voor gebruik
+      <<: *note_type_definitions
     note_singlepart_type:
-      abstract: Abstract
-      accessrestrict: Voorwaarden voor raadpleging
-      accruals: Aanvullingen
-      acqinfo: Verwerving
-      altformavail: Bestaan en bewaarplaats van kopieën
-      appraisal: Selectie
-      arrangement: Ordening
-      bibliography: Bibliografie
-      bioghist: Biografische / historische noot
-      contact_note: Contact noot
-      custodhist: Geschiedenis archief
-      dimensions: Afmetingen
-      edition: Editie
-      extent: Omvang
-      fileplan: Ordeningsplan
-      general_context: Algemene context
-      index: Index
-      inscription: Inscriptie
-      langmaterial: Taal van de materialen
-      legal_status: Wettelijke status
-      legalstatus: Wettelijke status
-      mandate: Mandaat
-      materialspec: Materiaalspecifieke details
-      note: Algemene noot
-      note_bibliography: Bibliografie
-      odd: Algemeen
-      originalsloc: Bestaan en bewaarplaats van originelen
-      otherfindaid: Andere toegangen
-      physdesc: Fysieke beschrijving
-      physfacet: Fysiek aspect
-      physloc: Fysieke locatie
-      phystech: Fysieke kenmerken en technische vereisten
-      prefercite: Voorkeursvorm voor citatie
-      processinfo: Informatie over verwerking
-      relatedmaterial: Verwante materialen
-      rights_statement: Rechtenverklaring
-      scopecontent: Bereik en inhoud
-      separatedmaterial: Separated Materials@en
-      structure_or_genealogy: Structuu of genealogie
-      summary: Korte inhoud
-      userestrict: Voorwaarden voor gebruik
+      <<: *note_type_definitions
     place_role:
       assoc_country: Geassocieerd land
       other_assoc: Andere
@@ -1799,12 +1649,14 @@ nl:
       allmusic: "AllMusic"
       allocine: "AlloCiné"
       amnbo: "American National Biography Online"
-      ansi: "American National Standards Institute and National Information Standards Organisation number for an ANSI or ANSI/NISO standard"
+      ansi: "American National Standards Institute and National Information Standards Organisation\
+        \ number for an ANSI or ANSI/NISO standard"
       artsy: "Artsy"
       bdusc: "Biographical Directory of the United States Congress (United States Congress)"
       bfi: "BFI - British Film Institute"
       bnfcg: "BnF catalogue général (Paris: Bibliothèque nationale de France)"
-      cantic: "CANTIC (Catàleg d'autoritats de noms i títols de Catalunya) (Biblioteca de Catalunya)"
+      cantic: "CANTIC (Catàleg d'autoritats de noms i títols de Catalunya)\
+        \ (Biblioteca de Catalunya)"
       cgndb: "Canadian Geographical Names Database (Natural Resources Canada)"
       danacode: "Danacode (Bnei Brak, Israel: D.A.N.A. Systems)"
       datoses: "datos.bne.es (Biblioteca Nacional de España)"
@@ -1823,15 +1675,18 @@ nl:
       gettytgn: "Getty Thesaurus of Geographic Names Online (J. Paul Getty Trust)"
       gettyulan: "Union List of Artist Names Online (J. Paul Getty Trust)"
       gnd: "Gemeinsame Normdatei (Leipzig, Frankfurt: Deutsche Nationalbibliothek)"
-      gnis: "Geographic Names Information System (GNIS) (United States Geological Survey, Board on Geographic Names)"
+      gnis: "Geographic Names Information System (GNIS) (United States Geological Survey, Board on\
+        \ Geographic Names)"
       gtin-14: "Global Trade Identification Number 14 (EAN/UCC-128 or ITF-14)"
       hdl: "Handle"
       ibdb: "IBDB - Internet Broadway Database"
-      idref: "IdRef: le referentiel des autorites Sudoc (L'agence bibliographique de l'enseignement superieur (ABES))"
+      idref: "IdRef: le referentiel des autorites Sudoc (L'agence bibliographique de l'enseignement\
+        \ superieur (ABES))"
       imdb: "IMDb - Internet Movie Database"
       isan: "International Standard Audiovisual Number"
       isbn: "International Standard Book Number"
-      isbn-a: "International Standard Book Number (the actionable ISBN) (International DOI Foundation (IDF))"
+      isbn-a: "International Standard Book Number (the actionable ISBN) (International DOI\
+        \ Foundation (IDF))"
       isbnre: "ISBN (International Standard Book Number) registrant element"
       isil: "ISIL (International Standard Identifier for Libraries and Related Organizations)"
       ismn: "International Standard Music Number"
@@ -1847,7 +1702,8 @@ nl:
       kinopo: "КиноПоиск = KinoPoisk"
       lccn: "Library of Congress Control Number"
       lcmd: "Library of Congress Manuscript Division (Washington, DC: Library of Congress)"
-      lcmpt: "Library of Congress Medium of Performance Thesaurus for Music (LCMPT) (Washington, DC: Library of Congress)"
+      lcmpt: "Library of Congress Medium of Performance Thesaurus for Music (LCMPT) (Washington,\
+        \ DC:Library of Congress)"
       libaus: "Libraries Australia (National Library of Australia)"
       local: "Locally defined identifier"
       matrix-number: "Sound recording matrix number"
@@ -1866,13 +1722,20 @@ nl:
       orcid: "Open Researcher and Contributor IDentifier"
       oxforddnb: "Oxford Biography Index"
       porthu: "PORT.hu"
-      rbmsbt: "RBMS Controlled Vocabularies: Binding Terms (Rare Books and Manuscripts Section, Association of College & Research Libraries)"
-      rbmsgt: "RBMS Controlled Vocabularies: Genre Terms (Rare Books and Manuscripts Section, Association of College & Research Libraries)"
-      rbmspe: "RBMS Controlled Vocabularies: Provenance Evidence (Rare Books and Manuscripts Section, Association of College & Research Libraries)"
-      rbmsppe: "RBMS Controlled Vocabularies: Printing and Publishing Evidence (Rare Books and Manuscripts Section, Association of College & Research Libraries)"
-      rbmspt: "RBMS Controlled Vocabularies: Paper Terms (Rare Books and Manuscripts Section Association of College & Research Libraries)"
-      rbmsrd: "RBMS Controlled Vocabularies: Relationship Designators (Rare Books and Manuscripts Section, Association of College & Research Libraries)"
-      rbmste: "RBMS Controlled Vocabularies: Type Evidence (Rare Books and Manuscripts Section, Association of College & Research Libraries)"
+      rbmsbt: "RBMS Controlled Vocabularies: Binding Terms (Rare Books and Manuscripts Section,\
+        \ Association of College & Research Libraries)"
+      rbmsgt: "RBMS Controlled Vocabularies: Genre Terms (Rare Books and Manuscripts Section,\
+        \ Association of College & Research Libraries)"
+      rbmspe: "RBMS Controlled Vocabularies: Provenance Evidence (Rare Books and Manuscripts\
+        \ Section, Association of College & Research Libraries)"
+      rbmsppe: "RBMS Controlled Vocabularies: Printing and Publishing Evidence (Rare Books and\
+        \ Manuscripts Section, Association of College & Research Libraries)"
+      rbmspt: "RBMS Controlled Vocabularies: Paper Terms (Rare Books and Manuscripts Section\
+        \ Association of College & Research Libraries)"
+      rbmsrd: "RBMS Controlled Vocabularies: Relationship Designators (Rare Books and Manuscripts\
+        \ Section, Association of College & Research Libraries)"
+      rbmste: "RBMS Controlled Vocabularies: Type Evidence (Rare Books and Manuscripts Section,\
+        \ Association of College & Research Libraries)"
       rid: "ResearcherID (Thomson Reuters)"
       rkda: "RKDartists& (Den Haag: Rijksbureau voor Kunsthistorische Documentatie)"
       saam: "Smithsonian American Art Museum (Washington DC: Smithsonian Institution)"
@@ -2114,7 +1977,8 @@ nl:
       Xpeo: Oud Perzisch
       Xsux: Spijkerschrift, Sumerisch-Akkadisch
       Yiii: Yi
-      Zanb: Zanabazar Square (Zanabazarin Dörböljin Useg, Xewtee Dörböljin Bicig, Horizontal Square Script)
+      Zanb: Zanabazar Square (Zanabazarin Dörböljin Useg, Xewtee Dörböljin Bicig, Horizontal Square\
+      \ Script)
       Zinh: Code voor geërfd schrift
       Zmth: Mathematical notation
       Zsye: Symbols (Emoji variant)
