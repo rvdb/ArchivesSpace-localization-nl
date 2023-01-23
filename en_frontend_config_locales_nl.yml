@@ -74,10 +74,10 @@ nl:
     transfer: Overbrengen
     transfer_confirm_title: Dit record overbrengen?
     transfer_confirm_message: "Het record '%{target}' wordt overgebracht naar de geselecteerde repository."
-    transfer_successful: Overbrengen geslaagd.  Het kan even duren voordat records in de doelrepository verschijnen terwijl het opnieuw indexeren plaatsvindt.
+    transfer_successful: Overbrengen geslaagd. Het kan even duren voordat records in de doelrepository verschijnen terwijl het opnieuw indexeren plaatsvindt.
     transfer_failed: Overbrengen mislukt
     transfer_failed_records_using_digital_objects: "De volgende records hebben een koppeling naar een digitaal object die zouden worden overgebracht, maar daardoor worden de links met hun instanties verbroken."
-    transfer_failed_digital_objects_linked_to_records: "Dit digitaal object heeft een koppeling met andere records in dit Repository. Verwijder de koppelingen in de volgende records om het overbrengen uit te voeren."
+    transfer_failed_digital_objects_linked_to_records: "Dit digitaal object heeft een koppeling met andere records in dit repository. Verwijder de koppelingen in de volgende records om het overbrengen uit te voeren."
     transfer_failed_top_containers_in_use: "De volgende topcontainers zijn gekoppeld aan andere archieven/collecties in dit repository, en kunnen niet worden overgebracht tot deze koppelingen verwijderd zijn."
     transfer_failed_barcodes_in_use: "De volgende topcontainers gebruiken barcodes die in gebruik zijn in het doelrepository, en kunnen niet worden overgebracht tot die conflicten hersteld zijn."
     unset_default: Standaardwaarde uitschakelen
@@ -89,15 +89,15 @@ nl:
     delete: Verwijderen
     delete_confirm_title: "Dit record verwijderen? %{title}"
     delete_confirm_message: "<p>Hou er rekening mee dat <strong> je deze actie niet ongedaan kan maken </strong>. </p> <p> Door deze actie wordt het record uit de database verwijderd, inclusief eventuele verwijzingen naar andere records.</p>"
-    delete_repository_confirm_title: "Deze Repository verwijderen? %{name}"
-    delete_repository_confirm_message: "<p>Hou er rekening mee dat <strong> je deze actie niet ongedaan kan maken </strong>. </p> <p> Deze actie <strong>verwijdert de Repository </strong> en alle bijbehorende records uit de database, inclusief eventuele verwijzingen naar andere records.</p> <p> Voer hieronder '%{repository}' in om verder te gaan: </p><p><input id='deleteRepoConfim' data-confirm-answer='%{repository}'></input></p>"
+    delete_repository_confirm_title: "Dit repository verwijderen? %{name}"
+    delete_repository_confirm_message: "<p>Hou er rekening mee dat <strong> je deze actie niet ongedaan kan maken </strong>. </p> <p> Deze actie <strong>verwijdert het repository </strong> en alle bijbehorende records uit de database, inclusief eventuele verwijzingen naar andere records.</p> <p> Voer hieronder '%{repository}' in om verder te gaan: </p><p><input id='deleteRepoConfim' data-confirm-answer='%{repository}'></input></p>"
     delete_multiple: Verwijder records
     delete_multiple_confirm_title: Records verwijderen?
     delete_multiple_confirm_message: "<p>Hou er rekening mee dat <strong> je deze actie niet ongedaan kan maken </strong>.</p> <p> Door deze actie worden deze records uit de database verwijderd, inclusief eventuele verwijzingen naar andere records.</p>"
     reset: Herstel standaardinstellingen
     reset_confirm_title: "%{preftype} naar standaard instellingen van de toepassing herstellen?"
     reset_confirm_message: "<p>Hou er rekening mee dat <strong> je deze actie niet ongedaan kan maken </strong>. </p> <p> Door deze actie worden de voorkeuren teruggezet naar de standaardinstellingen van de applicatie.</p>"
-    edit_multiple: Bewerk Records
+    edit_multiple: Bewerk records
     edit_multiple_confirm_title: Records bewerken?
     edit_multiple_confirm_message: "<p>Hiermee worden meerdere records in bulk bijgewerkt.</p>"
     export_eac: Download EAC-CPF
@@ -114,7 +114,7 @@ nl:
     finish_editing: Sluit record
     merge: Samenvoegen
     form_changes_message: "<small><span class='muted'>Je hebt niet-opgeslagen wijzigingen</span></small>"
-    toolbar_disabled_message: "<small><span class='muted'>Je hebt niet-opgeslagen wijzigingen - Bewaar of Maak ongedaan</span></small>"
+    toolbar_disabled_message: "<small><span class='muted'>Je hebt niet-opgeslagen wijzigingen - Bewaar of maak ongedaan</span></small>"
     publish: Publiceer alles
     publish_confirm_title: Publiceren?
     publish_confirm_message: "<p>Als je deze actie uitvoert, worden dit record, eventuele subrecords (externe documenten, notities, enz.) en alle onderdelen in de hiërarchie gepubliceerd.</p>"
@@ -149,7 +149,7 @@ nl:
     message: "<p><strong>Database Warning:</strong> You are currently using the embedded database (Apache Derby). The embedded database is for testing/demo purposes only. You should use MySQL for any data intended for production, including data in a test instance that you intend to move over to a production instance.</p>"
 
   states:
-    auto_generated: Gegenereerd door systeem bij Bewaren
+    auto_generated: Gegenereerd door systeem bij bewaren
 
   export_options:
     include_unpublished: Inclusief ongepubliceerde
@@ -255,7 +255,7 @@ nl:
       score: Relevantie
       title: Titel
       publish: Gepubliceerd
-      context: Bovenliggend Archief/Collectie-record
+      context: Bovenliggend archief/collectie
       identifier: Identificatiecode
       ref_id: Referentie ID
       level: Niveau
@@ -272,7 +272,7 @@ nl:
     subject:
       score: Relevantie
       source: Bron
-      first_term_type: Term Type (eerste)
+      first_term_type: Term type (eerste)
       title: Termen
       publish: Gepubliceerd
       audit_info: Audit informatie
@@ -320,10 +320,10 @@ nl:
       title: Naam
       primary_type: Actor type
       publish: Gepubliceerd
-      authority_id: Authority ID
+      authority_id: Identificatiecode
       source: Bron
       rules: Rules
-      is_user: Is Gebruiker?
+      is_user: Is gebruiker?
       audit_info: Audit informatie
       user_mtime: Aangepast
       create_time: Gemaakt
@@ -338,7 +338,7 @@ nl:
       floor: Verdieping
       room: Kamer
       area: Gebied
-      location_holdings: Holdings voor de huidige Repository
+      location_holdings: Holdings voor het huidige repository
       location_no_holdings: Geen holdings voor dit repository.
       location_one_top_container: 1 topcontainer.
       location_top_containers: " topcontainers."
@@ -370,7 +370,7 @@ nl:
       parent_title: Titel
       parent_type: Recordtype
       processing_priority: Prioriteit verwerking
-      processing_status: Verwerking Status
+      processing_status: Verwerkingsstatus
       processing_hours_total: Totaal uren
       processing_funding_source: Financieringsbron verwerking
       processors: Verwerkers
@@ -432,9 +432,9 @@ nl:
       container_profile_display_string_u_sstr: Containerprofiel
       location_display_string_u_sstr: Locatie
       type: Type
-      indicator: Indicator
+      indicator: Identificatiecode
       barcode: Barcode
-      context: Archief/Collectie / Aanwinst
+      context: Archief/collectie / aanwinst
       audit_info: Audit informatie
       user_mtime: Aangepast
       create_time: Gemaakt
@@ -556,7 +556,7 @@ nl:
     become-user: Word gebruiker
     brand: ArchivesSpace
     create: Maak
-    import: Import
+    import: Importeer
     import_eac: EAC file
     import_ead: EAD file
     import_marcxml: MARCXML
@@ -569,20 +569,20 @@ nl:
     show_advanced_search_button_title: Toon geavanceerd zoeken
     hide_advanced_search_button_title: Verberg geavanceerd zoeken
     plugins: Plug-ins
-    repositories_manage: Beheer Repositories
+    repositories_manage: Beheer repositories
     repository_settings: Repository instellingen
     oai_config: Beheer OAI-PMH instellingen
-    manage_groups: Beheer Groepen
-    manage_users: Beheer Gebruikers
-    manage_container_profiles: Beheer Containerprofielen
+    manage_groups: Beheer groepen
+    manage_users: Beheer gebruikers
+    manage_container_profiles: Beheer containerprofielen
     manage_location_profiles: Beheer locatieprofielen
-    manage_top_containers: Beheer Topcontainers
-    manage_enumerations: Beheer Waardenlijsten
+    manage_top_containers: Beheer topcontainers
+    manage_enumerations: Beheer waardenlijsten
     global_preferences: Globale voorkeuren
     global_settings: Globale instellingen
     user_repo_preferences: Gebruikersvoorkeuren
     repo_preferences: Repository voorkeuren
-    manage_user_access: Beheer Gebruikerstoegang
+    manage_user_access: Beheer gebruikerstoegang
     logout: Log uit
     register: Registreer nu
     register_prefix: Heb je een account nodig?
@@ -609,10 +609,10 @@ nl:
   batch_delete:
     archival_records:
       success: Records verwijderd
-      error: "Kan Records niet verwijderen:"
+      error: "Kan records niet verwijderen:"
     subjects:
       success: Onderwerpen verwijderd
-      error: "Kan Onderwerpen niet verwijderen:"
+      error: "Kan onderwerpen niet verwijderen:"
     agents:
       success: actoren verwijderd
       error: "Kan actoren niet verwijderen:"
@@ -652,7 +652,7 @@ nl:
     create_and_link_to_prefix: Maak en koppel met
     hint_text: Typ om records te zoeken...
     placeholder: Typ om records te zoeken...
-    no_results: Geen resultaten.  Probeer 'Blader'.
+    no_results: Geen resultaten. Probeer 'Blader'.
     searching: Aan het zoeken...
     delete: "&times;"
 
@@ -664,10 +664,10 @@ nl:
     eac_title: Importeer een EAC bestand
     ead_title: Importeer een EAD bestand
     marcxml_title: Importeer een MARCXML bestand
-    marcxml_subjects_and_agents_title: Importeer Onderwerpen en actoren uit een MARCXML bestand
-    accession_csv_title: Importeer Aanwinstenrecords uit een CSV bestand
-    digital_object_csv_title: Importeer Digitale Object Records uit een CSV bestand
-    import_report: Importeer Rapport
+    marcxml_subjects_and_agents_title: Importeer onderwerpen en actoren uit een MARCXML bestand
+    accession_csv_title: Importeer aanwinsten uit een CSV bestand
+    digital_object_csv_title: Importeer digitale objecten uit een CSV bestand
+    import_report: Importeer rapport
     import_another: Importeer een ander bestand
     file_select: Selecteer een bestand
     submit: Importeer
@@ -680,29 +680,29 @@ nl:
 
   default_values:
     form_title:
-      archival_object: Archiefonderdeel-record standaardinstellingen
-      resource: Archief/Collectie-record standaardinstellingen
-      accession: Aanwinstenrecord standaardinstellingen
-      subject: Onderwerprecord standaardinstellingen
-      agent_person: Actorrecord standaardinstellingen (Persoon)
-      agent_family: Actorrecord standaardinstellingen (Familie)
-      agent_corporate_entity: Actorrecord standaardinstellingen (Organisatie)
-      agent_software: Actorrecord standaardinstellingen (Software)
-      digital_object: Digitaal object standaardinstellingen
-      digital_object_component: Digitaal object onderdeel standaardinstellingen
-      location: Locatierecord standaardinstellingen
-      event: Gebeurtenisrecord standaardinstellingen
-      classification: Classificatierecord standaardinstellingen
-      classification_term: Classificatie Term standaardinstellingen
+      archival_object: Archiefonderdeel: standaardwaarden
+      resource: Archief/collectie: standaardwaarden
+      accession: Aanwinst: standaardwaarden
+      subject: Onderwerp: standaardwaarden
+      agent_person: Actor (Persoon): standaardwaarden
+      agent_family: Actor (Familie): standaardwaarden 
+      agent_corporate_entity: Actor (Organisatie): standaardwaarden 
+      agent_software: Actor (Software): standaardwaarden 
+      digital_object: Digitaal object: standaardwaarden
+      digital_object_component: Digitaal object onderdeel: standaardwaarden
+      location: Locatie: standaardwaarden
+      event: Gebeurtenis: standaardwaarden
+      classification: Classificatie: standaardwaarden
+      classification_term: Classificatie term: standaardwaarden
     messages:
       defaults_updated: Standaardwaarden aangepast
 
   required_fields:
     form_title:
-      agent_person: Actor Record verplichte velden (Persoon)
-      agent_family: Actor Record verplichte velden (Familie)
-      agent_corporate_entity: Actor Record verplichte velden (Organisatie)
-      agent_software: Actor Record verplichte velden (Software)
+      agent_person: Actor (Persoon): verplichte velden
+      agent_family: Actor (Familie): verplichte velden
+      agent_corporate_entity: Actor (Organisatie): verplichte velden
+      agent_software: Actor (Software): verplichte velden
     messages:
       required_fields_updated: Verplichte velden aangepast
 
@@ -712,7 +712,7 @@ nl:
       after: Voeg items achteraan toe
       as_child: Voeg items als kind toe
     unexpected_failure: Oeps! We hebben problemen met het ophalen van deze hiërarchie. Probeer de pagina te vernieuwen.
-    resize: Toon/Verberg hiërarchie
+    resize: Toon/verberg hiërarchie
 
   errors:
     sidebar_label: Fouten en waarschuwingen
@@ -745,8 +745,8 @@ nl:
         add: Koppel met aanwinst
 
   accession:
-    component_link: Linked Component
-    component_links: Linked Components
+    component_link: Gekoppeld archiefonderdeel
+    component_links: Gekoppelde archiefonderdelen
     _frontend:
       messages:
         created: Aanwinst <strong>%{accession.display_string}</strong> gemaakt
@@ -762,8 +762,8 @@ nl:
       section:
         basic_information: Basisgegevens
       action:
-        create: Maak Aanwinst
-        save: Bewaar Aanwinst
+        create: Maak aanwinst
+        save: Bewaar aanwinst
 
   agent: &agent_attributes
     _frontend:
@@ -778,15 +778,15 @@ nl:
         please_select_a_agent_to_merge: Selecteer een actor
       section:
         basic_information: Basisgegevens
-        record_control_information: Record Control informatie
-        identity_information: Identiteit Informatie
+        record_control_information: Record controle informatie
+        identity_information: Identiteit informatie
         description_information: Beschrijvingsinformatie
         relation_information: Relatie informatie
         date_of_existence: Datum van bestaan
         dates_of_existence: Datums van bestaan
         name: Naamvormen
         contacts: Contactgegevens
-        search_embedded: Gekoppelde Records
+        search_embedded: Gekoppelde records
         linked_via_rights_statement: Records gekoppeld via rechtenverklaring
         events: Gebeurtenissen
         target_record: Dit record zal worden aangepast
@@ -795,7 +795,7 @@ nl:
         structured_date_range_fields: Datumbereik
       action:
         create: Maak actor
-        preview: Voeg preview samen
+        preview: Voeg voorbeeld samen
 
   agent_contact:
     is_representative: Is primair contact
@@ -803,8 +803,8 @@ nl:
       <p>Additional notes or other information about the contact.</p>
     _frontend:
       action:
-        add: Voeg Contact toe
-        make_representative: Make primair contact
+        add: Voeg contact toe
+        make_representative: Maak primair contact
 
   telephone:
     _frontend:
@@ -814,22 +814,22 @@ nl:
   agent_corporate_entity:
     _frontend:
       action:
-        save: Bewaar Organisatie
+        save: Bewaar organisatie
 
   agent_family:
     _frontend:
       action:
-        save: Bewaar Familie
+        save: Bewaar familie
 
   agent_person:
     _frontend:
       action:
-        save: Bewaar Persoon
+        save: Bewaar persoon
 
   agent_software:
     _frontend:
       action:
-        save: Bewaar Software
+        save: Bewaar software
 
   structured_date_single:
     _frontend:
@@ -847,13 +847,13 @@ nl:
     new_title: Nieuw archiefonderdeel
     _frontend:
       messages:
-        created: Archiefonderdeel <strong>%{archival_object.display_string}</strong> gemaakt op Archief/Collectie <strong>%{resource.title}</strong>
-        created_with_parent: Archiefonderdeel <strong>%{archival_object.display_string}</strong> gemaakt als kind van <strong>%{parent.display_string}</strong> op Archief/Collectie <strong>%{resource.title}</strong>
+        created: Archiefonderdeel <strong>%{archival_object.display_string}</strong> gemaakt in archief/collectie <strong>%{resource.title}</strong>
+        created_with_parent: Archiefonderdeel <strong>%{archival_object.display_string}</strong> gemaakt als kind van <strong>%{parent.display_string}</strong> in archief/collectie <strong>%{resource.title}</strong>
         updated: Archiefonderdeel <strong>%{archival_object.display_string}</strong> aangepast
         updated_with_parent: Archiefonderdeel <strong>%{archival_object.display_string}</strong> aangepast
-        please_select_a_resource_for_transfer: Kies een Archief/Collectie
-        transfer_success: '“Archiefonderdeel <strong>%{archival_object.display_string}</strong> overgebracht naar Archief/Collectie <strong>%{resource.title}</strong>”'
-        transfer_error: "Kan Archiefonderdeel niet overbrengen wegens een fou of conflict: <pre>%{exception}</pre>"
+        please_select_a_resource_for_transfer: Kies een archief/collectie
+        transfer_success: '“Archiefonderdeel <strong>%{archival_object.display_string}</strong> overgebracht naar archief/collectie <strong>%{resource.title}</strong>”'
+        transfer_error: "Kan archiefonderdeel niet overbrengen wegens een fout of conflict: <pre>%{exception}</pre>"
         deleted: "Archiefonderdeel <strong>%{archival_object.display_string}</strong> verwijderd"
         published: "Het archiefonderdeel <strong>%{archival_object.title}</strong>, kinderen, subrecords en onderdelen werden gepubliceerd"
         unpublished: "Publicatie van het archiefonderdeel <strong>%{archival_object.title}</strong>, kinderen, subrecords en onderdelen werd ongedaan gemaakt"
@@ -870,11 +870,11 @@ nl:
       section:
         basic_information: Basisgegevens
       action:
-        add_child: Voeg Kind toe
-        add_sibling: Voeg Sibling toe
-        save: Bewaar Archiefonderdeel
+        add_child: Voeg kind toe
+        add_sibling: Voeg broer/zus toe
+        save: Bewaar archiefonderdeel
         bulk_import: Laad met spreadsheet
-        select_resource: Selecteer Archief/Collectie
+        select_resource: Selecteer archief/collectie
         select_parent_and_position: Selecteer positie voor archiefonderdeel
         leave_parent_empty: Sluit / wijs geen ouder toe
 
@@ -889,12 +889,12 @@ nl:
         deleted: "Classificatie <strong>%{classification.title}</strong> verwijderd"
       section:
         basic_information: Basisgegevens
-        search_embedded: Gekoppelde Records
+        search_embedded: Gekoppelde records
       action:
-        add_child: Voeg Kind toe
-        create: Maak Classificatie
-        save: Bewaar Classificatie
-        add: Voeg Classificatie toe
+        add_child: Voeg kind toe
+        create: Maak classificatie
+        save: Bewaar classificatie
+        add: Voeg classificatie toe
 
   classification_term:
     _frontend:
@@ -906,11 +906,11 @@ nl:
         deleted: "Classificatieterm <strong>%{classification_term.title}</strong> verwijderd"
       section:
         basic_information: Basisgegevens
-        search_embedded: Gekoppelde Records
+        search_embedded: Gekoppelde records
       action:
-        add_child: Voeg Kind toe
-        add_sibling: Voeg Sibling toe
-        save: Bewaar Classificatie Term
+        add_child: Voeg kind toe
+        add_sibling: Voeg broer/zus toe
+        save: Bewaar classificatieterm
       tree:
         new_record_title: Nieuwe classificatieterm
 
@@ -918,12 +918,12 @@ nl:
     _frontend:
       title_prefix: Verwerken
       action:
-        add: Voeg Collectiebeheer velden toe
+        add: Voeg collectiebeheer velden toe
 
   container:
     _frontend:
       action:
-        add: Voeg Container toe
+        add: Voeg container toe
 
   container_location:
     _frontend:
@@ -934,19 +934,19 @@ nl:
     _frontend:
       expression_placeholder: Beschrijf de datum of het datumbereik
       action:
-        add: Voeg Datum toe
+        add: Voeg datum toe
 
   dates_of_existence:
     _singular: Datum van bestaan
     _plural: Datums van bestaan
     _frontend:
       action:
-        add: Voeg Datum toe
+        add: Voeg datum toe
 
   deaccession:
     _frontend:
       action:
-        add: Voeg Afstoting toe
+        add: Voeg afstoting toe
 
   structured_date_label_common_fields: &structured_date_label_attributes
     date_label: Label
@@ -959,11 +959,7 @@ nl:
     <<: *structured_date_label_attributes
 
   structured_date_label_usage:
-    date_label: Label
-    date_type_structured: Datumtype
-    date_certainty: Zekerheid
-    date_era: Tijdperk
-    date_calendar: Kalender
+    <<: *structured_date_label_attributes
 
   structured_date_single_fields:
     date_role: Datum rol
@@ -986,25 +982,25 @@ nl:
   digital_object:
     _frontend:
       messages:
-        created: "Digitaal Object <strong>%{digital_object.title}</strong> gemaakt"
-        updated: "Digitaal Object <strong>%{digital_object.title}</strong> aangepast"
-        deleted: "Digitaal Object <strong>%{digital_object.title}</strong> verwijderd"
+        created: "Digitaal object <strong>%{digital_object.title}</strong> gemaakt"
+        updated: "Digitaal object <strong>%{digital_object.title}</strong> aangepast"
+        deleted: "Digitaal object <strong>%{digital_object.title}</strong> verwijderd"
         published: "Het digitaal object <strong>%{digital_object.title}</strong>, subrecords en onderdelen werden gepubliceerd"
-        merge_description: Selecteer Digitale objecten om mee samen te voegen
-        please_select_a_digital_object_to_merge: Selecteer een Digitaal object
+        merge_description: Selecteer digitale objecten om mee samen te voegen
+        please_select_a_digital_object_to_merge: Selecteer een digitaal object
         merged: Digitale object(en) samengevoegd
-        transfer_description: Breng dit Archief/Collectie-record over naar...
+        transfer_description: Breng dit archief/collectie over naar...
         transfer_target: Selecteer een repository voor overdracht
-        unsuppressed: Digitaal Object <strong>%{digital_object.title}</strong> zichtbaar gemaakt
-        suppressed: Digitaal Object <strong>%{digital_object.title}</strong> verborgen
+        unsuppressed: Digitaal object <strong>%{digital_object.title}</strong> zichtbaar gemaakt
+        suppressed: Digitaal object <strong>%{digital_object.title}</strong> verborgen
         suppressed_info: Digitaal object is verborgen en kan niet worden aangepast
-        delete_conflict: "Digitaal Object kon niet verwijderd worden: <pre>%{error}</pre>"
+        delete_conflict: "Digitaal object kon niet verwijderd worden: <pre>%{error}</pre>"
       section:
         basic_information: Basisgegevens
       action:
-        add_child: Voeg Kind toe
-        create: Maak Digitaal object
-        save: Bewaar Digitaal object
+        add_child: Voeg kind toe
+        create: Maak digitaal object
+        save: Bewaar digitaal object
 
   digital_object_component:
     _frontend:
@@ -1021,9 +1017,9 @@ nl:
       section:
         basic_information: Basisgegevens
       action:
-        add_child: Voeg Kind toe
-        add_sibling: Voeg Sibling toe
-        save: Bewaar Digitaal object onderdeel
+        add_child: Voeg kind toe
+        add_sibling: Voeg broer/zus toe
+        save: Bewaar digitaal object onderdeel
       tree:
         new_record_title: Nieuw digitaal object-onderdeel
 
@@ -1036,22 +1032,22 @@ nl:
         delete_conflict: "Kan waarde niet verwijderen omdat er door een record naar verwezen wordt"
         default_set: Standaardwaarde ingesteld
         created: Waarde gemaakt
-        create_error: Kan Waarde niet maken
+        create_error: Kan waarde niet maken
         merged: Waarde samengevoegd
-        merge_tip: Deze Waarde kan worden samengevoegd met een andere
+        merge_tip: Deze waarde kan worden samengevoegd met een andere
         merge_error: Waarde kan niet worden samengevoegd
-        no_selection: Selecteer een Waardenlijst
-        name_selector: Lijst naam
+        no_selection: Selecteer een waardenlijst
+        name_selector: Waardenlijst
         name_selector_tooltip: |
-          <p>De aan te passen Waardenlijst.</p>
-        no_name_provided: Selecteer een Waardenlijst voor je een nieuwe waarde maakt
+          <p>De aan te passen waardenlijst.</p>
+        no_name_provided: Selecteer een waardenlijst voor je een nieuwe waarde maakt
         not_used: Niet gebruikt.
         one_related_item: 1 gekoppeld item.
         related_items: " gekoppelde items."
       action:
-        create_value: Maak Waarde
-        delete_value: Verwijder Waarde
-        merge_value: Merge Waarde
+        create_value: Maak waarde
+        delete_value: Verwijder waarde
+        merge_value: Voeg waarde samen
         download_csv: Download CSV
 
   event:
@@ -1063,10 +1059,10 @@ nl:
         suppressed_info: Gebeurtenis is verborgen an kan niet worden aangepast
       section:
         basic_information: Basisgegevens
-        date: Gebeurtenis Datum/Tijd
+        date: Gebeurtenis datum/tijd
       action:
-        save: Bewaar Gebeurtenis
-        create: Maak Gebeurtenis
+        save: Bewaar gebeurtenis
+        create: Maak gebeurtenis
     linked_agents: Gerelateerde actoren
 
   extent:
@@ -1082,8 +1078,8 @@ nl:
   file_version:
     _frontend:
       action:
-        add: Voeg Bestandsversie toe
-        make_representative: Maak Representatief
+        add: Voeg bestandsversie toe
+        make_representative: Maak representatief
         make_representative_tooltip: Geef aan dat deze afbeelding moet worden getoond wanneer er verschillende bestandsversies geassocieerd zijn met het record.
 
   group:
@@ -1095,17 +1091,17 @@ nl:
   instance:
     _frontend:
       messages:
-        select_a_type: Selecteer een Instantietype
+        select_a_type: Selecteer een instantietype
       action:
-        add_digital_object: Voeg Digitaal object toe
-        add: Voeg Instantie toe
+        add_digital_object: Voeg digitaal object toe
+        add: Voeg instantie toe
 
   lang_material:
     _plural: Talen
     _frontend:
       action:
-        add: Voeg Taal toe
-        add_note: Voeg Taal noot toe
+        add: Voeg taal toe
+        add_note: Voeg taal noot toe
 
   linked_agent:
     _frontend:
@@ -1115,7 +1111,7 @@ nl:
   linked_record:
     _frontend:
       action:
-        add: Voeg Record Koppeling toe
+        add: Voeg koppeling met record toe
 
   location:
     _frontend:
@@ -1125,17 +1121,17 @@ nl:
         deleted: Locatie verwijderd
       section:
         basic_information: Basisgegevens
-        search_embedded: Gekoppelde Records
+        search_embedded: Gekoppelde records
       action:
-        add_child: Voeg Subonderdeel toe
-        add_sibling: Voeg Sibling toe
+        add_child: Voeg kind toe
+        add_sibling: Voeg broer/zus toe
         create: Maak locatie
         batch: Maak locaties in batch
         batch_edit: Bewerk locaties in batch
         save: Bewaar locatie
-        single: Enkelvoudige Locatie
-        delete_confirm_message: "<p>Houd er rekening mee dat je <strong> deze actie niet ongedaan kan maken. </strong>. </p> <p> Als deze locatie momenteel is gekoppeld aan een of meer Instanties, kan deze niet worden verwijderd.</p>"
-        show_space_calculator: Zoek met Ruimtecalculator
+        single: Enkelvoudige locatie
+        delete_confirm_message: "<p>Houd er rekening mee dat je <strong> deze actie niet ongedaan kan maken. </strong>. </p> <p> Als deze locatie momenteel is gekoppeld aan een of meer instanties, kan deze niet worden verwijderd.</p>"
+        show_space_calculator: Zoek met ruimtecalculator
 
   location_batch:
     _frontend:
@@ -1146,15 +1142,15 @@ nl:
         created: "<strong>%{number_created} locaties</strong> gemaakt"
         updated: "<strong>%{number_created} locaties</strong> aangepast"
         location_batch_info: "Definieer de basiswaarden die worden toegepast op alle locaties die zijn gegenereerd op basis van de onderstaande <strong> coördinatenbereiken </strong>."
-        location_batch_update_info: "Geef de toe te passen Waarden."
+        location_batch_update_info: "Geef de toe te passen waarden."
         ranges_info: "Houd er rekening mee dat alle coördinatenvelden die in de bovenstaande <strong>Basislocatie</strong> zijn ingevoerd, worden vervangen door de waarden die zijn gegenereerd door de onderstaande bereiken. Er worden maximaal% {max_range} locaties gemaakt."
         number_to_create: Number of locaties
         warning: Afhankelijk van de grootte van het bereik, kan dit proces enkele minuten duren.
       action:
         create: Maak locaties
         update: Pas locaties aan
-        preview: Voorvertoning locaties
-        preview_short: Voorvertoning
+        preview: Voorbeeld locaties
+        preview_short: Voorbeeld
         creating: Batch in uitvoering...
 
   name:
@@ -1169,8 +1165,8 @@ nl:
         function_subject: Functie
         occupation_subject: Beroep
       action:
-        add: Voeg Naamvorm toe
-        make_authorized: Maak geauthoriseerde Naam
+        add: Voeg naamvorm toe
+        make_authorized: Maak geautoriseerde naam
         make_authorized_tooltip: Geef aan dat deze naamvorm de geautoriseerde naamvorm is.
         make_display_name: Maak Weergavenaam
         make_display_name_tooltip: Geef aan dat deze naamvorm als weergavevorm moet worden gebruikt wanneer het actorrecord verschillende naamvormen heeft.
@@ -1189,17 +1185,17 @@ nl:
         select_a_note_type: "<em>Selecteer een noottype</em>"
       action:
         add: Voeg noot toe
-        add_for_contact_note: Voeg Contact noot toe
-        add_content_item: Voeg Content Item toe
-        add_note_orderedlist: Voeg Item toe
+        add_for_contact_note: Voeg contact noot toe
+        add_content_item: Voeg onderdeel toe
+        add_note_orderedlist: Voeg onderdeel toe
         add_sub_note: Voeg Subnoot toe
-        add_note_index_item: Voeg Item toe
+        add_note_index_item: Voeg onderdeel toe
         add_note_chronology_item: Voeg gebeurtenis toe
-        add_event: Add Event Item
-        add_note_bibliography_item: Voeg Item toe
-        add_note_outline_level_item: Voeg Item toe
-        add_note_outline_level_level: Voeg Niveau toe
-        note_definedlist_item: Voeg Item toe
+        add_event: Voeg gebeurtenis toe
+        add_note_bibliography_item: Voeg onderdeel toe
+        add_note_outline_level_item: Voeg onderdeel toe
+        add_note_outline_level_level: Voeg niveau toe
+        note_definedlist_item: Voeg onderdeel toe
         expand: Uitklappen
         collapse: Inklappen
         apply_note_order: Pas standaard nootvolgorde toe
@@ -1210,25 +1206,25 @@ nl:
   related_accession:
     _frontend:
       action:
-        add: Voeg gerelateerde Aanwinst toe
+        add: Voeg gerelateerde aanwinst toe
 
   related_agent:
     dates: Datering relatie
     _frontend:
       messages:
-        select_a_type: "<em>Selecteer een Relatietype</em>"
+        select_a_type: "<em>Selecteer een relatietype</em>"
       action:
         add: Voeg koppeling met actor toe
 
   related_resource:
     _frontend:
       action:
-        add: Voeg gerelateerde Archieven/Collecties toe
+        add: Voeg gerelateerde archieven/collecties toe
 
   revision_statement:
     _frontend:
       action:
-        add: Voeg Revisieverklaring toe
+        add: Voeg revisieverklaring toe
 
   repository_oai:
     oai_is_disabled: OAI Harvesting Disabled?
@@ -1243,22 +1239,22 @@ nl:
         selected: Repository is momenteel geselecteerd
         selected_short: Geselecteerd
         changed: Repository <strong>%{repository.repo_code}</strong> is nu actief
-        create_first_repository: "Om je eerste Repository te maken: klik op het <strong>System</strong> menu bovenaan en dan op <strong>Beheer Repositories</strong>."
-        no_access_to_repositories: "<p>Je hebt geen toegang tot een Repository.</p><p>Contacteer je Systeembeheerder om toegang te verkrijgen.</p>"
+        create_first_repository: "Om je eerste repository te maken: klik op het <strong>Systeem</strong> menu bovenaan en dan op <strong>Beheer repositories</strong>."
+        no_access_to_repositories: "<p>Je hebt geen toegang tot een repository.</p><p>Contacteer je systeembeheerder om toegang te verkrijgen.</p>"
         continue_with_transfer: Doorgaan met overdracht?
-        transfer_failed: De Overdracht kon niet worden voltooid vanwege de volgende fouten
+        transfer_failed: De overdracht kon niet worden voltooid vanwege de volgende fouten
         transfer_target: Selecteer een repository voor overdracht
-        transfer_warning: <strong>Waarschuwing:</strong> Als je deze Repository overzet, worden <strong> alle </strong> records naar de geselecteerde Repository verplaatst. <strong>Deze actie kan niet ongedaan worden gemaakt.</strong>
-        cannot_delete_nonempty: 'Kan niet verwijderen: Repository is niet leeg'
+        transfer_warning: <strong>Waarschuwing:</strong> Als je dit repository overzet, worden <strong> alle </strong> records naar het geselecteerde repository verplaatst. <strong>Deze actie kan niet ongedaan worden gemaakt.</strong>
+        cannot_delete_nonempty: 'Kan niet verwijderen: repository is niet leeg'
       section:
         all_fields: Repository velden
         oai_fields: OAI Harvest instellingen
-        transfer: Breng Repository over
+        transfer: Breng repository over
         oai_settings: OAI instellingen
       action:
-        select: Selecteer Repository
-        save: Bewaar Repository
-        create: Maak Repository
+        select: Selecteer repository
+        save: Bewaar repository
+        create: Maak repository
         order_for_pui: Bepaal volgorde in publieksinterface
     _sidebar:
       oai_settings:
@@ -1267,36 +1263,36 @@ nl:
   resource:
     _frontend:
       messages:
-        created: "Archief/Collectie-record <strong>%{resource.title}</strong> gemaakt"
-        updated: "Archief/Collectie-record <strong>%{resource.title}</strong> aangepast"
-        spawned: "Er is een nieuw Archief/Collectie-record gecreëerd uit Aanwinst <strong>% {accession.display_string} </strong>"
-        deleted: "Archief/Collectie-record <strong>%{resource.title}</strong> verwijderd"
-        published: "Archief/Collectie-record <strong>%{resource.title}</strong>, subrecords en onderdelen werden gepubliceerd"
-        unpublished: "Publicatie van archief/collectie-record <strong>%{resource.title}</strong>, kinderen, subrecords en onderdelen werd ongedaan gemaakt"
-        merge_description: Selecteer de Archief/Collectie-records waarmee moet worden samengevoegd
-        please_select_a_resource_to_merge: Selecteer een Archief/Collectie-record
-        merged: Archief/Collectie-records samengevoegd
-        transfer_description: Breng dit Archief/Collectie-record over naar...
+        created: "Archief/collectie <strong>%{resource.title}</strong> gemaakt"
+        updated: "Archief/collectie <strong>%{resource.title}</strong> aangepast"
+        spawned: "Er is een nieuw archief/collectie gecreëerd uit aanwinst <strong>% {accession.display_string} </strong>"
+        deleted: "Archief/collectie <strong>%{resource.title}</strong> verwijderd"
+        published: "Archief/collectie <strong>%{resource.title}</strong>, subrecords en onderdelen werden gepubliceerd"
+        unpublished: "Publicatie van archief/collectie <strong>%{resource.title}</strong>, kinderen, subrecords en onderdelen werd ongedaan gemaakt"
+        merge_description: Selecteer de archieven/collecties waarmee moet worden samengevoegd
+        please_select_a_resource_to_merge: Selecteer een archief/collectie
+        merged: Archieven/collecties samengevoegd
+        transfer_description: Breng dit archief/collectie over naar...
         transfer_target: Selecteer een repository voor overdracht
-        unsuppressed: Archief/Collectie-record <strong>%{resource.title}</strong> zichtbaar gemaakt
-        suppressed: Archief/Collectie-record <strong>%{resource.title}</strong> verborgen
-        suppressed_info: Archief/Collectie-record is verborgen en kan niet worden aangepast
-        delete_conflict: "Archief/Collectie-record kon niet worden verwijderd: <pre>%{error}</pre>"
+        unsuppressed: Archief/collectie <strong>%{resource.title}</strong> zichtbaar gemaakt
+        suppressed: Archief/collectie <strong>%{resource.title}</strong> verborgen
+        suppressed_info: Archief/collectie is verborgen en kan niet worden aangepast
+        delete_conflict: "Archief/collectie kon niet worden verwijderd: <pre>%{error}</pre>"
       section:
         basic_information: Basisgegevens
         finding_aid: Toegangsgegevens
       action:
-        add_child: Voeg Kind toe
-        create: Maak Archief/Collectie-record
+        add_child: Voeg kind toe
+        create: Maak archief/collectie
         load_bulk: Laad met spreadsheet
-        save: Bewaar Archief/Collectie-record
+        save: Bewaar archief/collectie
         delete_multiple: Verwijder archieven/collecties
       remove_subrecord: Verwijder subrecord
     external_ark_url: Externe ARK URL
     external_ark_url_tooltip: Archival Resource Key (ARK) persistent identifier werd gegenereerd buiten ArchivesSpace.Als dit veld een waarde heeft, heeft het voorrang op een ARK die is gegenereerd in ArchivesSpace.
     linker:
       browse:
-        Blader in Archieven/Collecties
+        Blader in archieven/collecties
       link_title: Blader
 
   preference:
@@ -1306,7 +1302,7 @@ nl:
         reset: Voorkeuren ingesteld op standaardinstellingen van de applicatie
         reset_error: "Kan voorkeuren niet resetten vanwege een fout: %{exception}"
       action:
-        save: Bewaar Voorkeuren
+        save: Bewaar voorkeuren
 
   rights_statement:
     _frontend:
@@ -1316,9 +1312,9 @@ nl:
   term:
     _frontend:
       messages:
-        preview_pending: Onderwerp Voorvertoning
+        preview_pending: Onderwerp voorbeeld
       action:
-        add: Voeg Term/onderafdeling toe
+        add: Voeg term/onderafdeling toe
 
   transfer:
     ref: Bestemmingsrepository
@@ -1330,17 +1326,17 @@ nl:
         updated: Onderwerp bewaard
         deleted: Onderwerp verwijderd
         merged: Subject(s) samengevoegd
-        merge_description: Selecteer Onderwerpen hieronder om mee samen te voegen
-        please_select_a_subject_to_merge: Selecteer een Onderwerp
-        delete_conflict: "Onerwerp kon niet worden verwijderd: <pre>%{error}</pre>"
+        merge_description: Selecteer onderwerpen hieronder om mee samen te voegen
+        please_select_a_subject_to_merge: Selecteer een onderwerp
+        delete_conflict: "Onderwerp kon niet worden verwijderd: <pre>%{error}</pre>"
       section:
         basic_information: Basisgegevens
         terms: Termen en subtermen
-        search_embedded: Gekoppelde Records
+        search_embedded: Gekoppelde records
       action:
-        create: Maak Onderwerp
-        save: Bewaar Onderwerp
-        add: Voeg Onderwerp toe
+        create: Maak onderwerp
+        save: Bewaar onderwerp
+        add: Voeg onderwerp toe
 
   user:
     is_active_user: Actief
@@ -1361,16 +1357,16 @@ nl:
         error_activate: Gebruiker niet geactiveerd
         error_deactivate: Gebruiker niet gedeactiveerd
       section:
-        manage_access: Beheer Gebruikerstoegang
+        manage_access: Beheer gebruikerstoegang
         account: Account
-        edit_account: Bewerk Account
-        edit_account_submit: Update Account
-        new_account: Nieuw Account
+        edit_account: Bewerk account
+        edit_account_submit: Update account
+        new_account: Nieuw account
       action:
-        create_account: Maak Account
-        update_account: Pas Account aan
-        create: Maak Gebruiker
-        edit: Bewerk Gebruiker
+        create_account: Maak account
+        update_account: Pas account aan
+        create: Maak gebruiker
+        edit: Bewerk gebruiker
         show_active: Toon actieve gebruikers
         show_inactive: Toon inactieve gebruikers
         deactivate_user: Deactiveer
@@ -1386,7 +1382,7 @@ nl:
   use_date:
     _frontend:
       action:
-        add: Voeg Datum gebruik toe
+        add: Voeg datum gebruik toe
 
   rde:
     date_type: Datumtype
@@ -1418,16 +1414,16 @@ nl:
     fill_column:
       basic: Basis
       sequence: Sequentie
-      fill_value: Vul Waarde in
+      fill_value: Vul waarde in
       select_a_column: Selecteer een kolom
       apply_basic_fill: Pas aanvullen toe
-      apply_sequence_fill: Pas Sequentie toe
-      sequence_count_warning: Er zijn meer rijen dan items in de sequentie.
-      preview_sequence: Preview Sequentie Waarden
-      sequence_summary: "%{count} items in de Sequentie:"
-      sequence_summary_with_maxsize: "Voor je %{limit} rijen zijn de %{count} sequentiewaarden:"
-      sequence_from_required: Van is vereist
-      sequence_to_required: Naar is vereist
+      apply_sequence_fill: Pas reeks toe
+      sequence_count_warning: Er zijn meer rijen dan items in de reeks.
+      preview_sequence: Voorbeeld reekswaarden
+      sequence_summary: "%{count} items in de reeks:"
+      sequence_summary_with_maxsize: "Voor je %{limit} rijen zijn de %{count} reekswaarden:"
+      sequence_from_required: Beginwaarde is vereist
+      sequence_to_required: Eindwaarde is vereist
     reorder_columns:
       apply_order: Pas kolomvolgorde toe
     save_template:
@@ -1435,7 +1431,7 @@ nl:
       template_name: Sjabloon naam
       confirm_removal: Bevestig verwijdering
     templates:
-      listing: Templates
+      listing: Sjablonene
       no_templates: Geen sjablonen gedefinieerd
     default_template: Standaard sjabloon
     messages:
@@ -1460,7 +1456,7 @@ nl:
         <div><small>Om een kolom met één waarde te vullen, klik je op <strong> Kolom vullen </strong> en selecteer je het tabblad <strong> Basis </strong> de <strong>doelkolom</strong>. Voer dan de gewenste <strong> Opvulwaarde </strong> in en klik op <strong> Vulling toepassen </strong>.</small></div>
         <br/>
         <div><strong>Kolom opvullen - Sequentie</strong></div>
-        <div><small>Om een Sequentie op een kolom toe te passen, klik je op <strong>Kolom Vullen</strong> en selecteer je op het tabblad <strong>Sequentie</strong> de <strong>doelkolom</strong>. Vervolledig de <strong>Opvulwaarde</strong> in en creëer de gewenste sequentie.  Er wordt een waarschuwing weergegeven als de gegenereerde reeks niet voldoet aan het aantal rijen in het formulier.</small></div>
+        <div><small>Om een Sequentie op een kolom toe te passen, klik je op <strong>Kolom Vullen</strong> en selecteer je op het tabblad <strong>Sequentie</strong> de <strong>doelkolom</strong>. Vervolledig de <strong>Opvulwaarde</strong> in en creëer de gewenste sequentie. Er wordt een waarschuwing weergegeven als de gegenereerde reeks niet voldoet aan het aantal rijen in het formulier.</small></div>
       resize_and_reorder_columns: |
         <div><strong>Herorden kolommen</strong></div>
         <div><small>Klik <strong>Herorden kolommen</strong>, selecteer de rij(en) die je wil herordenen en gebruik de boven/beneden knoppen om hun positie in de lijst aan te passen. Als je klaar bent, klik dan op <strong>Pas kolom ordening toe</strong></small></div>
@@ -1470,7 +1466,7 @@ nl:
   update_monitor:
     save_failed: <strong>Je wijzigingen kunnen niet worden opgeslagen</strong>
     stale_record: Dit record werd aangepast door een andere gebruiker. Vernieuw jde pagina om de laatste versie te zien.
-    other_editors: "Dit record wordt bewerkt door een andere gebruiker.  Contacteer de volgend egebruikers om er zeker van te zijn dat er geen conflicten optreden: <strong>%{user_ids}</strong>"
+    other_editors: "Dit record wordt bewerkt door een andere gebruiker. Contacteer de volgend egebruikers om er zeker van te zijn dat er geen conflicten optreden: <strong>%{user_ids}</strong>"
     repository_changed: "Dit record kan niet worden opgeslagen, omdat uw actieve repository is gewijzigd. Open een ander venster en stel je actieve repository opnieuw in om dit record op te slaan."
   job:
     _frontend:
@@ -1479,32 +1475,32 @@ nl:
       audit_data: Audit data
       external_repo: Record hoort bij een ander repository
       actions:
-        create: Maak Taak
-        save: Start Taak
-        new: Nieuwe Background Taak
-        cancel: Annuleer Taak
+        create: Maak taak
+        save: Start taak
+        new: Nieuwe achtergrondtaak
+        cancel: Annuleer taak
         add_file: Voeg bestand toe
-        follow_log: Follow Log
+        follow_log: Volg log
       section:
         basic_information: Basisgegevens
-        status: Taak Status
+        status: Taak status
         logs: Log
         generated_uris: Nieuwe & gewijzigde records
-        active_jobs: Actieve Taken
-        archived_jobs: Gearchiveerde Taken
+        active_jobs: Actieve taken
+        archived_jobs: Gearchiveerde taken
         files: Bestanden
       messages:
-        status_changed_running: De Taak is begonnen. Pagina verversen...
-        status_changed_completed: De Taak is voltooid.
-        status_changed_failed: De Taak is mislukt.
-        status_changed_canceled: De Taak werd geannuleerd.
-        no_active_jobs: Er zijn geen actieve Taken.
-        no_archived_jobs: Er zijn geen gearchiveerde Taken.
+        status_changed_running: De taak is begonnen. Pagina verversen...
+        status_changed_completed: De taak is voltooid.
+        status_changed_failed: De taak is mislukt.
+        status_changed_canceled: De taak werd geannuleerd.
+        no_active_jobs: Er zijn geen actieve taken.
+        no_archived_jobs: Er zijn geen gearchiveerde taken.
         uploading: Taak opladen...
-        upload_successful: Opladen geslaagd. Doorsturen naar Taak pagina...
-        import_type_missing: Selecteer een Import type
-        queue_position_next: Deze Taak is de volgende in de wachtrij.
-        queue_position: "Deze Taak is nr %{position} in de wachtrij."
+        upload_successful: Opladen geslaagd. Doorsturen naar detailpagina voor deze taak...
+        import_type_missing: Selecteer een import-type
+        queue_position_next: Deze taak is de volgende in de wachtrij.
+        queue_position: "Deze taak is nr %{position} in de wachtrij."
         drag_and_drop_hint: Sleep bestanden hierheen
         find_and_replace_warning: '''Zoek en vervang''-opdrachten kunnen grote veranderingen in de database aanbrengen. Het is <strong> sterk </strong>aangeraden om een back-up te maken van je database EN om de opdracht in een testinstantie uit te voeren voordat je verder gaat. Er is geen ''ongedaan maken''.'
         find_and_replace_instructions: Kies een basisrecord om deze zoek- en vervangbewerking uit te voeren. Kies vervolgens een recordtype om te targeten en een eigenschap van dat type. De bewerking wordt uitgevoerd in elk doelrecord in de boomstructuur van het basisrecord, of in het basisrecord zelf als het doeltype 'Bron' is..
@@ -1515,8 +1511,8 @@ nl:
         slug_config_id: Slugs worden waar nodig gegenereerd met behulp van de entiteits-Identificatiecode.
         slug_config_title: Slugs worden gegenereerd met behulp van de naam of titel van de entiteit.
         slug_config_eadid: Slugs voor <b> archieven/collecties </b> worden gegenereerd met behulp van de EAD-ID waar van toepassing.
-        slug_config_cuid: Slugs voor <b> Archiefonderdelen </b> worden gegenereerd met behulp van de unieke ID van het onderdeel, waar van toepassing.
-        ark_generation: Deze taak genereert ARK's voor alle <b> archieven/collecties </b> en <b> Archiefonderdeel </b> die nog geen ARK hebben. <br /> <br /> <em> Externe ARK's worden niet gewijzigd.</em>
+        slug_config_cuid: Slugs voor <b> archiefonderdelen </b> worden gegenereerd met behulp van de unieke ID van het onderdeel, waar van toepassing.
+        ark_generation: Deze taak genereert ARK's voor alle <b> archieven/collecties </b> en <b> archiefonderdeel </b> die nog geen ARK hebben. <br /> <br /> <em> Externe ARK's worden niet gewijzigd.</em>
 
   shortcuts:
     quick_reference_window: "Overzicht: Sneltoetsen"
@@ -1540,31 +1536,31 @@ nl:
     type_2: Kind type
     type_2_tooltip: |
       <p> Het type container op het tweede niveau waarin het beschreven materiaal is ondergebracht. </p>
-       <p>Waarden in deze Waardenlijst kunnen worden aangepast. </p>
-    indicator_2: Kind Indicator
+       <p>Waarden in deze waardenlijst kunnen worden aangepast. </p>
+    indicator_2: Kind identificatiecode
     indicator_2_tooltip: |
       <p>Een alfanumerieke expressie voor het aangeven van de ID van de container op het tweede niveau, die ook de positie van de container op het tweede niveau binnen een reeks van dergelijke containers kan aangeven. Bulkreeksen van containers op het tweede niveau zijn ook toegestaan, b.v. Mappen 1-16.</p>
-    barcode_2: Kind Container Barcode
+    barcode_2: Kind container barcode
     barcode_2_tooltip: |
       <p> Een streepjescode om de container op het tweede niveau te identificeren waarin het beschreven materiaal zich bevindt. </p>
     type_3: Kleinkind type
     type_3_tooltip: |
       <p>Het type container op het derde niveau waarin het beschreven materiaal is ondergebracht. </p>
-       <p>Waarden in deze Waardenlijst kunnen worden aangepast. </p>
-    indicator_3: Kleinkind indicator
+       <p>Waarden in deze waardenlijst kunnen worden aangepast. </p>
+    indicator_3: Kleinkind identificatiecode
     indicator_3_tooltip: |
       <p>Een alfanumerieke expressie voor het aangeven van de ID van de container op het derde niveau, die ook de positie van de container op het tweede niveau binnen een reeks van dergelijke containers kan aangeven. Bulkreeksen van containers op het derde niveau zijn ook toegestaan, b.v. Mappen 1-16.</p>
     _singular: Subcontainer
     _plural: Subcontainers
     _frontend:
       action:
-        add: Voeg Container Instantie toe
+        add: Voeg container toe
 
   top_container:
     container_profile: Containerprofiel
     container_profile_tooltip: |
       <p>Een beschrijving van verschillende kenmerken van een bepaald soort container, inclusief afmetingen.</p>
-    indicator: Indicator
+    indicator: Identificatiecode
     indicator_tooltip: |
       <p>VERPLICHT VELD. Een alfanumerieke uitdrukking voor het aangeven van de plaats van de container op het hoogste niveau, die ook de positie van de container in een reeks containers kan zijn.</p>
     barcode: Barcode
@@ -1573,7 +1569,7 @@ nl:
     type: Container type
     type_tooltip: |
       <p>Het type container op het hoogste niveau.</p>
-       <p>Waarden in deze Waardenlijst kunnen worden aangepast. </p>
+       <p>Waarden in deze waardenlijst kunnen worden aangepast. </p>
     ils_holding_id: ILS Holding ID
     ils_holding_id_tooltip: |
       <p>Identificatiecode van het bijbehorende holdingrecord in de bibliotheeksysteem (ILS)</p>
@@ -1587,42 +1583,42 @@ nl:
     exported_to_ils: Geëxporteerd naar het bibliotheeksysteem
     not_exported: Niet geëxporteerd
     restricted: Beperkt?
-    parent: Ouder Container
+    parent: Bovenliggende container
     has_location: Heeft locatie
 
-    managed_container_2_type: Kind Container type
+    managed_container_2_type: Kind container type
     managed_container_2_type_tooltip: |
       <p> Het type container op het tweede niveau waarin het beschreven materiaal is ondergebracht. </p>
-       <p>Waarden in deze Waardenlijst kunnen worden aangepast. </p>
-    managed_container_2_indicator: Kind Container Indicator
+       <p>Waarden in deze waardenlijst kunnen worden aangepast. </p>
+    managed_container_2_indicator: Kind container identificatiecode
     managed_container_2_indicator_tooltip: |
       <p>Een alfanumerieke expressie voor het aangeven van de ID van de container op het tweede niveau, die ook de positie van de container op het tweede niveau binnen een reeks van dergelijke containers kan aangeven. Bulkreeksen van containers op het tweede niveau zijn ook toegestaan, b.v. Mappen 1-16.</p>
-    managed_container_3_type: Kleinkind Container type
+    managed_container_3_type: Kleinkind container type
     managed_container_3_type_tooltip: |
       <p>Het type container op het derde niveau waarin het beschreven materiaal is ondergebracht. </p>
-       <p>Waarden in deze Waardenlijst kunnen worden aangepast. </p>
-    managed_container_3_indicator: Kleinkind Container Indicator
+       <p>Waarden in deze waardenlijst kunnen worden aangepast. </p>
+    managed_container_3_indicator: Kleinkind container identificatiecode
     managed_container_3_indicator_tooltip: |
       <p>Een alfanumerieke expressie voor het aangeven van de ID van de container op het derde niveau, die ook de positie van de container op het tweede niveau binnen een reeks van dergelijke containers kan aangeven. Bulkreeksen van containers op het derde niveau zijn ook toegestaan, b.v. Mappen 1-16.</p>
-    barcode_length_for_this_repository: "Barcodelengte voor deze Repository:"
+    barcode_length_for_this_repository: "Barcodelengte voor dit repository:"
     characters: Tekens
 
     batch_delete:
       success: Topcontainers zijn verwijderd
-      error: Er is een probleem opgetreden bij het verwijderen van Topcontainers
+      error: Er is een probleem opgetreden bij het verwijderen van topcontainers
 
     _singular: Topcontainer
     _plural: Topcontainers
 
     _frontend:
       section:
-        active_restrictions: Actieve Beperkingen
-        linked_records: Gekoppelde Records
+        active_restrictions: Actieve beperkingen
+        linked_records: Gekoppelde records
         basic_information: Container informatie
       action:
-        add: Voeg Topcontainer toe
-        create: Maak een Topcontainer
-        save: Bewaar Topcontainer
+        add: Voeg topcontainer toe
+        create: Maak een topcontainer
+        save: Bewaar topcontainer
       messages:
         created: Topcontainer gemaakt
         updated: Topcontainer aangepast
@@ -1631,16 +1627,16 @@ nl:
         max_results_limit_details: "<strong>%{visible}</strong> van <strong>%{num_found}</strong> resultaten getoond"
         results_summary: "Resulten: <strong>%{num_found}</strong>"
         bulk_selection_sort_help: Klik op een kolom om de sorteervolgorde in te stellen. Houd shift ingedrukt om op meerdere kolommen te sorteren.
-        merged: Top Container(s) Merged
+        merged: Topcontainer(s) samengevoegd
         bulk_action_success: Topcontainers aangepast
         bulk_action_success_info: Houd er rekening mee dat het even kan duren voordat wijzigingen worden weergegeven in de zoekresultaten.
         no_active_restrictions: Geen actieve beperkingen
       bulk_operations:
-        title: Bulk Operaties
-        collection_singular: Archief/Collectie / Aanwinst
-        collection_plural: Archieven/Collecties / Aanwinsten
+        title: Bulk operaties
+        collection_singular: Archief/collectie / aanwinst
+        collection_plural: Archieven/collecties / aanwinsten
         collection_resource_singular: Archief/collectie
-        collection_resource_plural: Archieven/Collecties
+        collection_resource_plural: Archieven/collecties
         collection_accession_singular: Aanwinst
         collection_accession_plural: Aanwinsten
         collection_resource_linker:
@@ -1661,30 +1657,30 @@ nl:
         empty_true: "Ja"
         empty_false: "Nee"
         search: Zoek
-        update_ils_holding_ids: Pas bibliotheek holding Identificatiecodes aan
+        update_ils_holding_ids: Pas bibliotheek holding identificatiecodes aan
         update_ils_holding_ids_help: Voer een waarde in voor de holding-ID van de bibliotheek voor alle geselecteerde containers. Laat dit veld leeg om de huidige waarde te verwijderen zonder deze te vervangen door een andere waarde.
-        update_container_profiles: Pas Containerprofielen aan
+        update_container_profiles: Pas containerprofielen aan
         update_container_profiles_help: Kies een containerprofiel voor alle geselecteerde containers. Laat dit veld leeg om de huidige waarde te verwijderen zonder deze te vervangen door een andere waarde.
         update_locations_singular: "Pas locaties aan: één locatie"
         update_locations_singular_help: Kies een locatie voor alle geselecteerde containers. Laat dit veld leeg om de huidige waarde te verwijderen zonder deze te vervangen door een andere waarde.
         update_locations_multiple: "Pas locaties aan: meerdere locaties"
         update_locations_multiple_help: Kies een locatie voor elke geselecteerde container. Laat dit veld leeg om de huidige waarde te verwijderen zonder deze te vervangen door een andere waarde.
-        rapid_indicator_entry: Werk indicators bij
-        rapid_indicator_entry_new_indicator: Nieuwe indicator
-        rapid_indicator_entry_help: Vul een indicator in voor elke geselecteerde container. Laat het nieuwe indicator veld leeg om de bestaande indicator ongewijzigd te laten. Sjablonen bevatten bijkomende instructies
-        rapid_barcode_entry: Snelle Barcode invoer
-        rapid_barcode_entry_existing_barcode: Bestaande Barcode
-        rapid_barcode_entry_new_barcode: Nieuwe Barcode
-        rapid_barcode_entry_help: Voer een Barcode in voor elke geselecteerde container. Laat het veld Nieuwe streepjescode leeg om de huidige Barcode te verwijderen zonder deze te vervangen door een nieuwe waarde.
-        batch_merge: Voeg Topcontainers samen
-        batch_merge_instructions: Selecteer de Topconcainer waarmee alle andere Topcontainers in de lijst zullen worden samengevoegd. Gekoppelde Aanwinsten, Archieven/Collecties, Archiefonderdelen en Gebeurtenissen zullen opnieuw worden gekoppeld aan deze Topcontainer. Containerprofielen zullen overgebracht worden naar deze Topcontainer indien die er nog geen bevat. Locaties en alle andere informatie van de andere Topcontainers zullen worden verwijderd.
-        batch_merge_confirm: Bevestig Topcontainers samenvoegen
-        batch_merge_confirm_question: Weet je zeker dat je onderstaande Topcontainers wil samenvoegen? Deze actie is onomkeerbaar.
+        rapid_indicator_entry: Werk identificatiecodes bij
+        rapid_indicator_entry_new_indicator: Nieuwe identificatiecode
+        rapid_indicator_entry_help: Vul een identificatiecode in voor elke geselecteerde container. Laat het nieuwe identificatiecode veld leeg om de bestaande identificatiecode ongewijzigd te laten. Sjablonen bevatten bijkomende instructies.
+        rapid_barcode_entry: Snelle barcode invoer
+        rapid_barcode_entry_existing_barcode: Bestaande barcode
+        rapid_barcode_entry_new_barcode: Nieuwe barcode
+        rapid_barcode_entry_help: Voer een barcode in voor elke geselecteerde container. Laat het veld Nieuwe streepjescode leeg om de huidige barcode te verwijderen zonder deze te vervangen door een nieuwe waarde.
+        batch_merge: Voeg topcontainers samen
+        batch_merge_instructions: Selecteer de topconcainer waarmee alle andere topcontainers in de lijst zullen worden samengevoegd. Gekoppelde aanwinsten, archieven/collecties, archiefonderdelen en gebeurtenissen zullen opnieuw worden gekoppeld aan deze topcontainer. Containerprofielen zullen overgebracht worden naar deze topcontainer indien die er nog geen bevat. Locaties en alle andere informatie voor de andere topcontainers zullen worden verwijderd.
+        batch_merge_confirm: Bevestig samenvoeging van topcontainers
+        batch_merge_confirm_question: Weet je zeker dat je onderstaande topcontainers wil samenvoegen? Deze actie is onomkeerbaar.
         batch_merge_container_profile_too_many_warning: Deze topcontainers hebben verschillende containerprofielen. Geen van deze containerprofielen wordt samengevoegd in de doelcontainer.
         batch_merge_container_profile_mismatch_warning: Deze topcontainers hebben een ander containerprofiel dan de target topcontainer. Het containerprofiel wordt niet samengevoegd met de doelcontainer.
-        batch_merge_confirm_victims: "Voeg volgende Topcpontainers samen:"
+        batch_merge_confirm_victims: "Voeg volgende topcpontainers samen:"
         batch_merge_confirm_target: "In deze topcontainer:"
-        batch_delete: Verwijder Topcontainers
+        batch_delete: Verwijder topcontainers
         batch_delete_help: Verwijder alle geselecteerde containers.
         update_n_records: "Update %{n} records"
         select_merge_target: Selecteer doel om samen te voegen
@@ -1704,30 +1700,30 @@ nl:
     _plural: Containerprofielen
     _frontend:
       action:
-        save: Bewaar Containerprofiel
-        edit: Bewerk Containerprofiel
-        create: Maak Containerprofiel
+        save: Bewaar containerprofiel
+        edit: Bewerk containerprofiel
+        create: Maak containerprofiel
         space_calculator: Ruimtecalculator
       messages:
         created: Containerprofiel gemaakt
         updated: Containerprofiel aangepast
-        merged: Container Profiles(s) Merged
+        merged: Containerprofiel(en) samengevoegd
       section:
         basic_information: Basisgegevens
       bulk_operations:
-        merge: Voeg Containerprofielen samen
-        merge_instructions: Select the container profile into which all of the other listed container profile(s) will merge. Any linked records will be re-linked to this profile and all information for the other container profile(s) will be deleted.
+        merge: Voeg containerprofielen samen
+        merge_instructions: Selecteer het containerprofiel waarmee alle andere containerprofielen in de lijst zullen worden samengevoegd. Gekoppelde records zullen opnieuw worden gekoppeld aan dit containerprofiel en alle informatie voor de ander containerprofielen zal worden verwijderd.
         merge_select_target: Selecteer doel om samen te voegen
-        confirm_merge: Bevestig samenvoegen Containerprofielen
+        confirm_merge: Bevestig samenvoeging van containerprofielen
         confirm_merge_question: Weet je zeker dat je de containerprofielen zoals hieronder vermeld wil samenvoegen? Deze actie is onomkeerbaar.
         confirm_merge_victims: "Voeg de volgende container profiel(en) samen:"
-        confirm_merge_target: "In dit Containerprofiel:"
+        confirm_merge_target: "In dit containerprofiel:"
     notes: Noot
     notes_tooltip: |
       <p>Noot voor diverse informatie/metadata.</p>
     name: Naam
     name_tooltip: |
-      <p>VERPLICHT VELD. De naam van het Containerprofiel. Mag generiek of specifiek zijn.</p>
+      <p>VERPLICHT VELD. De naam van het containerprofiel. Mag generiek of specifiek zijn.</p>
       <p>Voorbeelden:</p>
       <ul>
       <li>Doos</li>
@@ -1739,8 +1735,8 @@ nl:
       <p>Een hyperlink voor een externe beschrijving van de container.</p>
     dimension_units: Maateenheid
     dimension_units_tooltip: |
-      <p>Maateenheid voor afmeting.  </p>
-       <p>Waarden in deze Waardenlijst kunnen worden aangepast. </p>
+      <p>Maateenheid voor afmeting. </p>
+       <p>Waarden in deze waardenlijst kunnen worden aangepast. </p>
     extent_dimension: Omvang afmeting
     extent_dimension_tooltip: |
       <p>De afmeting die wordt gebruikt voor het berekenen en aangeven van de omvang van de materialen in de container. Dit helpt te bepalen welke afmeting wordt gemeten door de omvangberekening.</p>
@@ -1781,23 +1777,23 @@ nl:
     local_access_restriction_type_inline_help: "Hou CTRL (Windows) / Command (Mac/Linux) ingedrukt om meerdere opties te selecteren of een optie te deselecteren"
     local_access_restriction_type_tooltip: |
       <p>Voor beperkingen die niet tijdgebonden zijn, een indicatie van de reden voor de beperking.</p>
-       <p>Waarden in deze Waardenlijst kunnen worden aangepast. </p>
+       <p>Waarden in deze waardenlijst kunnen worden aangepast. </p>
     linked_records: Gekoppeld record
     restriction_note_type: Noottype
 
   extent_calculator:
     no_object_message: Geef een object op om de omvangberekening op uit te voeren.
-    report_title: Berekende Omvang rapport
+    report_title: Berekende omvang rapport
     container_profile_header: Containerprofiel
     count_header: Aantal
     extent_header: Omvang
     no_profile: <span class="text-error">GEEN PROFIEL</span>
-    all_containers_label: Alle Containers
+    all_containers_label: Alle containers
     timestamp_label: Rapport gegenereerd om
-    extent_record_header: Omvang Record
-    create_extent: Maak Omvang
-    calculate_extent: Bereken Omvang
-    create_extent_record_message: Voer de Omvangberekening uit in Bewerk modus om een omvangrecord te maken gebaseerd op het rapport.
+    extent_record_header: Omvang record
+    create_extent: Maak omvang
+    calculate_extent: Bereken omvang
+    create_extent_record_message: Voer de omvangberekening uit in bewerk-modus om een omvangrecord te maken gebaseerd op het rapport.
     waiting_for_report_message: Omvang berekenen ...
     container_summary_type:
       _singular: container
@@ -1830,9 +1826,9 @@ nl:
   space_calculator:
     modal_title: Ruimtecalculator
     modal_loading: Laden...
-    message_container_profile_required: De Ruimtecalculator vereist het instellen van een Containerprofiel.
-    message_locations_required: De Ruimtecalculator vereist dat er één of meerdere locaties worden ingesteld.
-    message_select_locations: "Check for space in the following Location(s):"
+    message_container_profile_required: De ruimtecalculator vereist het instellen van een containerprofiel.
+    message_locations_required: De ruimtecalculator vereist dat er één of meerdere locaties worden ingesteld.
+    message_select_locations: "Controleer de ruimte voor volgende locatie(s):"
     message_no_locations_with_space: Geen locaties met ruimte gevonden
     message_total_spaces: "Totaal aantal beschikbare plaatsen voor dit containertype: %{total_spaces}"
     message_total_containers: "Totaal aantal containers van dit type gevonden op deze locaties: %{total_containers}"
@@ -1841,8 +1837,8 @@ nl:
     calculate_space: Controleer of er ruimte is
     locations_without_space_details: Review locaties zonder ruimte
     by_locations: By Location(s)
-    by_building: Volgens Gebouw
-    result_filter: Filter Resultaten
+    by_building: Volgens gebouw
+    result_filter: Filter resultaten
     summary:
       locations_with_space: "Locaties met beschikbare ruimte: <strong>%{count}</strong>"
       locations_without_space: "Locaties zonder beschikbare ruimte: <strong>%{count}</strong>"
@@ -1919,7 +1915,7 @@ nl:
         false_value: "Nee"
       browse_reviewers: Reviewers
       linked_records:
-        heading: Gekoppelde Records
+        heading: Gekoppelde records
         loading: Laden...
         linked_via_assessment_records: Waarderingen
         linked_via_assessment_surveyed_by: Waarderingen - Onderzocht door
@@ -1959,12 +1955,12 @@ nl:
       translation: Vertaling
 
   custom_report_template:
-    new_title: Nieuw aangepast Rapportsjabloon
+    new_title: Nieuw aangepast rapportsjabloon
     _frontend:
       section:
         template_information: Sjabloon informatie
         basic_information_fields: Basisgegevens velden
-        linked_records: Gekoppelde Records
+        linked_records: Gekoppelde records
         sort_by: Sorteer rapport op
       action:
         create: Maak sjabloon
@@ -1977,20 +1973,20 @@ nl:
 
   oai_config:
     title: OAI-PMH instellingen
-    title_repo_section: Per Repository OAI-PMH instellingen
+    title_repo_section: OAI-PMH instellingen per repository
     general_section: Algemene instellingen
     repo_set_section: Repository Set
     sponsor_set_section: Sponsor Set
     repo_set_desc: Naast sets op basis van beschrijvingsniveau, kunt u een OAI-set definiëren op basis van repositories.
     sponsor_set_desc: Naast sets op basis van beschrijvingsniveau, kunt u een OAI-set definiëren op basis van sponsornamen.
-    oai_record_prefix: OAI Record Prefix
+    oai_record_prefix: OAI record prefix
     oai_admin_email: OAI Admin Email
-    oai_repository_name: OAI Repository Naam
-    repo_set_name: Repository Set Naam
+    oai_repository_name: OAI repository naam
+    repo_set_name: Repository Set naam
     repo_set_codes: Repositories in Set
     repo_set_description: Repository Set beschrijving
-    sponsor_set_name: Sponsor Set Naam
-    sponsor_set_names: Sponsor Namen
+    sponsor_set_name: Sponsor Set naam
+    sponsor_set_names: Sponsor namen
     sponsor_set_description: Sponsor Set beschrijving
     oai_leave_repo_form: Deze opties zijn alleen van invloed op OAI-PMH voor deze repository. Klik hieronder om algemene OAI-opties te bekijken / bewerken. Hierdoor wordt het huidige formulier verlaten zonder de wijzigingen op te slaan.
     _frontend:
@@ -2005,7 +2001,7 @@ nl:
       sponsor_set_section:
         _plural: Sponsor Sets
       repo_settings:
-        _plural: Per Repository OAI-PMH instellingen
+        _plural: OAI-PMH instellingen per repository
 
   agent_record_control: &agent_record_control_attributes
     _plural: Recordinformatie
@@ -2388,7 +2384,7 @@ nl:
     dates: Datums
     places: Plaatsen
     publish: Gepubliceerd
-    linked_agent_role: Archief/Collectie relatie type
+    linked_agent_role: Archief/collectie relatie type
     linked_resource: Gerelateerd extern archief/collectie-record
     linked_resource_description: Beschrijving
     file_uri: BestandsURI
@@ -2438,7 +2434,7 @@ nl:
         add_file: Selecteer bestand
         add_archival_objects: Importeer archiefonderdeel
         add_digital_objects: Voeg digitale objecten toe aan archiefonderdelen
-        import: Import via spreadSheet
+        import: Importeer via spreadSheet
         drag_drop: Sleep het bestand hierheen.
         clip_btn: Kopieer naar klembord
         only_validate: Enkel valideren
@@ -2453,8 +2449,8 @@ nl:
         uncopied: Kan niet kopiëren
         submitted: "<p>Job werd naar achtergrondtaken gestuurd. <br/> Klik 'Sluiten' om deze pagina te verversen.</p>"
   bulk_import_job:
-    active: "Er is een bulkimporttaak actief voor dit record, probeer het later te bewerken: <a href ='%{url}'>%{uri}</a>"
-    resource_id: Archief/Collectie identificatiecode
+    active: "Er is een bulk-importtaak actief voor dit record, probeer het later te bewerken: <a href ='%{url}'>%{uri}</a>"
+    resource_id: Archief/collectie identificatiecode
     format: Download bestand
     filename: Spreadsheet bestandsnaam
     not_direct: Op dit moment kan deze taak alleen worden gemaakt op basis van het bronrecord
@@ -2496,7 +2492,7 @@ nl:
 
   bulk_import_templates:
     overview: |
-      <p>Met deze sjablonen kunnen spreadsheets worden opgeladen via de verschillende importeer-opties in de instellingen voor Achtergrondtaken. De benodigde gegevens voor een succesvolle import zijn afhankelijk van het recordtype. Niet elke rij en kolom moet worden ingevuld.</p><p>Elk CSV sjabloon bevat een rij met voorbeelddata. Om te vermijden dat een record met deze voorbeelddata wordt aangemaakt, moet deze rij worden verwijderd vóór het CSV bestand wordt opgeladen. <b>Verwijder de titelrij niet, voeg geen extra kolommen toe en herorden de bestaande kolommen niet.</b></p><p>De Excel sjablonen bevatten bijkomende instructies over gebruik van de sjablonen, en valideringsformules voor bepaalde cellen. <b>Verwijder deze instructies of valideringsformules niet.</b></p>
+      <p>Met deze sjablonen kunnen spreadsheets worden opgeladen via de verschillende importeer-opties in de instellingen voor achtergrondtaken. De benodigde gegevens voor een succesvolle import zijn afhankelijk van het recordtype. Niet elke rij en kolom moet worden ingevuld.</p><p>Elk CSV sjabloon bevat een rij met voorbeelddata. Om te vermijden dat een record met deze voorbeelddata wordt aangemaakt, moet deze rij worden verwijderd vóór het CSV bestand wordt opgeladen. <b>Verwijder de titelrij niet, voeg geen extra kolommen toe en herorden de bestaande kolommen niet.</b></p><p>De Excel sjablonen bevatten bijkomende instructies over gebruik van de sjablonen, en valideringsformules voor bepaalde cellen. <b>Verwijder deze instructies of valideringsformules niet.</b></p>
     aspace_accession_import_template_csv: Maak aanwinstenrecords en gekoppelde records zoals actoren, onderwerpen en gebeurtenissen.
     aspace_digital_object_import_template_csv: Maak digitale objectenrecords en gekoppelde records zoals actoren, onderwerpen en gebeurtenissen.
     bulk_import_template_csv: Maak en koppel archiefonderdelen aan een bestaand archief/collectierecord. Het is mogelijk om verschillende sub-records en gekoppelde records op te nemen, zoals datums, omvant, noten, containers en digitale objecten. Het CSV formaat wordt aangeboden voor wie geen toegang heeft tot Microsoft Excel.
@@ -2597,7 +2593,7 @@ nl:
       description: Sjablonen voor aangepaste rapporten bundelen informatie die werd geselecteerd voor recordtype, data velden en gekoppelde records. Maak eerst een aangepast rapportsjabloon, en selecteer het vervolgens in de keuzelijst om het uit te voeren.
 
     user_groups_report:
-      title:  Gebruikersgroepen
+      title: Gebruikersgroepen
       description: Overzicht van gebruikers en gebruikersgroepen voor het repository
       name: Naam
       department: Afdeling
@@ -2803,7 +2799,7 @@ nl:
       record_title: Titel
       title: Titel
       top_container_barcode: Topcontainer barcode
-      top_container_indicator: Topcontainer aanduiding
+      top_container_indicator: Topcontainer identificatiecode
       total_deaccessions_extent: Totale omvang van afstotingen
       total_extent: Totale omvang van records
       type: Type
@@ -2836,7 +2832,7 @@ nl:
       template_name: Sjabloon naam
       template_description: Sjabloon beschrijving
       date_type: Datumtype
-      label:  Label
+      label: Label
       expression: Datumexpressie
       standardized_type: Gestandaardiseerd type
       begin_expression: Begindatum expressie

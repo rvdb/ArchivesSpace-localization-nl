@@ -1,104 +1,104 @@
 nl:
   enumeration_names:
     accession_acquisition_type: Aanwinst verwervingstype
-    accession_parts_relator: Aanwinst deel relator
-    accession_parts_relator_type: Aanwinst deel relator type
-    accession_resource_type: Aanwinst bron type
-    accession_sibling_relator: "Verwante aanwinst relator"
-    accession_sibling_relator_type: Verwante aanwinst relator type
-    agency_code_type: Record Controle agentschapscode Type
+    accession_parts_relator: Aanwinst deel relatie
+    accession_parts_relator_type: Aanwinst deel relatortype
+    accession_resource_type: Aanwinst samenstelling type
+    accession_sibling_relator: "Gerelateerde aanwinst relator"
+    accession_sibling_relator_type: Gerelateerde aanwinst relatortype
+    agency_code_type: Record controle agentschapscode type
     agent_contact_salutation: Actor contact aanspreking
-    agent_relationship_associative_relator: Actor relatie associatieve relator
-    agent_relationship_earlierlater_relator: Actor relatie vroeger/later relator
-    agent_relationship_family_relator: Agent Relationship Family Relator
-    agent_relationship_hierarchical_relator: Agent Relationship Hierarchical Relator
-    agent_relationship_identity_relator: Agent Relationship Identity Relator
-    agent_relationship_parentchild_relator: Actor relatie ouder/kind relator
-    agent_relationship_specific_relator: Agent Relationship Specific Relator
-    agent_relationship_subordinatesuperior_relator: Actor relatie ondergeschik/nevengeschikt relator
-    agent_relationship_temporal_relator: Agent Relationship Temporal Relator
+    agent_relationship_associative_relator: Actor relaties - associatief
+    agent_relationship_earlierlater_relator: Actor relaties - vroeger/later
+    agent_relationship_family_relator: Actor relaties - familie
+    agent_relationship_hierarchical_relator: Actor relaties - hiërarchisch
+    agent_relationship_identity_relator: Actor relaties - identiteit
+    agent_relationship_parentchild_relator: Actor relaties - ouder/kind
+    agent_relationship_specific_relator: Actor relaties - specifiek
+    agent_relationship_subordinatesuperior_relator: Actor relaties - onderschikking/nevenschikking
+    agent_relationship_temporal_relator: Actor relaties - temporeel
     archival_record_level: Beschrijvingsniveau
-    begin_date_standardized_type: Begindatum gestandaardiseerd type
-    cataloging_source: Record Controle Catalogingbron
-    collection_management_processing_priority: Prioriteit verwerking collectiebeheer
-    collection_management_processing_status: Status verwerking collectiebeheer
+    begin_date_standardized_type: Datum - type gestandaardiseerde begindatum
+    cataloging_source: Record controle catalogiseringsbron
+    collection_management_processing_priority: Collectiebeheer - prioriteit verwerking
+    collection_management_processing_status: Collectiebeheer - status
     container_location_status: Status locatie verpakking
-    container_type: Container type
+    container_type: Containertype
     country_iso_3166: Land ISO 3166
-    date_calendar: Datum kalender
-    date_certainty: Datum zekerheid
-    date_era: Datum jaartelling
-    date_label: Datum label
-    date_role: Datum rol
-    date_standardized_type: Datum gestandardiseerd type
-    date_type: Datumtype
-    date_type_structured: Datumtype
+    date_calendar: Datum - kalender
+    date_certainty: Datum - zekerheid
+    date_era: Datum: jaartelling
+    date_label: Datum: label
+    date_role: Datum: rol
+    date_standardized_type: Datum - type gestandaardiseerde datum
+    date_type: Datum: type
+    date_type_structured: Datum - type gestructureerde datum
     deaccession_scope: Afstoting bereik
-    digital_object_digital_object_type: Digitaal object Digitaal object type
+    digital_object_digital_object_type: Digitaal object type
     digital_object_level: Digitaal object niveau
     dimension_units: Maateenheid
-    end_date_standardized_type: Eindatum gestandardiseerd type
-    event_event_type: Gebeurtenis Gebeurtenis type
+    end_date_standardized_type: Datum - type gestandaardiseerde einddatum
+    event_event_type: Gebeurtenis type
     event_outcome: Gebeurtenis resultaat
-    extent_extent_type: Omvang Omvang type
+    extent_extent_type: Omvang type
     extent_portion: Omvang deel
-    file_version_checksum_methods: Bestandsversie Checksum methodes
-    file_version_file_format_name: Bestandsversie Naam bestandsformaat
-    file_version_use_statement: Bestandsversie Verklaring over gebruik
-    file_version_xlink_actuate_attribute: File Version Xlink Actuate Attribute
-    file_version_xlink_show_attribute: File Version Xlink Show Attribute
+    file_version_checksum_methods: Bestandsversie checksum methodes
+    file_version_file_format_name: Bestandsversie bestandsformaat
+    file_version_use_statement: Bestandsversie verklaring over gebruik
+    file_version_xlink_actuate_attribute: Bestandsversie Xlink Activeer attribuut
+    file_version_xlink_show_attribute: Bestandsversie Xlink Toon Attribute
     gender: Actor geslacht
-    government_agency_type: Record Controle Overheidsorgaan Type
-    identifier_type: Record Controle Identificatiecode Type
-    instance_instance_type: Instantie Instantie type
+    government_agency_type: Record controle overheidsorgaan type
+    identifier_type: Record controle identificatiecode type
+    instance_instance_type: Instantie type
     job_type: Taak type
     language_iso639_2: Taal ISO 639-2
-    level_of_detail: Record Controle Detailniveau
-    linked_agent_archival_record_relators: Gekoppelde actor Archiefrecord Relators
-    linked_agent_event_roles: Gekoppelde actor gebeurtenis rollen
-    linked_agent_role: Gekoppelde actor Rol
-    linked_event_archival_record_roles: Gekoppelde gebeurtenis Archiefrecord rollen
+    level_of_detail: Record controle detailniveau
+    linked_agent_archival_record_relators: Gekoppelde actor - archiefrecord relators
+    linked_agent_event_roles: Gekoppelde actor - gebeurtenis rol
+    linked_agent_role: Gekoppelde actor - rol
+    linked_event_archival_record_roles: Gekoppelde gebeurtenis - archiefrecord rollen
     location_function_type: Locatie functie type
     location_temporary: Tijdelijke locatie
-    maintenance_agent_type: Record Controle Onderhoud actor Type
-    maintenance_event_type: Record Controle Onderhoudsgebeurtenis Type
-    maintenance_status: Record Controle Onderhoud Status
+    maintenance_agent_type: Record controle onderhoud actor type
+    maintenance_event_type: Record controle onderhoudsgebeurtenis type
+    maintenance_status: Record controle onderhoudstatus
     metadata_license: Metadata licentie
-    modified_record: Record Controle Aangepast Type
-    name_person_name_order: Naam Persoon Naamvorm
+    modified_record: Record controle wijziging type
+    name_person_name_order: Persoonsnaam naamvolgorde
     name_rule: Naam regelwerk
     name_source: Naam bron
-    name_type: Record Controle Naam Type
-    note_bibliography_type: Noot Bibliografie type
-    note_digital_object_type: Noot digitaal object type
-    note_index_item_type: Noot Index Item type
-    note_index_type: Noot Index type
-    note_langmaterial_type: Noot taal van het materiaal type
-    note_multipart_type: Noot meerdelig type
-    note_orderedlist_enumeration: Noot lijst/opsomming
-    note_rights_statement_act_type: Noot rechtenverklaring wetgeving type
-    note_rights_statement_type: Noot rechtenverklaring type
-    note_singlepart_type: Noot eendelig type
-    place_role: Actor Plaats rol
-    publication_status: Record Controle Publicatie Status
-    reference_evaluation: Record Controle Referentie Evaluatie
+    name_type: Record controle naamtype
+    note_bibliography_type: Noot - bibliografie type
+    note_digital_object_type: Noot - digitaal object type
+    note_index_item_type: Noot - index item type
+    note_index_type: Noot - index type
+    note_langmaterial_type: Noot - taal van het materiaal type
+    note_multipart_type: Noot - meerdelig type
+    note_orderedlist_enumeration: Noot - lijst/opsomming
+    note_rights_statement_act_type: Noot - rechtenverklaring wetgeving type
+    note_rights_statement_type: Noot - rechtenverklaring type
+    note_singlepart_type: Noot - eendelig type
+    place_role: Plaats rol
+    publication_status: Record controle publicatiestatus
+    reference_evaluation: Record controle referentie evaluatie
     resource_finding_aid_description_rules: Toegang beschrijvingsregels
     resource_finding_aid_status: Toegang status
     resource_resource_type: Archiefbestanddeel type
-    restriction_type: Type beperking op toegankelijkheid
-    rights_statement_act_restriction: Rechtenverklaring Regelgeving beperking
-    rights_statement_act_type: Rechtenverklaring Regelgeving type
-    rights_statement_external_document_identifier_type: Rechtenverklaring Extern document 
-    identifier type
-    rights_statement_ip_status: Rechtenverklaring IP Status
-    rights_statement_other_rights_basis: Rechtenverklaring Other Rights Basis
-    rights_statement_rights_type: Rechtenverklaring Rechten type
+    restriction_type: Beperking op toegankelijkheid type
+    rights_statement_act_restriction: Rechtenverklaring - regelgeving beperking
+    rights_statement_act_type: Rechtenverklaring - regelgeving type
+    rights_statement_external_document_identifier_type: Rechtenverklaring - extern document 
+    identificatietype
+    rights_statement_ip_status: Rechtenverklaring - status
+    rights_statement_other_rights_basis: Rechtenverklaring - andere rechtengrondslag
+    rights_statement_rights_type: Rechtenverklaring - rechten type
     romanization: Romanisering
     script_iso15924: Taal Schrift ISO 15924
-    subject_source: Bron onderwerp
-    subject_term_type: Onderwerpsterm type
+    subject_source: Onderwerp - bron
+    subject_term_type: Onderwerp - term type
     telephone_number_type: Telefoonnummer type
-    transliteration: Transliteration
+    transliteration: Transliteratie
     user_defined_enum_1: User Defined Enum 1
     user_defined_enum_2: User Defined Enum 2
     user_defined_enum_3: User Defined Enum 3
@@ -114,16 +114,16 @@ nl:
       forms_part_of: Is deel van
       has_part: Heeft deel
     accession_parts_relator_type:
-      part: "\"Part\" relationship"
+      part: "\"Deel/geheel\" relatie"
     accession_resource_type:
       collection: Verzamelingen
       papers: Documenten
       publications: Publicaties
       records: Records
     accession_sibling_relator:
-      sibling_of: Broer/zus van gerelateerde actor
+      sibling_of: Is broer/zus van
     accession_sibling_relator_type:
-      bound_with: "\"Bound With\" relationship"
+      bound_with: "\"Gebonden met\" relatie"
     agency_code_type:
       local: Lokaal
       oclc: OCLC
@@ -134,24 +134,24 @@ nl:
       ms: Juffr.
       sir: De heer
     agent_relationship_associative_relator:
-      is_associative_with: Associatief met gerelateerde actor
+      is_associative_with: Is associatief met
     agent_relationship_earlierlater_relator:
-      is_earlier_form_of: Eerdere vorm van gerelateerde actor
-      is_later_form_of: Latere vorm van gerelateerde actor
+      is_earlier_form_of: Is eerdere vorm van
+      is_later_form_of: Is latere vorm van
     agent_relationship_family_relator:
-      is_related_with: Actor Relatie relatie Relator
+      is_related_with: Is gerelateerd met
     agent_relationship_hierarchical_relator:
-      is_hierarchical_with: Agent Relationship Hierarchical Relator
+      is_hierarchical_with: Heeft hiërarchische relatie met
     agent_relationship_identity_relator:
-      is_identified_with: Actor relatie geïdentificeerd met Relator
+      is_identified_with: Is geïdentificeerd als
     agent_relationship_parentchild_relator:
-      is_child_of: Kind van gerelateerde actor
-      is_parent_of: Ouder van gerelateerde actor
+      is_child_of: Kind van
+      is_parent_of: Ouder van
     agent_relationship_subordinatesuperior_relator:
-      is_subordinate_to: Is ondergeschikt aan gerelateerde actor
-      is_superior_of: Is bovengeschikt aan gerelateerde actor
+      is_subordinate_to: Is ondergeschikt aan
+      is_superior_of: Is bovengeschikt aan
     agent_relationship_temporal_relator:
-      is_temporal_with: Agent Relationship Temporal Relator
+      is_temporal_with: Heeft temporele relatie met
     archival_record_level:
       class: Afdeling
       collection: Verzamelingen
@@ -481,7 +481,7 @@ nl:
     date_type:
       bulk: Bulk data
       expression: Bewoording
-      inclusive: Inclusieve Data
+      inclusive: Inclusieve data
       range: Bereik
       single: Enkelvoudig
     date_type_structured:
