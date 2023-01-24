@@ -1198,7 +1198,7 @@ nl:
 
   note_citation_xlink:
     actuate: Activeer
-    arcrole: Arc Rol
+    arcrole: Arcrol
     href: Href
     role: Rol
     show: Toon
@@ -1241,12 +1241,12 @@ nl:
     use_statement_tooltip: |
       <p>A descriptor indicating the use for which the digital file is intended (e.g., a thumbnail).</p>
       <p>Waarden in deze lijst met gecontroleerde waarden kunnen worden gewijzigd.</p>
-    xlink_actuate_attribute: XLink Actuate Attribute
+    xlink_actuate_attribute: XLink Activeer attribuut
     xlink_actuate_attribute_tooltip: |
-      <p>Een XLink-attribuut dat wordt gebruikt voor export om aan te geven hoe het digitale object moet worden weergegeven (bijvoorbeeld of de link automatisch plaatsvindt of moet worden aangevraagd door de gebruiker). Het wordt gebruikt in combinatie met het kenmerk XLink Toon.</p>
+      <p>Een XLink attribuut dat wordt gebruikt voor export om aan te geven hoe het digitale object moet worden weergegeven (bijvoorbeeld of de link automatisch plaatsvindt of moet worden aangevraagd door de gebruiker). Het wordt gebruikt in combinatie met het kenmerk XLink Toon.</p>
     xlink_show_attribute: XLink Toon attribuut
     xlink_show_attribute_tooltip: |
-      <p>Een XLink-attribuut dat wordt gebruikt voor export om aan te geven hoe het doel van een link moet worden weergegeven. Het wordt gebruikt in combinatie met de XLink Actuate attribuut.</p>
+      <p>Een XLink attribuut dat wordt gebruikt voor export om aan te geven hoe het doel van een link moet worden weergegeven. Het wordt gebruikt in combinatie met de XLink Actuate attribuut.</p>
     file_format_name: Naam bestandsformaat
     file_format_name_tooltip: |
       <p>De naam van het bestandsformaat.</p>
@@ -2525,13 +2525,13 @@ nl:
       container_labels_job: Container labels
       container_conversion_job: Maak rapport
       import_job: Importeer data
-      generate_slugs_job: Maak Slugs in Bulk
-      generate_arks_job: Maak ARKs in Bulk
+      generate_slugs_job: Maak Slugs in bulk
+      generate_arks_job: Maak ARKs in bulk
       find_and_replace_job: Batch zoek en vervang (Beta)
       trim_whitespace_job: Verwijder witruimte
       unknown_job_type: Onbekend taaktype
       bulk_import_job: Laad met spreadsheet
-      top_container_linker_job: Taak voor het koppelen van top containers
+      top_container_linker_job: Taak voor het koppelen van topcontainers
       ns2_remover_job: ns2 Namespace Remover
     status: Status
     status_completed: Voltooid
@@ -2830,7 +2830,7 @@ nl:
       "Metal Fasteners": Nietjes
       "Newspaper": Krantenpapier
       "Tape": Tape
-      "Heat-Sensitive Paper": Hiitegevoelig papier
+      "Heat-Sensitive Paper": Hittegevoelig papier
       "Water Damage": Waterschade
 
   custom_report_template:

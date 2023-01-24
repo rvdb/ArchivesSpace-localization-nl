@@ -2220,11 +2220,11 @@ nl:
     set_component: Label
     descriptive_note: Beschrijvende noot
     file_uri: BestandsURI
-    xlink_title_attribute: Xlink titel attribuut
-    xlink_role_attribute: Xlink rol attribuut
-    xlink_arcrole_attribute: Xlink arcrol attribuut
-    file_version_xlink_actuate_attribute: Xlink activeer attribuut
-    file_version_xlink_show_attribute: Xlink toon attribuut
+    xlink_title_attribute: Xlink Titel attribuut
+    xlink_role_attribute: Xlink Rol attribuut
+    xlink_arcrole_attribute: Xlink Arcrol attribuut
+    file_version_xlink_actuate_attribute: Xlink Activeer attribuut
+    file_version_xlink_show_attribute: Xlink Toon attribuut
     last_verified_date: Datum laatste verificatie
 
   agent_alternate_sets:
@@ -2249,11 +2249,11 @@ nl:
     citation: Citaat
     descriptive_note: Beschrijvende noot
     file_uri: BestandsURI
-    xlink_title_attribute: Xlink titel attribuut
-    xlink_role_attribute: Xlink rol attribuut
-    xlink_arcrole_attribute: Xlink arcrol attribuut
-    file_version_xlink_actuate_attribute: Xlink activeer attribuut
-    file_version_xlink_show_attribute: Xlink toon attribuut
+    xlink_title_attribute: Xlink Titel attribuut
+    xlink_role_attribute: Xlink Rol attribuut
+    xlink_arcrole_attribute: Xlink Arcrol attribuut
+    file_version_xlink_actuate_attribute: Xlink Activeer attribuut
+    file_version_xlink_show_attribute: Xlink Toon attribuut
     last_verified_date: Datum laatste verificatie
 
   agent_conventions_declarations:
@@ -2346,11 +2346,11 @@ nl:
     source_entry: Bron ingang
     descriptive_note: Beschrijvende noot
     file_uri: BestandsURI
-    xlink_title_attribute: Xlink titel attribuut
-    xlink_role_attribute: Xlink rol attribuut
-    xlink_arcrole_attribute: Xlink arcrol attribuut
-    file_version_xlink_actuate_attribute: Xlink activeer attribuut
-    file_version_xlink_show_attribute: Xlink toon attribuut
+    xlink_title_attribute: Xlink Titel attribuut
+    xlink_role_attribute: Xlink Rol attribuut
+    xlink_arcrole_attribute: Xlink Arcrol attribuut
+    file_version_xlink_actuate_attribute: Xlink Activeer attribuut
+    file_version_xlink_show_attribute: Xlink Toon attribuut
     last_verified_date: Datum laatste verificatie
 
   agent_sources:
@@ -2388,11 +2388,11 @@ nl:
     linked_resource: Gerelateerd extern archief/collectie-record
     linked_resource_description: Beschrijving
     file_uri: BestandsURI
-    xlink_title_attribute: Xlink titel attribuut
-    xlink_role_attribute: Xlink rol attribuut
-    xlink_arcrole_attribute: Xlink arcrol attribuut
-    file_version_xlink_actuate_attribute: Xlink activeer attribuut
-    file_version_xlink_show_attribute: Xlink toon attribuut
+    xlink_title_attribute: Xlink Titel attribuut
+    xlink_role_attribute: Xlink Rol attribuut
+    xlink_arcrole_attribute: Xlink Arcrol attribuut
+    file_version_xlink_actuate_attribute: Xlink Activeer attribuut
+    file_version_xlink_show_attribute: Xlink Toon attribuut
     last_verified_date: Datum laatste verificatie
 
   agent_resources:
@@ -2471,11 +2471,11 @@ nl:
     license: Licentie
     descriptive_note: Beschrijvende noot
     file_uri: BestandsURI
-    xlink_title_attribute: Xlink titel attribuut
-    xlink_role_attribute: Xlink rol attribuut
-    xlink_arcrole_attribute: Xlink arcrol attribuut
-    file_version_xlink_actuate_attribute: Xlink activeer attribuut
-    file_version_xlink_show_attribute: Xlink toon attribuut
+    xlink_title_attribute: Xlink Titel attribuut
+    xlink_role_attribute: Xlink Rol attribuut
+    xlink_arcrole_attribute: Xlink Arcrol attribuut
+    file_version_xlink_actuate_attribute: Xlink Activeer attribuut
+    file_version_xlink_show_attribute: Xlink Toon attribuut
     last_verified_date: Datum laatste verificatie
 
   metadata_rights_declarations:

@@ -45,8 +45,8 @@ nl:
     file_version_checksum_methods: Bestandsversie checksum methodes
     file_version_file_format_name: Bestandsversie bestandsformaat
     file_version_use_statement: Bestandsversie verklaring over gebruik
-    file_version_xlink_actuate_attribute: Bestandsversie Xlink Activeer attribuut
-    file_version_xlink_show_attribute: Bestandsversie Xlink Toon Attribute
+    file_version_xlink_actuate_attribute: Xlink Activeer attribuut
+    file_version_xlink_show_attribute: Xlink Toon Attribuut
     gender: Actor geslacht
     government_agency_type: Record controle overheidsorgaan type
     identifier_type: Record controle identificatiecode type
