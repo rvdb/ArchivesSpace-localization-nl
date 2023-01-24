@@ -680,29 +680,29 @@ nl:
 
   default_values:
     form_title:
-      archival_object: Archiefonderdeel: standaardwaarden
-      resource: Archief/collectie: standaardwaarden
-      accession: Aanwinst: standaardwaarden
-      subject: Onderwerp: standaardwaarden
-      agent_person: Actor (Persoon): standaardwaarden
-      agent_family: Actor (Familie): standaardwaarden 
-      agent_corporate_entity: Actor (Organisatie): standaardwaarden 
-      agent_software: Actor (Software): standaardwaarden 
-      digital_object: Digitaal object: standaardwaarden
-      digital_object_component: Digitaal object onderdeel: standaardwaarden
-      location: Locatie: standaardwaarden
-      event: Gebeurtenis: standaardwaarden
-      classification: Classificatie: standaardwaarden
-      classification_term: Classificatie term: standaardwaarden
+      archival_object: "Archiefonderdeel: standaardwaarden"
+      resource: "Archief/collectie: standaardwaarden"
+      accession: "Aanwinst: standaardwaarden"
+      subject: "Onderwerp: standaardwaarden"
+      agent_person: "Actor (Persoon): standaardwaarden"
+      agent_family: "Actor (Familie): standaardwaarden"
+      agent_corporate_entity: "Actor (Organisatie): standaardwaarden"
+      agent_software: "Actor (Software): standaardwaarden"
+      digital_object: "Digitaal object: standaardwaarden"
+      digital_object_component: "Digitaal object onderdeel: standaardwaarden"
+      location: "Locatie: standaardwaarden"
+      event: "Gebeurtenis: standaardwaarden"
+      classification: "Classificatie: standaardwaarden"
+      classification_term: "Classificatie term: standaardwaarden"
     messages:
       defaults_updated: Standaardwaarden aangepast
 
   required_fields:
     form_title:
-      agent_person: Actor (Persoon): verplichte velden
-      agent_family: Actor (Familie): verplichte velden
-      agent_corporate_entity: Actor (Organisatie): verplichte velden
-      agent_software: Actor (Software): verplichte velden
+      agent_person: "Actor (Persoon): verplichte velden"
+      agent_family: "Actor (Familie): verplichte velden"
+      agent_corporate_entity: "Actor (Organisatie): verplichte velden"
+      agent_software: "Actor (Software): verplichte velden"
     messages:
       required_fields_updated: Verplichte velden aangepast
 

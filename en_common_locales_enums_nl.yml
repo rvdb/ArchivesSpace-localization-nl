@@ -8,36 +8,36 @@ nl:
     accession_sibling_relator_type: Gerelateerde aanwinst relatortype
     agency_code_type: Record controle agentschapscode type
     agent_contact_salutation: Actor contact aanspreking
-    agent_relationship_associative_relator: Actor relaties - associatief
-    agent_relationship_earlierlater_relator: Actor relaties - vroeger/later
-    agent_relationship_family_relator: Actor relaties - familie
-    agent_relationship_hierarchical_relator: Actor relaties - hiërarchisch
-    agent_relationship_identity_relator: Actor relaties - identiteit
-    agent_relationship_parentchild_relator: Actor relaties - ouder/kind
-    agent_relationship_specific_relator: Actor relaties - specifiek
-    agent_relationship_subordinatesuperior_relator: Actor relaties - onderschikking/nevenschikking
-    agent_relationship_temporal_relator: Actor relaties - temporeel
+    agent_relationship_associative_relator: "Actor relaties: associatief"
+    agent_relationship_earlierlater_relator: "Actor relaties: vroeger/later"
+    agent_relationship_family_relator: "Actor relaties: familie"
+    agent_relationship_hierarchical_relator: "Actor relaties: hiërarchisch"
+    agent_relationship_identity_relator: "Actor relaties: identiteit"
+    agent_relationship_parentchild_relator: "Actor relaties: ouder/kind"
+    agent_relationship_specific_relator: "Actor relaties: specifiek"
+    agent_relationship_subordinatesuperior_relator: "Actor relaties: onderschikking/nevenschikking"
+    agent_relationship_temporal_relator: "Actor relaties: temporeel"
     archival_record_level: Beschrijvingsniveau
-    begin_date_standardized_type: Datum - type gestandaardiseerde begindatum
+    begin_date_standardized_type: "Datum: type gestandaardiseerde begindatum"
     cataloging_source: Record controle catalogiseringsbron
-    collection_management_processing_priority: Collectiebeheer - prioriteit verwerking
-    collection_management_processing_status: Collectiebeheer - status
+    collection_management_processing_priority: "Collectiebeheer: prioriteit verwerking"
+    collection_management_processing_status: "Collectiebeheer: status"
     container_location_status: Status locatie verpakking
     container_type: Containertype
     country_iso_3166: Land ISO 3166
-    date_calendar: Datum - kalender
-    date_certainty: Datum - zekerheid
-    date_era: Datum: jaartelling
-    date_label: Datum: label
-    date_role: Datum: rol
-    date_standardized_type: Datum - type gestandaardiseerde datum
-    date_type: Datum: type
-    date_type_structured: Datum - type gestructureerde datum
+    date_calendar: "Datum: kalender"
+    date_certainty: "Datum: zekerheid"
+    date_era: "Datum: jaartelling"
+    date_label: "Datum: label"
+    date_role: "Datum: rol"
+    date_standardized_type: "Datum: type gestandaardiseerde datum"
+    date_type: "Datum: type"
+    date_type_structured: "Datum: type gestructureerde datum"
     deaccession_scope: Afstoting bereik
-    digital_object_digital_object_type: Digitaal object type
-    digital_object_level: Digitaal object niveau
+    digital_object_digital_object_type: "Digitaal object: type"
+    digital_object_level: "Digitaal object: niveau"
     dimension_units: Maateenheid
-    end_date_standardized_type: Datum - type gestandaardiseerde einddatum
+    end_date_standardized_type: "Datum: type gestandaardiseerde einddatum"
     event_event_type: Gebeurtenis type
     event_outcome: Gebeurtenis resultaat
     extent_extent_type: Omvang type
@@ -54,10 +54,10 @@ nl:
     job_type: Taak type
     language_iso639_2: Taal ISO 639-2
     level_of_detail: Record controle detailniveau
-    linked_agent_archival_record_relators: Gekoppelde actor - archiefrecord relators
-    linked_agent_event_roles: Gekoppelde actor - gebeurtenis rol
-    linked_agent_role: Gekoppelde actor - rol
-    linked_event_archival_record_roles: Gekoppelde gebeurtenis - archiefrecord rollen
+    linked_agent_archival_record_relators: "Gekoppelde actor: archiefrecord relators"
+    linked_agent_event_roles: "Gekoppelde actor: gebeurtenis rol"
+    linked_agent_role: "Gekoppelde actor: rol"
+    linked_event_archival_record_roles: "Gekoppelde gebeurtenis: archiefrecord rollen"
     location_function_type: Locatie functie type
     location_temporary: Tijdelijke locatie
     maintenance_agent_type: Record controle onderhoud actor type
@@ -69,16 +69,16 @@ nl:
     name_rule: Naam regelwerk
     name_source: Naam bron
     name_type: Record controle naamtype
-    note_bibliography_type: Noot - bibliografie type
-    note_digital_object_type: Noot - digitaal object type
-    note_index_item_type: Noot - index item type
-    note_index_type: Noot - index type
-    note_langmaterial_type: Noot - taal van het materiaal type
-    note_multipart_type: Noot - meerdelig type
-    note_orderedlist_enumeration: Noot - lijst/opsomming
-    note_rights_statement_act_type: Noot - rechtenverklaring wetgeving type
-    note_rights_statement_type: Noot - rechtenverklaring type
-    note_singlepart_type: Noot - eendelig type
+    note_bibliography_type: "Noot: bibliografie type"
+    note_digital_object_type: "Noot: digitaal object type"
+    note_index_item_type: "Noot: index item type"
+    note_index_type: "Noot: index type"
+    note_langmaterial_type: "Noot: taal van het materiaal type"
+    note_multipart_type: "Noot: meerdelig type"
+    note_orderedlist_enumeration: "Noot: lijst/opsomming"
+    note_rights_statement_act_type: "Noot: rechtenverklaring wetgeving type"
+    note_rights_statement_type: "Noot: rechtenverklaring type"
+    note_singlepart_type: "Noot: eendelig type"
     place_role: Plaats rol
     publication_status: Record controle publicatiestatus
     reference_evaluation: Record controle referentie evaluatie
@@ -86,17 +86,17 @@ nl:
     resource_finding_aid_status: Toegang status
     resource_resource_type: Archiefbestanddeel type
     restriction_type: Beperking op toegankelijkheid type
-    rights_statement_act_restriction: Rechtenverklaring - regelgeving beperking
-    rights_statement_act_type: Rechtenverklaring - regelgeving type
-    rights_statement_external_document_identifier_type: Rechtenverklaring - extern document 
-    identificatietype
-    rights_statement_ip_status: Rechtenverklaring - status
-    rights_statement_other_rights_basis: Rechtenverklaring - andere rechtengrondslag
-    rights_statement_rights_type: Rechtenverklaring - rechten type
+    rights_statement_act_restriction: "Rechtenverklaring: regelgeving beperking"
+    rights_statement_act_type: "Rechtenverklaring: regelgeving type"
+    rights_statement_external_document_identifier_type: "Rechtenverklaring: extern document
+     identificatietype"
+    rights_statement_ip_status: "Rechtenverklaring: status"
+    rights_statement_other_rights_basis: "Rechtenverklaring: andere rechtengrondslag"
+    rights_statement_rights_type: "Rechtenverklaring: rechten type"
     romanization: Romanisering
     script_iso15924: Taal Schrift ISO 15924
-    subject_source: Onderwerp - bron
-    subject_term_type: Onderwerp - term type
+    subject_source: "Onderwerp: bron"
+    subject_term_type: "Onderwerp: term type"
     telephone_number_type: Telefoonnummer type
     transliteration: Transliteratie
     user_defined_enum_1: User Defined Enum 1
@@ -546,10 +546,10 @@ nl:
       migration: Migratie
       normalization: Normalisering
       processed: Verwerkt
-      processing_completed: Verwerking - voltooid
-      processing_in_progress: Verwerking - in uitvoering
-      processing_new: Verwerking - nieuw
-      processing_started: Verwerking - start
+      processing_completed: "Verwerking: voltooid"
+      processing_in_progress: "Verwerking: in uitvoering"
+      processing_new: "Verwerking: nieuw"
+      processing_started: "Verwerking: start"
       publication: Publicatie
       replication: Replicatie
       request: Verzoek
