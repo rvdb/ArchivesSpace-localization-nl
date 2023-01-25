@@ -2,7 +2,7 @@ nl:
   states:
     suppressed: Verborgen
     deleted: Verwijderd
-    auto_generated: Gecreëerd door systeem na bewaren van wijzigingen
+    auto_generated: Automatisch gegenereerd bij opslaan
 
   boolean:
     "true": "Ja"
@@ -366,7 +366,7 @@ nl:
       compression: Compressie
       contribution: Bijdrage
       copyright_transfer: Overdracht copyright
-      custody_transfer: Custody Transfer@en
+      custody_transfer: Overdracht bewaring
       deaccession: Afstoting
       decompression: Decompressie
       decryption: Decryptie
@@ -428,7 +428,7 @@ nl:
   parallel_name: &parallel_name_attributes
     _frontend:
       action:
-        add: Voeg Parallelle naam toe
+        add: Voeg parallelle naam toe
   agent_name: &agent_name_attributes
     authority_id: Identificatiecode
     authority_id_tooltip: |
@@ -1384,7 +1384,7 @@ nl:
     identifier: Identificatiecode
     identifier_tooltip: |
       <p>Identificeert op unieke wijze de rechtenverklaring binnen het repository-domein. Rechtenverklaring-ID's worden meestal automatisch gegenereerd door de toepassing.</p>
-    identifier_auto_generate_message: "-- auto-generated upon save --"
+    identifier_auto_generate_message: "-- automatisch gegenereerd bij opslaan --"
     rights_type: Rechtentype
     rights_type_tooltip: |
       <p>De basis voor het maken van de rechtenverklaring. Vier bases zijn toegestaan: Copyright, Licentie, Statuut en Overig.</p>
@@ -1571,7 +1571,7 @@ nl:
     condition_description: Conditie beschrijving
     condition_description_tooltip: |
       <p>Een beschrijving van de fysieke toestand van de inhoud van de 
-      Aanwinst, inclusief eventuele speciale afhandelingsvereisten.</p>
+      aanwinst, inclusief eventuele speciale afhandelingsvereisten.</p>
        <p> Voorbeelden: </p>
       <p>De kaarten in doos 4 zijn broos en verschillende zijn bedekt met schimmel. 
       Tijdens de verwerking moeten inademingsbeschermers worden gedragen.</p>
@@ -1827,7 +1827,7 @@ nl:
       <p> VOORWAARDELIJK VERPLICHT SUBRECORD. Een archiefonderdeel moet minstens een subrecord Titel of Datum hebben.</p>
     extents: Omvang
     lang_materials: Talen
-    ref_id_auto_generation_message: "-- auto-generated upon save --"
+    ref_id_auto_generation_message: "-- automatisch gegenereerd bij opslaan --"
     component_id: Identificatiecode
     component_id_tooltip: |
       <p>Drukt een unieke ID uit, binnen de context van de archief/collectiebeschrijving, voor het onderdeel.</p>
@@ -2566,8 +2566,8 @@ nl:
     import_type_assessment_csv: Waardering CSV
     import_type_accession_csv: Aanwinsten CSV
     import_type_subject_csv: Onderwerpen CSV
-    bulk_import_csv: Bulk import archiefobjecten CSV
-    bulk_import_xlsx: Bulk import archiefobjecten XLSX
+    bulk_import_csv: Bulk import archiefonderdelen CSV
+    bulk_import_xlsx: Bulk import archiefonderdelen XLSX
     bulk_import_DO_csv: Bulk import digitale objecten CSV
     bulk_import_DO_xlsx: Bulk import digitale objecten XLSX
     import_type_digital_object_csv: Digitaal object CSV
@@ -2971,7 +2971,7 @@ nl:
       dig_info_miss: De URI van het digitale object of de miniatuur-URI is niet gespecificeerd
       dig_validation: "Kan het digitale object niet maken %{err}"
       initial_save_error: "Probleem met de eerste opslag van %{title} -- %{msg}"
-      second_save_error: "Fout bij het opnieuw opslaan van het archiefonderdeel met 'instanties' %{title} position: %{pos}. Het archiefobject werd aangemaakt, maar mogelijk niet goed gekoppeld aan de bijhorende instanties (digitaal object, topcontainer, onderwerp, enz.) [%{what}]"
+      second_save_error: "Fout bij het opnieuw opslaan van het archiefonderdeel met 'instanties' %{title} position: %{pos}. Het archiefonderdeel werd aangemaakt, maar mogelijk niet goed gekoppeld aan de bijhorende instanties (digitaal object, topcontainer, onderwerp, enz.) [%{what}]"
       ao_validation: "Validatiefout bij het opslaan van archiefonderdeel: %{err}"
       validation_error: "Kan niet %{what} valideren: %{err}"
       validated: "%{what} gevalideerd"

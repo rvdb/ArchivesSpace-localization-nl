@@ -918,7 +918,7 @@ nl:
     _frontend:
       title_prefix: Verwerken
       action:
-        add: Voeg collectiebeheer velden toe
+        add: Voeg verwerkingsinformatie toe
 
   container:
     _frontend:
@@ -1158,7 +1158,7 @@ nl:
       section:
         use_date: Datum(s) van naamgebruik
         dates: Datums
-        parallel_names: Parallele namen
+        parallel_names: Parallelle namen
         place_subject: Plaats
         topic_subject: 'Onderwerp: term'
         name_subject: Naam
@@ -1377,7 +1377,7 @@ nl:
   user_defined:
     _frontend:
       action:
-        add: Voeg door de gebruiker gedefinieerde velden toe
+        add: Voeg extra gegevens toe
 
   use_date:
     _frontend:
@@ -1868,7 +1868,7 @@ nl:
   act:
     _frontend:
       action:
-        add: Voeg Act toe
+        add: Voeg regels toe
 
   assessment:
     _frontend:
@@ -2156,7 +2156,7 @@ nl:
   agent_function: &agent_function_attributes
     _frontend:
       action:
-        add: Add Function
+        add: Voeg functie toe
     section:
       dates: Datums
     _plural: Functies

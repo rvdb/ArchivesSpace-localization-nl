@@ -534,7 +534,7 @@ nl:
       compression: Compressie
       contribution: Bijdrage
       copyright_transfer: Overdracht copyright
-      custody_transfer: Custody Transfer@en
+      custody_transfer: Overdracht bewaring
       deaccession: Afstoting
       decompression: Decompressie
       decryption: Decryptie
@@ -1438,7 +1438,7 @@ nl:
       transmitter: Verzender
       validator: Validator
     linked_agent_role:
-      creator: Makers
+      creator: Maker
       source: Bron
       subject: Onderwerp
     linked_event_archival_record_roles:
@@ -1584,8 +1584,8 @@ nl:
       relatedmaterial: Verwante materialen
       rights_statement: Rechtenverklaring
       scopecontent: Bereik en inhoud
-      separatedmaterial: Separated Materials@en
-      structure_or_genealogy: Structuu of genealogie
+      separatedmaterial: Gescheiden archiefmateriaal
+      structure_or_genealogy: Structuur of genealogie
       summary: Korte inhoud
       userestrict: Voorwaarden voor gebruik
     note_digital_object_type:
