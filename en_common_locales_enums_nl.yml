@@ -160,7 +160,7 @@ nl:
       item: Object
       otherlevel: Ander niveau
       recordgrp: Archiefblok
-      series: Reeksen
+      series: Reeks
       subfonds: Deelarchief
       subgrp: Deelgroep
       subseries: Deelreeks
@@ -1638,11 +1638,11 @@ nl:
       disallow: Niet toegelaten
     rights_statement_act_type:
       delete: Verwijderen
-      disseminate: Publiceer
-      migrate: Migreer
-      modify: Wijzig
-      replicate: Repliceer
-      use: Gebruik
+      disseminate: Verspreiden
+      migrate: Migreren
+      modify: Wijzigen
+      replicate: Repliceren
+      use: Gebruiken
     rights_statement_external_document_identifier_type:
       agrovoc: "AGROVOC multilingual agricultural thesaurus. (Rome: APIMONDIA)"
       allmovie: "AllMovie"
