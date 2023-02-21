@@ -542,8 +542,8 @@ nl:
     search_field: Zoekveld
     search_text: Zoektekst
     search_date: Datum
-    search_terms: Velden met geavanceerde zoektermen %{number}
-    remove_row: Verwijder rij met geavanceerde zoektermen %{number}
+    search_terms: Geavanceerde zoekvelden %{number}
+    remove_row: Verwijder geavanceerde zoekvelden %{number}
     add_row: Voeg rij toe
 
   become-user:

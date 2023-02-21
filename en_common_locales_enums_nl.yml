@@ -1633,9 +1633,9 @@ nl:
       RestrictedFragileSpecColl: 3 - Toegangsbeperking wegens kwetsbaarheid
       RestrictedSpecColl: 1 - Toegangsbeperking door schenker/universiteit
     rights_statement_act_restriction:
-      allow: Toegelaten
-      conditional: Voorwaardelijk
-      disallow: Niet toegelaten
+      allow: open
+      conditional: toelating vereist
+      disallow: gesloten
     rights_statement_act_type:
       delete: Verwijderen
       disseminate: Verspreiden
