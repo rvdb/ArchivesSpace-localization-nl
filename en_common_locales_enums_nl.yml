@@ -154,7 +154,7 @@ nl:
       is_temporal_with: Heeft temporele relatie met
     archival_record_level:
       class: Afdeling
-      collection: Verzamelingen
+      collection: Verzameling
       file: Bestanddeel
       fonds: Archief
       item: Object
