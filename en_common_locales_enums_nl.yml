@@ -479,14 +479,14 @@ nl:
       not_before: Niet voor
       standard: Standaard
     date_type:
-      bulk: Bulk data
-      expression: Bewoording
-      inclusive: Inclusieve data
-      range: Bereik
-      single: Enkelvoudig
+      bulk: Bulk datumbereik
+      expression: Omschrijving
+      inclusive: Datumbereik
+      range: Datumbereik
+      single: Enkelvoudige datum
     date_type_structured:
-      range: Bereik
-      single: Enkelvoudig
+      range: Datumbereik
+      single: Enkelvoudige datum
     deaccession_scope:
       part: Deel
       whole: Geheel
