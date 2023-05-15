@@ -863,7 +863,7 @@ nl:
         has_unpublished_ancestor: Hou er rekening mee dat dit record een bovenliggende beschrijving heeft die niet is gepubliceerd.
         spawned: "Dit archiefonderdeel is doorgedrukt van aanwinst <strong>%{accession.display_string}</strong>. Dit record is nog niet bewaard. Klik Opslaan om dit archiefonderdeel te bewaren in het systeem."
         delete_conflict: "Archiefonderdeel kon niet worden verwijderd: <pre>%{error}</pre>"
-        spawn_placeholder: "<em>Doorgedrukt archiefonderdeel zal hier worden ingevoegd./em>"
+        spawn_placeholder: "<em>Doorgedrukt archiefonderdeel zal hier worden ingevoegd.</em>"
         spawn_menu_before: Voeg doorgedrukt archiefonderdeel in vóór
         spawn_menu_child: Voeg doorgedrukt archiefonderdeel in als kind
         spawn_menu_after: Voeg doorgedrukt archiefonderdeel in na
