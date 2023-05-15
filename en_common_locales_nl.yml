@@ -1292,11 +1292,11 @@ nl:
     portion_tooltip: |
       <p>VERPLICHT VELD: Wordt gebruikt om aan te geven of de beschrijving van de omvang betrekking heeft op het geheel of een deel van een gegeven beschreven aggregatie of object.</p>
       <p>Zie DACS 2.5.7</p>
-    number: Nummer
+    number: Aantal
     number_tooltip: |
       <p>VERPLICHT VELD: Een numerieke waarde voor het aangeven van het aantal eenheden in de omvangverklaring, bijvoorbeeld 5, 11.5, 245. Wordt gebruikt in combinatie met het type omvang om een gestructureerde omvangverklaring te geven.</p>
       <p>Zie DACS 2.5</p>
-    extent_type: Type
+    extent_type: Eenheid
     extent_type_tooltip: &extent_type_tooltip |
       <p>VERPLICHT VELD: Een term die het type eenheid aangeeft dat wordt gebruikt om de omvang van de beschreven materialen te meten.</p>
       <p>Waarden in deze lijst met gecontroleerde waarden kunnen worden gewijzigd.</p>
@@ -1310,12 +1310,16 @@ nl:
       <li>12 schoendozen.</li>
       <li>4 archiefdozen, 32 kokers</li>
        </ul>
-    physical_details: Fysieke kenmerken
+    physical_details: Magazijnplaats
     physical_details_tooltip: |
+      <p>TIJDELIJK: magazijnplaats. Tot containermodule is geïmplementeerd.</p>
+      <p>(oorspronkelijke veld: "Fysieke kenmerken")</p>
       <p>Andere fysieke details van de beschreven materialen, bijv. analoog, zwart-wit, negatieven.</p>
       <p>Zie DACS 2.5</p>
-    dimensions: Afmetingen
+    dimensions: Volgnr / plaatsingsnr
     dimensions_tooltip: |
+      <p>TIJDELIJK: magazijnplaats. Tot containermodule is geïmplementeerd.</p>
+      <p>(oorspronkelijke veld: "Afmetingen")</p>
       <p>Afmetingen van de beschreven materialen.</p>
       <p>Zie DACS 2.5</p>
        <p> Voorbeelden: </p>
