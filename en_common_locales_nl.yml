@@ -2658,7 +2658,7 @@ nl:
     backend_log: Backend log
 
   resource_component:
-    _singular: Archief/collectie-onderdeel
+    _singular: Archiefonderdeel
 
   largetree:
     reparent_error:

@@ -479,7 +479,7 @@ nl:
       not_before: Niet voor
       standard: Standaard
     date_type:
-      bulk: Bulk datumbereik
+      bulk: Datumbereik (bulk)
       expression: Omschrijving
       inclusive: Datumbereik
       range: Datumbereik
