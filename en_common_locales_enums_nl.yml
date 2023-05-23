@@ -1,4 +1,4 @@
-nl:
+en:
   enumeration_names:
     accession_acquisition_type: Aanwinst verwervingstype
     accession_parts_relator: Aanwinst deel relatie
@@ -8,6 +8,29 @@ nl:
     accession_sibling_relator_type: Gerelateerde aanwinst relatortype
     agency_code_type: Record controle agentschapscode type
     agent_contact_salutation: Actor contact aanspreking
+    agent_relationship_ovk_ovz_relator: Overkoepelende term/Overzicht relatie
+    agent_relationship_fbb_fbb_relator: Broer/zus relatie
+    agent_relationship_bm_bmv_relator: Burgemeester (van) relatie
+    agent_relationship_afd_daf_relator: Deel (van) relatie
+    agent_relationship_di_div_relator: Directeur (van) relatie
+    agent_relationship_fnt_fnt_relator: Verwant van relatie
+    agent_relationship_fl_flv_relator: Familie/familielid relatie
+    agent_relationship_fee_fee_relator: Gehuwd met relatie
+    agent_relationship_hr_hrv_relator: Hoofdredacteur (van) relatie
+    agent_relationship_fdm_fmd_relator: Ouder/kind relatie
+    agent_relationship_fal_fla_relator: Grootouder/kleinkind relatie
+    agent_relationship_vza_vzt_relator: Eerdere/latere vorm van relatie
+    agent_relationship_li_liv_relator: Lid (van) relatie
+    agent_relationship_mw_mwv_relator: Medewerker (van) relatie
+    agent_relationship_fpf_fpf_relator: Partner van relatie
+    agent_relationship_gv_gvv_relator: Provinciegouverneur (van) relatie
+    agent_relationship_rd_rdv_relator: Redacteur (van) relatie
+    agent_relationship_rs_rsv_relator: Redactiesecretaris (van) relatie
+    agent_relationship_se_sev_relator: Secretaris (van) relatie
+    agent_relationship_ven_vnv_relator: Vennoot (van) relatie
+    agent_relationship_fav_fav_relator: Gerelateerde familie relatie
+    agent_relationship_vz_vzv_relator: Voorzitter (van) relatie
+    agent_relationship_zv_zvv_relator: Zaakvoerder (van) relatie  
     agent_relationship_associative_relator: "Actor relaties: associatief"
     agent_relationship_earlierlater_relator: "Actor relaties: vroeger/later"
     agent_relationship_family_relator: "Actor relaties: familie"
@@ -133,6 +156,70 @@ nl:
       mrs: Mevr.
       ms: Juffr.
       sir: De heer
+    agent_relationship_ovk_ovz_relator:
+      ovk: Overkoepelende term
+      ovz: Overzicht van
+    agent_relationship_fbb_fbb_relator:
+      fbb: Broer/zus van
+    agent_relationship_bm_bmv_relator:
+      bm: Burgemeester
+      bmv: Burgemeester van
+    agent_relationship_afd_daf_relator:
+      afd: Deel van
+      daf: Deel
+    agent_relationship_di_div_relator:
+      di: Directeur
+      div: Directeur van
+    agent_relationship_fnt_fnt_relator:
+      fnt: Verwant van
+    agent_relationship_fl_flv_relator:
+      fl: Familielid
+      flv: Lid van familie
+    agent_relationship_fee_fee_relator:
+      fee: Gehuwd met
+    agent_relationship_hr_hrv_relator:
+      hr: Hoofdredacteur
+      hrv: Hoofdredacteur van
+    agent_relationship_fdm_fmd_relator:
+      fdm: Kind van
+      fmd: Ouder van
+    agent_relationship_fal_fla_relator:
+      fal: Grootouder van
+      fla: Kleinkind van
+    agent_relationship_vza_vzt_relator:
+      vza: Eerdere vorm van
+      vzt: Latere vorm van
+    agent_relationship_li_liv_relator:
+      li: Lid
+      liv: Lid van
+    agent_relationship_mw_mwv_relator:
+      mw: Medewerker
+      mwv: Medewerker van
+    agent_relationship_fpf_fpf_relator:
+      fpf: Partner van
+    agent_relationship_gv_gvv_relator:
+      gv: Provinciegouverneur
+      gvv: Provinciegouverneur van
+    agent_relationship_rd_rdv_relator:
+      rd: Redacteur
+      rdv: Redacteur van
+    agent_relationship_rs_rsv_relator:
+      rs: Redactiesecretaris
+      rsv: Redactiesecretaris van
+    agent_relationship_se_sev_relator:
+      se: Secretaris
+      sev: Secretaris van
+    agent_relationship_ven_vnv_relator:
+      ven: Vennoot
+      vnv: Vennoot van
+    agent_relationship_fav_fav_relator:
+      fav: Gerelateerde familie
+    agent_relationship_vz_vzv_relator:
+      vz: Voorzitter
+      vzv: Voorzitter van
+    agent_relationship_zv_zvv_relator:
+      zv: Zaakvoerder
+      zvv: Zaakvoerder van
     agent_relationship_associative_relator:
       is_associative_with: Is associatief met
     agent_relationship_earlierlater_relator:
