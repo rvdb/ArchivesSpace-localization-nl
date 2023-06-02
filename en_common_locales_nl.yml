@@ -444,7 +444,7 @@ en:
     source_tooltip: |
       <p> VOORWAARDELIJK VERPLICHT VELD, als naam Regels niet gebruikt is. Een identificatiecode van de geautoriseerde bron waaruit de naam is gehaald.</p>
       <p>Waarden in deze lijst met gecontroleerde waarden kunnen worden gewijzigd.</p>
-    rules: Rules
+    rules: Regels
     rules_tooltip: |
       <p> VOORWAARDELIJK VERPLICHT VELD, als naam Bron niet gebruikt is. Een indicatie van de regels die worden gebruikt om de naaminvoer te formuleren.</p>
       <p>Waarden in deze lijst met gecontroleerde waarden kunnen worden gewijzigd.</p>
@@ -537,13 +537,13 @@ en:
     is_display_name: Getoonde naam
     language: Taal
     language_tooltip: |
-      <p>Geeft de taal aan die wordt gebruikt bij het opnemen van het naamformulier. Voorbeeld: Russisch (voor Каспаров, Г. К. (Гарри Кимович))</p>
+      <p>Identificeert de taal die werd gebruikt bij de registratie van de naamvorm. Voorbeeld: Russisch (voor Каспаров, Г. К. (Гарри Кимович))</p>
     script: Schrift
     script_tooltip: |
-      <p>Indicates the script used in recording the name form. Example: Cyrillic (for Каспаров, Г. К. (Гарри Кимович))</p>
-    transliteration: Transliteration
+      <p>Identificeert het schrift dat werd gebruikt bij de registratie van de naamvorm. Voorbeeld: Cyrillisch (voor Каспаров, Г. К. (Гарри Кимович))</p>
+    transliteration: Transliteratie
     transliteration_tooltip: |
-      <p>Indicates the transliteration scheme used in recording the name form.</p>
+      <p>Beschrijft het transliteratie-schema dat werd gebruikt bij de registratie van de naamvorm.</p>
     _singular: Naamvorm
     _plural: Naamvormen
 
@@ -572,7 +572,7 @@ en:
 
   name_corporate_entity: &agent_corporate_entity_attributes
     <<: *agent_name_attributes
-    subordinate_name_1: Subordinate Name 1
+    subordinate_name_1: Ondergeschikte entiteit 1
     subordinate_name_1_tooltip: |
       <p>Een hiërarchische eenheid van de bedrijfsentiteit genoemd in het veld Primaire naam.</p>
       <p>Voorbeelden:</p>
@@ -2472,7 +2472,7 @@ en:
     one_or_more_required_(or_enter_a_title): een of meer zijn vereist (of geef een titel)
     must_not_be_an_empty_string_(or_enter_a_date): mag niet leeg zijn (of geef een datum)
     is_required_when__source__is_blank: is vereist wanneer 'Bron' leeg is
-    is_required_when__rules__is_blank: is vereist wanneer 'Rules' leeg is
+    is_required_when__rules__is_blank: is vereist wanneer 'Regels' leeg is
     is_required_if_there_is_an_authority_id: is vereist als er een identificatiecode is
     you_must_provide_a_label__title_or_date: je moet een label, titel of datum opgeven
     location_fields_error: >
@@ -2557,7 +2557,7 @@ en:
     format: Formaat
 
   report_job:
-    report_type: Report type
+    report_type: Rapport type
     format: Formaat
 
   import_job:
@@ -2578,11 +2578,11 @@ en:
     import_subject_csv: Onderwerpen CSV
     import_type_eac_xml: EAC-CPF
     import_type_location_csv: Locatie CSV
-    import_type_marcxml: MarcXML Bibliographic (Resource)
-    import_type_marcxml_accession: MarcXML Bibliographic (Accession)
-    import_type_marcxml_subjects_and_agents: MarcXML Bibliographic (Subjects and Agents Only)
-    import_type_marcxml_auth_agent: MarcXML Authority (Agents)
-    import_type_marcxml_auth_subject: MarcXML Authority (Subjects)
+    import_type_marcxml: MarcXML Bibliographic (Archieven)
+    import_type_marcxml_accession: MarcXML Bibliographic (Aanwinsten)
+    import_type_marcxml_subjects_and_agents: MarcXML Bibliographic (uitsluitend Onderwerpen en Actoren)
+    import_type_marcxml_auth_agent: MarcXML Authority (Actoren)
+    import_type_marcxml_auth_subject: MarcXML Authority (Onderwerpen)
 
   find_and_replace_job:
     _singular: Zoek en vervang taak

@@ -322,7 +322,7 @@ en:
       publish: Gepubliceerd
       authority_id: Identificatiecode
       source: Bron
-      rules: Rules
+      rules: Regels
       is_user: Is gebruiker?
       audit_info: Audit informatie
       user_mtime: Aangepast
