@@ -392,7 +392,7 @@ en:
 
   deaccession:
     <<: *section_tooltips
-    scope: Portion
+    scope: Deel
     scope_tooltip: |
       <p>VERPLICHT VELD: Wordt gebruikt om aan te geven of de beschrijving van de omvang betrekking heeft op het geheel of een deel van een gegeven beschreven aggregatie of object.</p>
     description: Beschrijving
