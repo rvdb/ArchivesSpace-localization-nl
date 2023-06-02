@@ -1596,7 +1596,7 @@ en:
       rda: Resource Description and Access
     name_source:
       cash: Canadian Subject Headings
-      ingest: Unspecified ingested source
+      ingest: Onbepaalde bron (import)
       lcnaf: Library of Congress Name Authority File
       lcshac: Library of Congress Children's Subject Headings
       local: Lokale bronnen
@@ -2081,7 +2081,7 @@ en:
       aat: "Art & Architecture Thesaurus"
       cash: Canadian Subject Headings
       gmgpc: "TGM II, Genre and physical characteristic terms"
-      ingest: Unspecified ingested source
+      ingest: Onbepaalde bron (import)
       lcgft: Library of Congress Genre/Form Terms
       lcsh: Library of Congress Subject Headings
       lcshac: Library of Congress Children's Subject Headings
