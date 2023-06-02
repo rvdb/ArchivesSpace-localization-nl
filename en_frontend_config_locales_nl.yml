@@ -1767,13 +1767,13 @@ en:
       link_title: Koppel aan containerprofiel
 
   rights_restriction:
-    begin: Beperking Begin
+    begin: Beperking begindatum
     begin_tooltip: |
       <p>Voor een tijdgebonden beperking: de begindatum voor een toegangsbeperking. Moet een enkele datum zijn in de notatie JJJJ-MM-DD. Wordt losgekoppeld van de containers zodra deze vervalt. Gebruik de notitietekst om een minder nauwkeurige datum of datumbereik aan te geven.</p>
-    end: Beperking Einde
+    end: Beperking einddatum
     end_tooltip: |
       <p>Voor een tijdgebonden beperking: de einddatum voor een toegangsbeperking. Moet een enkele datum zijn in de notatie JJJJ-MM-DD. Wordt losgekoppeld van de containers zodra deze vervalt. Gebruik de notitietekst om een minder nauwkeurige datum of datumbereik aan te geven.</p>
-    local_access_restriction_type: Type beperking op toegankelijkheid
+    local_access_restriction_type: Type beperking op raadpleging
     local_access_restriction_type_inline_help: "Hou CTRL (Windows) / Command (Mac/Linux) ingedrukt om meerdere opties te selecteren of een optie te deselecteren"
     local_access_restriction_type_tooltip: |
       <p>Voor beperkingen die niet tijdgebonden zijn, een indicatie van de reden voor de beperking.</p>
