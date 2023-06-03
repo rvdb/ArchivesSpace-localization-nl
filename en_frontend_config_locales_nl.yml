@@ -1485,7 +1485,7 @@ en:
         basic_information: Basisgegevens
         status: Taak status
         logs: Log
-        generated_uris: Nieuwe & gewijzigde records
+        generated_uris: Nieuwe en gewijzigde records
         active_jobs: Actieve taken
         archived_jobs: Gearchiveerde taken
         files: Bestanden
