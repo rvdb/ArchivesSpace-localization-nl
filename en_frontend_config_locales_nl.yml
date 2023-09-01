@@ -731,22 +731,22 @@ en:
     cannot_delete_repository_agent: Deze actor is gekoppeld met een repository en kan niet worden verwijderd.
     
   component_link:
-    _plural: Gekoppelde componenten
-    _singular: Gekoppelde component
+    _plural: Archiefonderdelen
+    _singular: Archiefonderdeel
     _frontend:
       action:
-        add: Koppel met component
+        add: Koppel met archiefonderdeel
 
   accession_link:
-    _plural: Gekoppelde aanwinsten
-    _singular: Gekoppelde aanwinst
+    _plural: Aanwinsten
+    _singular: Aanwinst
     _frontend:
       action:
         add: Koppel met aanwinst
 
   accession:
-    component_link: Gekoppeld archiefonderdeel
-    component_links: Gekoppelde archiefonderdelen
+    component_link: Archiefonderdeel
+    component_links: Archiefonderdelen
     _frontend:
       messages:
         created: Aanwinst <strong>%{accession.display_string}</strong> gemaakt
@@ -1056,14 +1056,14 @@ en:
         created: Gebeurtenis gemaakt
         updated: Gebeurtenis bewaard
         deleted: Gebeurtenis verwijderd
-        suppressed_info: Gebeurtenis is verborgen an kan niet worden aangepast
+        suppressed_info: Gebeurtenis is verborgen en kan niet worden aangepast
       section:
         basic_information: Basisgegevens
         date: Gebeurtenis datum/tijd
       action:
         save: Bewaar gebeurtenis
         create: Maak gebeurtenis
-    linked_agents: Gerelateerde actoren
+    linked_agents: Actoren
 
   extent:
     _frontend:
@@ -1206,7 +1206,7 @@ en:
   related_accession:
     _frontend:
       action:
-        add: Voeg gerelateerde aanwinst toe
+        add: Voeg koppeling met aanwinst toe
 
   related_agent:
     dates: Datering relatie
@@ -1219,7 +1219,7 @@ en:
   related_resource:
     _frontend:
       action:
-        add: Voeg gerelateerde archieven/collecties toe
+        add: Voeg koppeling met archief/collectie toe
 
   revision_statement:
     _frontend:
@@ -2212,11 +2212,11 @@ en:
         add: Voeg plaats toe
 
   agent_alternate_set: &agent_alternate_set_attributes
-    _plural: Gerelateerde alternatieve beschrijvingen
-    _singular: Gerelateerde alternatieve beschrijving
+    _plural: Alternatieve beschrijvingen
+    _singular: Alternatieve beschrijving
     _frontend:
       action:
-        add: Voeg koppeling met alternatieve beschrijving toe
+        add: Voeg verwijzing naar alternatieve beschrijving toe
     set_component: Label
     descriptive_note: Beschrijvende noot
     file_uri: BestandsURI
@@ -2375,17 +2375,17 @@ en:
   agent_resource: &agent_resource_attributes
     _frontend:
       action:
-        add: Voeg gerelateerd extern archief/collectie-record toe
+        add: Voeg verwijzing naar extern archief/collectie-record toe
     section:
       dates: Datums
       places: Plaatsen
-    _plural: Gerelateerde externe archief/collectie-records
-    _singular: Gerelateerd extern archief/collectie-record
+    _plural: Externe archief/collectie-records
+    _singular: Extern archief/collectie-record
     dates: Datums
     places: Plaatsen
     publish: Gepubliceerd
     linked_agent_role: Archief/collectie relatie type
-    linked_resource: Gerelateerd extern archief/collectie-record
+    linked_resource: Extern archief/collectie-record
     linked_resource_description: Beschrijving
     file_uri: BestandsURI
     xlink_title_attribute: Xlink Titel attribuut
