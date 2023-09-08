@@ -1072,13 +1072,13 @@ en:
     note_mandate: Mandaat
     note_contact_note: Contact noot
     note_legal_status: Wettelijke status
-    note_structure_or_genealogy: Structuu of genealogie
+    note_structure_or_genealogy: Structuur of genealogie
     _singular: Noot
     _plural: Noten
 
   note_text:
     <<: *note_attributes
-    option: Text
+    option: Tekst
 
   note_index:
     <<: *note_attributes
