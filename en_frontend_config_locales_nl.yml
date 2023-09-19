@@ -47,12 +47,12 @@ en:
     merge_confirm_title: samenvoegen in dit record?
     merge_agent_compare_agent_details: Vergelijk actoren
     merge_from_browse_confirm_title: Geselecteerde records samenvoegen?
-    merge_subject_confirm_message: "Het trefwoord '%{source}' zal de geselecteerde records erin samenvoegen. Alle geselecteerde records worden verwijderd en eventuele gekoppelde records worden opnieuw aan dit onderwerp gekoppeld."
-    merge_agent_confirm_message: "Het geselecteerde record zal worden samengevoegd met de actor '%{source}'. Het geselecteerde record wordt verwijderd en alle gekoppelde records worden opnieuw aan deze actor gekoppeld. Als je op de knop actoren vergelijken klikt, verschijnt een scherm waarin je kan kiezen welke velden en subrecords je van elk record wil behouden."
-    merge_agent_from_browse_confirm_message: "Bij de eerste geselecteerde actor worden de daaropvolgende geselecteerde records erin samengevoegd. Alle volgende geselecteerde records worden verwijderd en alle gekoppelde records worden opnieuw gekoppeld aan de eerste geselecteerde actor."
-    merge_resource_confirm_message: "Het archief/collectie-record '%{source}' zal de geselecteerde records erin samenvoegen. Alle geselecteerde records worden verwijderd en alle gekoppelde records worden opnieuw aan deze bron gekoppeld."
+    merge_subject_confirm_message: "Het onderwerp '%{source}' zal overblijven en de geselecteerde records zullen ermee worden samengevoegd. Alle geselecteerde records worden verwijderd en al hun gekoppelde records worden opnieuw aan het onderwerp '%{source}' gekoppeld."
+    merge_agent_confirm_message: "De actor '%{source}' zal overblijven en de geselecteerde records zullen ermee worden samengevoegd. Alle geselecteerde records worden verwijderd en al hun gekoppelde records worden opnieuw aan de actor '%{source}' gekoppeld. Als je op de knop actoren vergelijken klikt, verschijnt een scherm waarin je kan kiezen welke velden en subrecords je van elk record wil behouden."
+    merge_agent_from_browse_confirm_message: "De eerst geselecteerde actor zal overblijven, en de daaropvolgende geselecteerde records zullen ermee worden samengevoegd. Die records worden verwijderd en al hun gekoppelde records worden opnieuw gekoppeld aan de eerste geselecteerde actor."
+    merge_resource_confirm_message: "Het archief/collectie-record '%{source}' zal overblijven en de geselecteerde records zullen ermee worden samengevoegd. Alle geselecteerde records worden verwijderd en al hun gekoppelde records worden opnieuw aan het het archief/collectie-record '%{source}' gekoppeld."
     merge_container_profile_confirm_message: "De geselecteerde records worden samengevoegd met het containerprofiel '%{target}'. Alle geselecteerde records worden verwijderd en alle gekoppelde records worden opnieuw aan dit containerprofiel gekoppeld."
-    batch_merge: "Selecteer het record waarin alle andere getoonde record(s) moeten worden samengevoegd. Alle gekoppelde records worden opnieuw aan dit record gekoppeld en alle informatie voor de andere record (s) wordt verwijderd."
+    batch_merge: "Selecteer het doelrecord waarin alle andere getoonde record(s) moeten worden samengevoegd. Al hun gekoppelde records worden opnieuw aan dit record gekoppeld en alle informatie voor de andere record (s) wordt verwijderd."
     merge_n_records: "Voeg %{n} records samen"
     move: Verplaats
     move_up_a_level: Eén niveau hoger
@@ -725,8 +725,8 @@ en:
     merge_too_many_victims: Er kan slechts één actor worden geselecteerd voor deze samenvoeging.
     merge_different_types: Actoren die voor deze samenvoeging zijn geselecteerd, moeten van hetzelfde type zijn.
     merge_denied_for_system_user: Eén of meer actoren is een system user.
-    merge_denied_relationship: These agents have a relationship. Remove relationship before proceeding with merge.
-    merge_restricted_contact_details: De samenvoeging kan niet worden voltooid omdat een of meer van de actoren contactgegevens hebben waartoe je geen toegang hebt.
+    merge_denied_relationship: Deze actoren hebben één of meer onderlinge relaties. Verwijder deze relatie(s) alvorens ze samen te voegen.
+    merge_restricted_contact_details: De samenvoeging kan niet worden voltooid omdat één of meer van de actoren contactgegevens hebben waartoe je geen toegang hebt.
     linked_to_assessment: Record kan niet worden verwijderd omdat het is gekoppeld aan een waarderingsrecord.
     cannot_delete_repository_agent: Deze actor is gekoppeld met een repository en kan niet worden verwijderd.
     
@@ -773,7 +773,7 @@ en:
         deleted: Actor verwijderd
         published: "De actor <strong>%{agent.title}</strong>, de subrecords en onderdelen zijn gepubliceerd"
         delete_conflict: "Actor kon niet worden verwijderd: <pre>%{error}</pre>"
-        merge_description: Selecteer een actor om mee samen te voegen
+        merge_description: Selecteer actoren om samen te voegen met 
         merged: Actor(en) samengevoegd
         please_select_a_agent_to_merge: Selecteer een actor
       section:
@@ -795,7 +795,7 @@ en:
         structured_date_range_fields: Datumbereik
       action:
         create: Maak actor
-        preview: Voeg voorbeeld samen
+        preview: Voorbeeld van samenvoeging
 
   agent_contact:
     is_representative: Is primair contact
@@ -986,7 +986,7 @@ en:
         updated: "Digitaal object <strong>%{digital_object.title}</strong> aangepast"
         deleted: "Digitaal object <strong>%{digital_object.title}</strong> verwijderd"
         published: "Het digitaal object <strong>%{digital_object.title}</strong>, subrecords en onderdelen werden gepubliceerd"
-        merge_description: Selecteer digitale objecten om mee samen te voegen
+        merge_description: Selecteer digitale objecten om samen te voegen met
         please_select_a_digital_object_to_merge: Selecteer een digitaal object
         merged: Digitale object(en) samengevoegd
         transfer_description: Breng dit archief/collectie over naar...
@@ -1269,7 +1269,7 @@ en:
         deleted: "Archief/collectie <strong>%{resource.title}</strong> verwijderd"
         published: "Archief/collectie <strong>%{resource.title}</strong>, subrecords en onderdelen werden gepubliceerd"
         unpublished: "Publicatie van archief/collectie <strong>%{resource.title}</strong>, kinderen, subrecords en onderdelen werd ongedaan gemaakt"
-        merge_description: Selecteer de archieven/collecties waarmee moet worden samengevoegd
+        merge_description: Selecteer archieven/collecties om samen te voegen met 
         please_select_a_resource_to_merge: Selecteer een archief/collectie
         merged: Archieven/collecties samengevoegd
         transfer_description: Breng dit archief/collectie over naar...
@@ -1326,7 +1326,7 @@ en:
         updated: Onderwerp bewaard
         deleted: Onderwerp verwijderd
         merged: Subject(s) samengevoegd
-        merge_description: Selecteer onderwerpen hieronder om mee samen te voegen
+        merge_description: Selecteer onderwerpen om samen te voegen met 
         please_select_a_subject_to_merge: Selecteer een onderwerp
         delete_conflict: "Onderwerp kon niet worden verwijderd: <pre>%{error}</pre>"
       section:
@@ -1712,8 +1712,8 @@ en:
         basic_information: Basisgegevens
       bulk_operations:
         merge: Voeg containerprofielen samen
-        merge_instructions: Selecteer het containerprofiel waarmee alle andere containerprofielen in de lijst zullen worden samengevoegd. Gekoppelde records zullen opnieuw worden gekoppeld aan dit containerprofiel en alle informatie voor de ander containerprofielen zal worden verwijderd.
-        merge_select_target: Selecteer doel om samen te voegen
+        merge_instructions: Selecteer het containerprofiel waarmee alle andere containerprofielen in de lijst zullen worden samengevoegd. Hun gekoppelde records zullen opnieuw worden gekoppeld aan dit eerste containerprofiel en alle informatie voor de andere containerprofielen zal worden verwijderd.
+        merge_select_target: Selecteer dit doelrecord voor samenvoeging
         confirm_merge: Bevestig samenvoeging van containerprofielen
         confirm_merge_question: Weet je zeker dat je de containerprofielen zoals hieronder vermeld wil samenvoegen? Deze actie is onomkeerbaar.
         confirm_merge_victims: "Voeg de volgende container profiel(en) samen:"
